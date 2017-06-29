@@ -1,0 +1,44 @@
+<div class="span3  horizontal-centered">
+        <h4 class="header-padding">Featured: The AUDL 2017</h4>
+        <ul class="audl-teams nav nav-tabs nav-stacked">
+        <li><a href="app/#/5762298832486400/players">Atlanta Hustle</a></li><li><a href="app/#/5199348879065088/players">Austin Sol</a></li><li><a href="app/#/5104011879383040/players">Chicago Wildfire</a></li><li><a href="app/#/5634601401712640/players">DC Breeze</a></li><li><a href="app/#/5688687119564800/players">Dallas Roughnecks</a></li><li><a href="app/#/5173627930542080/players">Detroit Mechanix</a></li><li><a href="app/#/5646521009700864/players">Indianapolis AlleyCats</a></li><li><a href="app/#/5672188833169408/players">Jacksonville Cannons</a></li><li><a href="app/#/5719707252424704/players">Los Angeles Aviators</a></li><li><a href="app/#/5701394610782208/players">Madison Radicals </a></li><li><a href="app/#/5658753101725696/players">Minnesota Wind Chill </a></li><li><a href="app/#/5736577883963392/players">Montreal Royal</a></li><li><a href="app/#/5672878150254592/players">Nashville Nightwatch</a></li><li><a href="app/#/5767202099691520/players">New York Empire</a></li><li><a href="app/#/5700228501995520/players">Ottawa Outlaws </a></li><li><a href="app/#/5666961832804352/players">Philadelphia Phoenix</a></li><li><a href="app/#/5721191432060928/players">Pittsburgh Thunderbirds</a></li><li><a href="app/#/5740216795004928/players">Raleigh Flyers </a></li><li><a href="app/#/5712818124881920/players">San Diego Growlers</a></li><li><a href="app/#/5654595548217344/players">San Francisco FlameThrowers</a></li><li><a href="app/#/5655358173347840/players">San Jose Spiders</a></li><li><a href="app/#/5753798823772160/players">Seattle Cascades</a></li><li><a href="app/#/5707300165648384/players">Toronto Rush </a></li><li><a href="app/#/5711261467672576/players">Vancouver Riptide</a></li></ul>
+		<div class="accordion" id="accordion2">
+		
+			<div class="accordion-group">
+				<div class="accordion-heading">
+					<a class="accordion-toggle audlTeamYear" data-toggle="collapse" data-parent="#accordion2" href="#collapse100"> AUDL 2016 </a>
+				</div>
+				<div id="collapse100" class="accordion-body in collapse" style="height: auto;">
+					<div class="accordion-inner">
+					    <ul class="audl-teams-2016 nav nav-tabs nav-stacked">
+        				<li><a href="app/#/5664284977659904/players">Atlanta Hustle</a></li><li><a href="app/#/5128666635829248/players">Austin Sol</a></li><li><a href="app/#/5640136574369792/players">Charlotte Express</a></li><li><a href="app/#/5691616589250560/players">Chicago Wildfire</a></li><li><a href="app/#/5069252692279296/players">Cincinnati Revolution</a></li><li><a href="app/#/5705148370255872/players">DC Breeze</a></li><li><a href="app/#/5206956054675456/players">Dallas Roughnecks</a></li><li><a href="app/#/5769906008096768/players">Detroit Mechanix</a></li><li><a href="app/#/5201331526565888/players">Indianapolis AlleyCats</a></li><li><a href="app/#/5723974822526976/players">Jacksonville Cannons</a></li><li><a href="app/#/4919856549855232/players">Los Angeles Aviators</a></li><li><a href="app/#/5114556594520064/players">Madison Radicals </a></li><li><a href="app/#/5142198416834560/players">Minnesota Wind Chill </a></li><li><a href="app/#/5686487861428224/players">Montreal Royal</a></li><li><a href="app/#/5749730717990912/players">Nashville Nightwatch</a></li><li><a href="app/#/5632202645700608/players">New York Empire</a></li><li><a href="app/#/5153306812874752/players">Ottawa Outlaws </a></li><li><a href="app/#/5675918433452032/players">Philadelphia Phoenix</a></li><li><a href="app/#/5758196635402240/players">Pittsburgh Thunderbirds</a></li><li><a href="app/#/5199033182191616/players">Raleigh Flyers </a></li><li><a href="app/#/5664810037411840/players">San Diego Growlers</a></li><li><a href="app/#/5743365039587328/players">San Francisco FlameThrowers</a></li><li><a href="app/#/5716256766296064/players">San Jose Spiders</a></li><li><a href="app/#/4860723440123904/players">Seattle Cascades</a></li><li><a href="app/#/5764281479987200/players">Toronto Rush </a></li><li><a href="app/#/6327231433408512/players">Vancouver Riptide</a></li></ul>
+					</div>
+				</div>
+			</div>
+			
+			<div class="accordion-group">
+				<div class="accordion-heading">
+					<a class="accordion-toggle audlTeamYear" data-toggle="collapse" data-parent="#accordion2" href="#collapse125"> AUDL 2015 </a>
+				</div>
+				<div id="collapse125" class="accordion-body collapse" style="height: 0px;">
+					<div class="accordion-inner">
+					    <ul class="audl-teams-2015 nav nav-tabs nav-stacked">
+        				<li><a href="app/#/5708939920408576/players">Atlanta Hustle</a></li><li><a href="app/#/5643517367943168/players">Charlotte Express</a></li><li><a href="app/#/5671536392404992/players">Chicago Wildfire</a></li><li><a href="app/#/5674069752020992/players">Cincinnati Revolution</a></li><li><a href="app/#/5635093192245248/players">DC Breeze</a></li><li><a href="app/#/5738275486564352/players">Detroit Mechanix</a></li><li><a href="app/#/5724822843686912/players">Indianapolis AlleyCats</a></li><li><a href="app/#/5633494390669312/players">Jacksonville Cannons</a></li><li><a href="app/#/5118639615246336/players">Los Angeles Aviators</a></li><li><a href="app/#/5070544437248000/players">Madison Radicals </a></li><li><a href="app/#/5683257223938048/players">Minnesota Wind Chill </a></li><li><a href="app/#/5753050442498048/players">Montreal Royal</a></li><li><a href="app/#/5705718560718848/players">Nashville Nightwatch</a></li><li><a href="app/#/5704221898833920/players">New York Empire</a></li><li><a href="app/#/5751646390845440/players">Ottawa Outlaws </a></li><li><a href="app/#/5641462360309760/players">Philadelphia Phoenix</a></li><li><a href="app/#/5651757665353728/players">Pittsburgh Thunderbirds</a></li><li><a href="app/#/5684793748488192/players">Raleigh Flyers </a></li><li><a href="app/#/5670377556541440/players">Rochester Dragons</a></li><li><a href="app/#/5734743547052032/players">San Diego Growlers</a></li><li><a href="app/#/5758048710688768/players">San Francisco FlameThrowers</a></li><li><a href="app/#/5722152447770624/players">San Jose Spiders</a></li><li><a href="app/#/5681589568667648/players">Seattle Cascades</a></li><li><a href="app/#/5754980359208960/players">Toronto Rush </a></li><li><a href="app/#/5701751084679168/players">Vancouver Riptide</a></li></ul>
+					</div>
+				</div>
+			</div>
+
+			<div class="accordion-group">
+				<div class="accordion-heading">
+					<a class="accordion-toggle audlTeamYear" data-toggle="collapse" data-parent="#accordion2" href="#collapse150"> AUDL 2014 </a>
+				</div>
+				<div id="collapse150" class="accordion-body collapse">
+					<div class="accordion-inner">
+					    <ul class="audl-teams-2014 nav nav-tabs nav-stacked">
+        				<li><a href="app/#/5471866718257152/players">Chicago Wildfire</a></li><li><a href="app/#/5732910535540736/players">Cincinnati Revolution</a></li><li><a href="app/#/4868028676177920/players">DC Breeze</a></li><li><a href="app/#/5684961520648192/players">Detroit Mechanix</a></li><li><a href="app/#/5075454121738240/players">Indianapolis AlleyCats</a></li><li><a href="app/#/5182111044599808/players">Madison Radicals</a></li><li><a href="app/#/5638404075159552/players">Minnesota Wind Chill</a></li><li><a href="app/#/5753341694967808/players">Montreal Royal</a></li><li><a href="app/#/6220853180104704/players">New York Empire</a></li><li><a href="app/#/5663684521099264/players">Philadelphia Phoenix</a></li><li><a href="app/#/5682238511382528/players">Rochester Dragons</a></li><li><a href="app/#/5662069344960512/players">Salt Lake Lions</a></li><li><a href="app/#/5094953273262080/players">San Francisco FlameThrowers</a></li><li><a href="app/#/6597766625099776/players">San Jose Spiders</a></li><li><a href="app/#/5648334039547904/players">Seattle Raptors</a></li><li><a href="app/#/5131065358286848/players">Toronto Rush</a></li><li><a href="app/#/6226234774126592/players">Vancouver Riptide</a></li></ul>
+					</div>
+				</div>
+			</div>
+			
+		</div>
+	  </div>
