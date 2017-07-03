@@ -1,0 +1,3407 @@
+<!DOCTYPE html>
+<!-- saved from url=(0063)http://www.ultianalytics.com/team/5762298832486400/main-classic -->
+<html class="ui-mobile"><!-- saved from url=(0014)about:internet --><head><meta http-equiv="Content-Type" content="text/html; charset=windows-1252"><!--<base href="http://www.ultianalytics.com/team/5762298832486400/main-classic">--><base href="."><style id="stndz-style"></style>
+	<title>Ultimate Team - Atlanta Hustle 2017</title> 
+	
+	<!--  ios offline meta stuff -->
+    <meta name="apple-mobile-web-app-capable" content="yes">  
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+        
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
+    <link rel="shortcut icon" href="http://www.ultianalytics.com/images/favicon.ico">
+	<link rel="apple-touch-icon-precomposed" sizes="114x114" href="http://www.ultianalytics.com/team/5762298832486400/images/icon.png">
+    <link rel="apple-touch-icon-precomposed" href="http://www.ultianalytics.com/team/5762298832486400/images/icon2x.png">
+    <link rel="stylesheet" href="./Ultimate Team - Atlanta Hustle 2017_files/ultimate1.css">
+  	<link rel="stylesheet" href="./Ultimate Team - Atlanta Hustle 2017_files/jquery.mobile.structure-1.1.0.min.css"> 
+	<link rel="stylesheet" href="./Ultimate Team - Atlanta Hustle 2017_files/custom.css">
+	<script type="text/javascript" async="" src="./Ultimate Team - Atlanta Hustle 2017_files/ga.js.download"></script><script src="./Ultimate Team - Atlanta Hustle 2017_files/jquery-1.7.1.min.js.download"></script>
+	<script src="./Ultimate Team - Atlanta Hustle 2017_files/jquery.mobile-1.1.0.min.js.download"></script>
+	<script src="./Ultimate Team - Atlanta Hustle 2017_files/page-params.js.download"></script>
+	<script src="./Ultimate Team - Atlanta Hustle 2017_files/handlebars-1.0.0.beta.6.js.download"></script>
+	<script src="./Ultimate Team - Atlanta Hustle 2017_files/jquery.flot.patched-multi.js.download"></script>
+	<script type="text/javascript">
+		Ultimate = {};
+		Ultimate.teamId = "5762298832486400";
+		Ultimate.teamName = "Atlanta Hustle 2017";
+		Ultimate.teamNameWithSeason = "Atlanta Hustle 2017";
+	</script>
+	<script src="./Ultimate Team - Atlanta Hustle 2017_files/rest.js.download"></script>
+	<script src="./Ultimate Team - Atlanta Hustle 2017_files/stats.js.download"></script>
+	<script src="./Ultimate Team - Atlanta Hustle 2017_files/app.js.download"></script>
+	
+	<script id="playerStatsTableTemplate" type="text/x-handlebars-template">
+		<thead>
+			{{#with headings}}
+				<th class="tablePlayerName"><a href="#" data-stattype="playerName">{{playerName}}</a></th>
+				<th><a href="#" data-stattype="plusMinusCount">{{plusMinusCount}}</a></th>
+  				{{#unless ../isPerPoint}}
+					<th><a href="#" data-stattype="gamesPlayed">{{gamesPlayed}}</a></th>
+					<th><a href="#" data-stattype="pointsPlayed">{{pointsPlayed}}</a></th>
+					<th><a href="#" data-stattype="minutesPlayed">{{minutesPlayed}}</a></th>
+					<th><a href="#" data-stattype="opointsPlayed">{{opointsPlayed}}</a></th>
+					<th><a href="#" data-stattype="plusMinusOLine">{{plusMinusOLine}}</a></th>
+					<th><a href="#" data-stattype="dpointsPlayed">{{dpointsPlayed}}</a></th>
+					<th><a href="#" data-stattype="plusMinusDLine">{{plusMinusDLine}}</a></th>
+  				{{/unless}}
+				<th><a href="#" data-stattype="touches">{{touches}}</a></th>
+				<th><a href="#" data-stattype="goals">{{goals}}</a></th>
+				<th><a href="#" data-stattype="callahans">{{callahans}}</a></th>
+				<th><a href="#" data-stattype="assists">{{assists}}</a></th>
+				<th><a href="#" data-stattype="passes">{{passes}}</a></th>
+				<th><a href="#" data-stattype="throwaways">{{throwaways}}</a></th>
+				<th><a href="#" data-stattype="stalls">{{stalls}}</a></th>
+				<th><a href="#" data-stattype="miscPenalties">{{miscPenalties}}</a></th>
+				<th><a href="#" data-stattype="callahaneds">{{callahaneds}}</a></th>
+  				{{#unless ../isPerPoint}}
+					<th><a href="#" data-stattype="passSuccess">{{passSuccess}}</a></th>
+  				{{/unless}}
+				<th><a href="#" data-stattype="catches">{{catches}}</a></th>
+				<th><a href="#" data-stattype="drops">{{drops}}</a></th>
+  				{{#unless ../isPerPoint}}
+					<th><a href="#" data-stattype="catchSuccess">{{catchSuccess}}</a></th>
+  				{{/unless}}
+				<th><a href="#" data-stattype="ds">{{ds}}</a></th>
+				<th><a href="#" data-stattype="pulls">{{pulls}}</a></th>
+  				{{#unless ../isPerPoint}}
+					<th><a href="#" data-stattype="pullsAvgHangtimeMillis">{{pullsAvgHangtimeMillis}}</a></th>
+					<th><a href="#" data-stattype="pullsOB">{{pullsOB}}</a></th>
+  				{{/unless}}
+			{{/with}}
+		</thead>
+		<tbody>
+			{{#stripeRows playerStats}}
+			{{#if even}}
+				<tr class="evenStatsRow">
+			{{else}}
+				<tr class="oddStasRow">
+			{{/if}}
+				<td class="tablePlayerName">{{playerName}}</td>
+				<td>{{plusMinusCount}}</td>
+  				{{#unless ../isPerPoint}}
+					<td>{{gamesPlayed}}</td>
+					<td>{{pointsPlayed}}</td>
+					<td>{{minutesPlayed}}</td>
+					<td>{{opointsPlayed}}</td>
+					<td>{{plusMinusOLine}}</td>
+					<td>{{dpointsPlayed}}</td>
+					<td>{{plusMinusDLine}}</td>
+  				{{/unless}}
+				<td>{{touches}}</td>
+				<td>{{goals}}</td>
+				<td>{{callahans}}</td>
+				<td>{{assists}}</td>
+				<td>{{passes}}</td>
+				<td>{{throwaways}}</td>
+				<td>{{stalls}}</td>
+				<td>{{miscPenalties}}</td>
+				<td>{{callahaneds}}</td>
+  				{{#unless ../isPerPoint}}
+					<td>{{passSuccess}}</td>
+  				{{/unless}}
+				<td>{{catches}}</td>
+				<td>{{drops}}</td>
+  				{{#unless ../isPerPoint}}
+					<td>{{catchSuccess}}</td>
+  				{{/unless}}
+				<td>{{ds}}</td>
+				<td>{{pulls}}</td>
+ 				{{#unless ../isPerPoint}}
+					<td>{{pullsAvgHangtimeMillis}}</td>
+					<td>{{pullsOB}}</td>
+				{{/unless}}
+			</tr>
+			{{/stripeRows}}
+		</tbody>
+	</script>
+	
+	<script id="statsDenominatorChooserTemplate" type="text/x-handlebars-template">
+		<div class="ui-block-b statDenominatorRadioButtons">
+			<fieldset data-role="controlgroup" data-type="horizontal" >
+		  	   	<input type="radio" name="mainpage-statDenominatorType" id="mainpage-sdrb1" value="Absolute" checked="checked" />
+		       	<label for="mainpage-sdrb1">Absolute</label>
+		       	<input type="radio" name="mainpage-statDenominatorType" id="mainpage-sdrb2" value="PerPoint"  />
+		       	<label for="mainpage-sdrb2">Per Point Played</label>
+		    </fieldset>
+		</div>
+	</script>
+	
+	<script type="text/javascript">
+
+		  var _gaq = _gaq || [];
+		  _gaq.push(['_setAccount', 'UA-31918750-1']);
+		  _gaq.push(['_trackPageview']);
+		
+		  (function() {
+		    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+		    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+		    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+		  })();
+
+	</script>
+</head>
+		
+<body class="ui-mobile-viewport ui-overlay-b">
+<div id="mainpage" class="pagediv ui-page ui-body-b ui-page-active" data-role="page" data-theme="b" data-title="Ultimate Team - Atlanta Hustle 2017" data-url="mainpage" tabindex="0" style="min-height: 566px;">
+	
+	<div class="top-section">
+		<img class="players-image" src="./Ultimate Team - Atlanta Hustle 2017_files/ultimate-silhouette.png">
+		<div class="pageHeading">
+			<span class="teamName">Atlanta Hustle 2017</span><br> 
+			<span class="pageTitle">Ultimate Team Statistics</span> 
+		</div>
+	</div>
+
+	<div data-role="navbar" class="ui-navbar ui-navbar-noicons" role="navigation">
+		<ul class="ui-grid-b">
+			<li class="ui-block-a"><a id="playersTab" href="http://www.ultianalytics.com/team/5762298832486400/main-classic#mainpage" data-prefetch="" class="ui-btn-active ui-state-persist ui-btn ui-btn-inline ui-btn-up-b" data-corners="false" data-shadow="false" data-iconshadow="true" data-wrapperels="span" data-theme="b" data-inline="true"><span class="ui-btn-inner"><span class="ui-btn-text">Players</span></span></a></li>
+			<li class="ui-block-b"><a id="gamesTab" href="http://www.ultianalytics.com/team/5762298832486400/main-classic#gamespage" data-prefetch="" data-corners="false" data-shadow="false" data-iconshadow="true" data-wrapperels="span" data-theme="b" data-inline="true" class="ui-btn ui-btn-up-b ui-btn-inline"><span class="ui-btn-inner"><span class="ui-btn-text">Games</span></span></a></li>
+			<li class="ui-block-c"><a id="teamTab" href="http://www.ultianalytics.com/team/5762298832486400/main-classic#teamstatspage" data-prefetch="" data-corners="false" data-shadow="false" data-iconshadow="true" data-wrapperels="span" data-theme="b" data-inline="true" class="ui-btn ui-btn-up-b ui-btn-inline"><span class="ui-btn-inner"><span class="ui-btn-text">Team</span></span></a></li>
+		</ul>
+	</div>
+	<div class="content">
+		<img class="spinner hidden" src="./Ultimate Team - Atlanta Hustle 2017_files/spinner.gif">
+		<div class="hideWhenBusy">
+			<div class="wideOnly"><br>Want to produce your own stats? <a class="downlaodRawStatsLink ui-link" href="javascript:void(0)">Download file of Raw Data</a></div>
+		</div>		
+		<div id="teamStatsNarrow" class="hideWhenBusy">
+			<br>
+			<div class="insetlist narrowOnly">
+				<ul id="players" data-role="listview" data-theme="c" data-inset="true" class="ui-listview ui-listview-inset ui-corner-all ui-shadow"></ul>
+			</div>
+		</div>
+		<div id="teamStatsWide" class="hideWhenBusy">
+			<br>
+			<fieldset class="ui-grid-a wideOnly">
+				<div class="ui-block-a">
+					<div class="ui-select"><div data-corners="true" data-shadow="true" data-iconshadow="true" data-wrapperels="span" data-icon="arrow-d" data-iconpos="right" data-theme="b" data-inline="true" data-mini="false" class="ui-btn ui-btn-inline ui-shadow ui-btn-corner-all ui-fullsize ui-btn-icon-right ui-btn-up-b"><span class="ui-btn-inner ui-btn-corner-all"><span class="ui-btn-text">All Games</span><span class="ui-icon ui-icon-arrow-d ui-icon-shadow">&nbsp;</span></span><select name="selectGamesForPlayerTeamStats" class="gameSelect" id="selectGamesForTeamPlayerStats" data-inline="true"><option value="AllGames">All Games</option><option value="TOURNAMENT-6-25-2017">6-25 2017</option><option value="TOURNAMENT-6-24-2017">6-24 2017</option><option value="TOURNAMENT-5-21-2017">5-21 2017</option><option value="TOURNAMENT-5-20-2017">5-20 2017</option><option value="game-f502b87d-21cf-4018-8c21-0f4f8c02f303">Sun, 6/25 at 6-25 vs. Austin Sol </option><option value="game-2abb46a6-5ce7-4d16-89ae-21469c640970">Fri, 6/23 at 6-24 vs. Dallas Roughnecks </option><option value="game-0F8DE9ED-F57E-49B3-819D-2109B7A33BB4">Sat, 6/17  vs. Raleigh Flyers </option><option value="game-25BAD013-2F40-4552-B630-8F511E00C1DC">Sat, 6/10  vs. Jacksonville Cannons </option><option value="game-68996CF8-F4A3-471F-9E66-62EF0EDBDA6D">Sun, 6/04  vs. Austin Sol </option><option value="game-7946704A-BC4A-4B39-A5ED-164686BE113E">Sat, 5/27  vs. Jacksonville Cannons </option><option value="game-93e86d68-ceb7-4a05-adcf-9d97b28ae7a2">Sun, 5/21 at 5-21 vs. Dallas Roughnecks </option><option value="game-e2d0a281-b882-49dc-b0ea-82ab812606fb">Sat, 5/20 at 5-20 vs. Austin Sol </option><option value="game-6FF132CA-278D-49BD-96C6-93648384F336">Sat, 5/13  vs. Nashville Nightwatch </option><option value="game-23B5BD77-F4FF-4316-AF13-1E9E2905D9F0">Sun, 4/30  vs. Dallas Roughnecks </option><option value="game-C3B60079-7F2A-4298-B69B-D53F08CB5A39">Sat, 4/22  vs. Jacksonville Cannons </option><option value="game-AFF39515-4A70-465C-9528-1CAD5B30E4F5">Sat, 4/15  vs. Nashville Nightwatch </option><option value="game-532073A4-B5F8-4EFF-B82A-E0AC3A0B0851">Sat, 4/01  vs. Raleigh Flyers </option></select></div></div>
+				</div>
+				<div class="teamStatsDenominatorChooser">
+		<div class="ui-block-b statDenominatorRadioButtons">
+			<fieldset data-role="controlgroup" data-type="horizontal" class="ui-corner-all ui-controlgroup ui-controlgroup-horizontal">
+		  	   	<div class="ui-radio"><input type="radio" name="mainpage-statDenominatorType" id="mainpage-sdrb1" value="Absolute" checked="checked"><label for="mainpage-sdrb1" data-corners="true" data-shadow="false" data-iconshadow="true" data-wrapperels="span" data-theme="b" class="ui-btn ui-corner-left ui-radio-on ui-btn-active ui-btn-up-b"><span class="ui-btn-inner ui-corner-left"><span class="ui-btn-text">Absolute</span></span></label></div>
+		       	
+		       	<div class="ui-radio"><input type="radio" name="mainpage-statDenominatorType" id="mainpage-sdrb2" value="PerPoint"><label for="mainpage-sdrb2" data-corners="true" data-shadow="false" data-iconshadow="true" data-wrapperels="span" data-theme="b" class="ui-btn ui-corner-right ui-controlgroup-last ui-btn-up-b ui-radio-off"><span class="ui-btn-inner ui-corner-right ui-controlgroup-last"><span class="ui-btn-text">Per Point Played</span></span></label></div>
+		       	
+		    </fieldset>
+		</div>
+	</div>
+			</fieldset>
+			<table id="teamPlayerStats" class="playerStats">
+		<thead>
+			
+				<tr><th class="tablePlayerName"><a href="http://www.ultianalytics.com/team/5762298832486400/main-classic#" data-stattype="playerName" class="selectedColumn">Player</a></th>
+				<th><a href="http://www.ultianalytics.com/team/5762298832486400/main-classic#" data-stattype="plusMinusCount">+/-</a></th>
+  				
+					<th><a href="http://www.ultianalytics.com/team/5762298832486400/main-classic#" data-stattype="gamesPlayed">Games played</a></th>
+					<th><a href="http://www.ultianalytics.com/team/5762298832486400/main-classic#" data-stattype="pointsPlayed">Points played</a></th>
+					<th><a href="http://www.ultianalytics.com/team/5762298832486400/main-classic#" data-stattype="minutesPlayed">Minutes played</a></th>
+					<th><a href="http://www.ultianalytics.com/team/5762298832486400/main-classic#" data-stattype="opointsPlayed">O-line points played</a></th>
+					<th><a href="http://www.ultianalytics.com/team/5762298832486400/main-classic#" data-stattype="plusMinusOLine">+/- O-line</a></th>
+					<th><a href="http://www.ultianalytics.com/team/5762298832486400/main-classic#" data-stattype="dpointsPlayed">D-line points played</a></th>
+					<th><a href="http://www.ultianalytics.com/team/5762298832486400/main-classic#" data-stattype="plusMinusDLine">+/- D-line</a></th>
+  				
+				<th><a href="http://www.ultianalytics.com/team/5762298832486400/main-classic#" data-stattype="touches">Touches</a></th>
+				<th><a href="http://www.ultianalytics.com/team/5762298832486400/main-classic#" data-stattype="goals">Goals</a></th>
+				<th><a href="http://www.ultianalytics.com/team/5762298832486400/main-classic#" data-stattype="callahans">Callahans</a></th>
+				<th><a href="http://www.ultianalytics.com/team/5762298832486400/main-classic#" data-stattype="assists">Assists</a></th>
+				<th><a href="http://www.ultianalytics.com/team/5762298832486400/main-classic#" data-stattype="passes">Throws</a></th>
+				<th><a href="http://www.ultianalytics.com/team/5762298832486400/main-classic#" data-stattype="throwaways">Throw aways</a></th>
+				<th><a href="http://www.ultianalytics.com/team/5762298832486400/main-classic#" data-stattype="stalls">Stalled's</a></th>
+				<th><a href="http://www.ultianalytics.com/team/5762298832486400/main-classic#" data-stattype="miscPenalties">Passer Penalties (turnovers)</a></th>
+				<th><a href="http://www.ultianalytics.com/team/5762298832486400/main-classic#" data-stattype="callahaneds">Callahaned's (other team scored)</a></th>
+  				
+					<th><a href="http://www.ultianalytics.com/team/5762298832486400/main-classic#" data-stattype="passSuccess">Throw %</a></th>
+  				
+				<th><a href="http://www.ultianalytics.com/team/5762298832486400/main-classic#" data-stattype="catches">Catches</a></th>
+				<th><a href="http://www.ultianalytics.com/team/5762298832486400/main-classic#" data-stattype="drops">Drops</a></th>
+  				
+					<th><a href="http://www.ultianalytics.com/team/5762298832486400/main-classic#" data-stattype="catchSuccess">Catch %</a></th>
+  				
+				<th><a href="http://www.ultianalytics.com/team/5762298832486400/main-classic#" data-stattype="ds">Ds</a></th>
+				<th><a href="http://www.ultianalytics.com/team/5762298832486400/main-classic#" data-stattype="pulls">Pulls</a></th>
+  				
+					<th><a href="http://www.ultianalytics.com/team/5762298832486400/main-classic#" data-stattype="pullsAvgHangtimeMillis">Avg Pull Hang Time</a></th>
+					<th><a href="http://www.ultianalytics.com/team/5762298832486400/main-classic#" data-stattype="pullsOB">OB Pulls</a></th>
+  				
+			
+		</tr></thead>
+		<tbody>
+			
+			
+				<tr class="oddStasRow">
+			
+				<td class="tablePlayerName">A Olsen</td>
+				<td>9</td>
+  				
+					<td>8</td>
+					<td>160</td>
+					<td>206.2</td>
+					<td>88.5</td>
+					<td>35</td>
+					<td>71.5</td>
+					<td>-39</td>
+  				
+				<td>94</td>
+				<td>12</td>
+				<td>0</td>
+				<td>6</td>
+				<td>82</td>
+				<td>10</td>
+				<td>0</td>
+				<td>0</td>
+				<td>0</td>
+  				
+					<td>88</td>
+  				
+				<td>90</td>
+				<td>1</td>
+  				
+					<td>99</td>
+  				
+				<td>2</td>
+				<td>0</td>
+ 				
+					<td>0.0</td>
+					<td>0</td>
+				
+			</tr>
+			
+			
+				<tr class="evenStatsRow">
+			
+				<td class="tablePlayerName">A Taylor</td>
+				<td>16</td>
+  				
+					<td>9</td>
+					<td>198</td>
+					<td>223.0</td>
+					<td>160</td>
+					<td>92</td>
+					<td>38</td>
+					<td>-9</td>
+  				
+				<td>146</td>
+				<td>8</td>
+				<td>0</td>
+				<td>15</td>
+				<td>136</td>
+				<td>4</td>
+				<td>1</td>
+				<td>0</td>
+				<td>0</td>
+  				
+					<td>96</td>
+  				
+				<td>141</td>
+				<td>3</td>
+  				
+					<td>98</td>
+  				
+				<td>1</td>
+				<td>0</td>
+ 				
+					<td>0.0</td>
+					<td>0</td>
+				
+			</tr>
+			
+			
+				<tr class="oddStasRow">
+			
+				<td class="tablePlayerName">Allan L</td>
+				<td>21</td>
+  				
+					<td>9</td>
+					<td>205</td>
+					<td>250.3</td>
+					<td>142</td>
+					<td>76</td>
+					<td>63</td>
+					<td>-27</td>
+  				
+				<td>240</td>
+				<td>10</td>
+				<td>0</td>
+				<td>24</td>
+				<td>228</td>
+				<td>17</td>
+				<td>0</td>
+				<td>0</td>
+				<td>0</td>
+  				
+					<td>93</td>
+  				
+				<td>170</td>
+				<td>2</td>
+  				
+					<td>99</td>
+  				
+				<td>6</td>
+				<td>45</td>
+ 				
+					<td>7.2</td>
+					<td>2</td>
+				
+			</tr>
+			
+			
+				<tr class="evenStatsRow">
+			
+				<td class="tablePlayerName">Anonymous</td>
+				<td>1</td>
+  				
+					<td>0</td>
+					<td>0</td>
+					<td>0.0</td>
+					<td>0</td>
+					<td>0</td>
+					<td>0</td>
+					<td>0</td>
+  				
+				<td>0</td>
+				<td>0</td>
+				<td>0</td>
+				<td>0</td>
+				<td>4</td>
+				<td>0</td>
+				<td>0</td>
+				<td>0</td>
+				<td>0</td>
+  				
+					<td>100</td>
+  				
+				<td>0</td>
+				<td>0</td>
+  				
+					<td>0</td>
+  				
+				<td>1</td>
+				<td>19</td>
+ 				
+					<td>2.2</td>
+					<td>0</td>
+				
+			</tr>
+			
+			
+				<tr class="oddStasRow">
+			
+				<td class="tablePlayerName">Archie</td>
+				<td>0</td>
+  				
+					<td>4</td>
+					<td>52</td>
+					<td>57.6</td>
+					<td>4</td>
+					<td>-3</td>
+					<td>48</td>
+					<td>-27</td>
+  				
+				<td>5</td>
+				<td>1</td>
+				<td>0</td>
+				<td>0</td>
+				<td>4</td>
+				<td>1</td>
+				<td>0</td>
+				<td>0</td>
+				<td>0</td>
+  				
+					<td>75</td>
+  				
+				<td>5</td>
+				<td>0</td>
+  				
+					<td>100</td>
+  				
+				<td>0</td>
+				<td>0</td>
+ 				
+					<td>0.0</td>
+					<td>0</td>
+				
+			</tr>
+			
+			
+				<tr class="evenStatsRow">
+			
+				<td class="tablePlayerName">Birdsong</td>
+				<td>0</td>
+  				
+					<td>2</td>
+					<td>19</td>
+					<td>31.6</td>
+					<td>10</td>
+					<td>5</td>
+					<td>9</td>
+					<td>-9</td>
+  				
+				<td>8</td>
+				<td>0</td>
+				<td>0</td>
+				<td>0</td>
+				<td>8</td>
+				<td>0</td>
+				<td>0</td>
+				<td>0</td>
+				<td>0</td>
+  				
+					<td>100</td>
+  				
+				<td>8</td>
+				<td>0</td>
+  				
+					<td>100</td>
+  				
+				<td>0</td>
+				<td>0</td>
+ 				
+					<td>0.0</td>
+					<td>0</td>
+				
+			</tr>
+			
+			
+				<tr class="oddStasRow">
+			
+				<td class="tablePlayerName">Boecking</td>
+				<td>6</td>
+  				
+					<td>12</td>
+					<td>295</td>
+					<td>353.3</td>
+					<td>125.5</td>
+					<td>54</td>
+					<td>169.5</td>
+					<td>-87</td>
+  				
+				<td>294</td>
+				<td>2</td>
+				<td>0</td>
+				<td>14</td>
+				<td>289</td>
+				<td>22</td>
+				<td>0</td>
+				<td>0</td>
+				<td>1</td>
+  				
+					<td>92</td>
+  				
+				<td>209</td>
+				<td>3</td>
+  				
+					<td>99</td>
+  				
+				<td>15</td>
+				<td>34</td>
+ 				
+					<td>5.8</td>
+					<td>1</td>
+				
+			</tr>
+			
+			
+				<tr class="evenStatsRow">
+			
+				<td class="tablePlayerName">Bradham</td>
+				<td>4</td>
+  				
+					<td>8</td>
+					<td>102</td>
+					<td>110.2</td>
+					<td>3.5</td>
+					<td>-2</td>
+					<td>98.5</td>
+					<td>-68</td>
+  				
+				<td>9</td>
+				<td>3</td>
+				<td>0</td>
+				<td>1</td>
+				<td>6</td>
+				<td>0</td>
+				<td>0</td>
+				<td>0</td>
+				<td>0</td>
+  				
+					<td>100</td>
+  				
+				<td>8</td>
+				<td>1</td>
+  				
+					<td>89</td>
+  				
+				<td>1</td>
+				<td>0</td>
+ 				
+					<td>0.0</td>
+					<td>0</td>
+				
+			</tr>
+			
+			
+				<tr class="oddStasRow">
+			
+				<td class="tablePlayerName">Bush</td>
+				<td>52</td>
+  				
+					<td>12</td>
+					<td>279</td>
+					<td>338.6</td>
+					<td>238</td>
+					<td>125</td>
+					<td>41</td>
+					<td>-8</td>
+  				
+				<td>154</td>
+				<td>38</td>
+				<td>0</td>
+				<td>24</td>
+				<td>114</td>
+				<td>9</td>
+				<td>0</td>
+				<td>0</td>
+				<td>0</td>
+  				
+					<td>92</td>
+  				
+				<td>145</td>
+				<td>4</td>
+  				
+					<td>97</td>
+  				
+				<td>3</td>
+				<td>3</td>
+ 				
+					<td>6.5</td>
+					<td>0</td>
+				
+			</tr>
+			
+			
+				<tr class="evenStatsRow">
+			
+				<td class="tablePlayerName">C Olsen</td>
+				<td>23</td>
+  				
+					<td>10</td>
+					<td>204.5</td>
+					<td>265.4</td>
+					<td>92.5</td>
+					<td>39</td>
+					<td>112</td>
+					<td>-40</td>
+  				
+				<td>196</td>
+				<td>16</td>
+				<td>0</td>
+				<td>18</td>
+				<td>178</td>
+				<td>15</td>
+				<td>0</td>
+				<td>0</td>
+				<td>0</td>
+  				
+					<td>92</td>
+  				
+				<td>186</td>
+				<td>1</td>
+  				
+					<td>99</td>
+  				
+				<td>5</td>
+				<td>1</td>
+ 				
+					<td>7.6</td>
+					<td>0</td>
+				
+			</tr>
+			
+			
+				<tr class="oddStasRow">
+			
+				<td class="tablePlayerName">Caldwell</td>
+				<td>0</td>
+  				
+					<td>2</td>
+					<td>22</td>
+					<td>26.9</td>
+					<td>1</td>
+					<td>0</td>
+					<td>21</td>
+					<td>-13</td>
+  				
+				<td>1</td>
+				<td>0</td>
+				<td>0</td>
+				<td>0</td>
+				<td>1</td>
+				<td>1</td>
+				<td>0</td>
+				<td>0</td>
+				<td>0</td>
+  				
+					<td>0</td>
+  				
+				<td>0</td>
+				<td>0</td>
+  				
+					<td>0</td>
+  				
+				<td>1</td>
+				<td>0</td>
+ 				
+					<td>0.0</td>
+					<td>0</td>
+				
+			</tr>
+			
+			
+				<tr class="evenStatsRow">
+			
+				<td class="tablePlayerName">Dylan</td>
+				<td>21</td>
+  				
+					<td>5</td>
+					<td>130</td>
+					<td>153.3</td>
+					<td>121</td>
+					<td>68</td>
+					<td>9</td>
+					<td>4</td>
+  				
+				<td>246</td>
+				<td>12</td>
+				<td>0</td>
+				<td>28</td>
+				<td>237</td>
+				<td>18</td>
+				<td>1</td>
+				<td>0</td>
+				<td>0</td>
+  				
+					<td>92</td>
+  				
+				<td>188</td>
+				<td>0</td>
+  				
+					<td>100</td>
+  				
+				<td>0</td>
+				<td>0</td>
+ 				
+					<td>0.0</td>
+					<td>0</td>
+				
+			</tr>
+			
+			
+				<tr class="oddStasRow">
+			
+				<td class="tablePlayerName">Gainer</td>
+				<td>20</td>
+  				
+					<td>9</td>
+					<td>182</td>
+					<td>208.1</td>
+					<td>133</td>
+					<td>68</td>
+					<td>49</td>
+					<td>-21</td>
+  				
+				<td>106</td>
+				<td>8</td>
+				<td>0</td>
+				<td>16</td>
+				<td>96</td>
+				<td>9</td>
+				<td>0</td>
+				<td>0</td>
+				<td>0</td>
+  				
+					<td>91</td>
+  				
+				<td>92</td>
+				<td>1</td>
+  				
+					<td>99</td>
+  				
+				<td>6</td>
+				<td>0</td>
+ 				
+					<td>0.0</td>
+					<td>0</td>
+				
+			</tr>
+			
+			
+				<tr class="evenStatsRow">
+			
+				<td class="tablePlayerName">Haskell</td>
+				<td>6</td>
+  				
+					<td>3</td>
+					<td>46.5</td>
+					<td>62.6</td>
+					<td>20</td>
+					<td>11</td>
+					<td>26.5</td>
+					<td>-19</td>
+  				
+				<td>18</td>
+				<td>3</td>
+				<td>0</td>
+				<td>4</td>
+				<td>15</td>
+				<td>4</td>
+				<td>0</td>
+				<td>0</td>
+				<td>0</td>
+  				
+					<td>73</td>
+  				
+				<td>15</td>
+				<td>0</td>
+  				
+					<td>100</td>
+  				
+				<td>3</td>
+				<td>4</td>
+ 				
+					<td>6.6</td>
+					<td>0</td>
+				
+			</tr>
+			
+			
+				<tr class="oddStasRow">
+			
+				<td class="tablePlayerName">Hunter</td>
+				<td>1</td>
+  				
+					<td>2</td>
+					<td>12</td>
+					<td>12.1</td>
+					<td>2</td>
+					<td>-1</td>
+					<td>10</td>
+					<td>-8</td>
+  				
+				<td>3</td>
+				<td>1</td>
+				<td>0</td>
+				<td>0</td>
+				<td>2</td>
+				<td>0</td>
+				<td>0</td>
+				<td>0</td>
+				<td>0</td>
+  				
+					<td>100</td>
+  				
+				<td>3</td>
+				<td>0</td>
+  				
+					<td>100</td>
+  				
+				<td>0</td>
+				<td>0</td>
+ 				
+					<td>0.0</td>
+					<td>0</td>
+				
+			</tr>
+			
+			
+				<tr class="evenStatsRow">
+			
+				<td class="tablePlayerName">Jaime</td>
+				<td>1</td>
+  				
+					<td>7</td>
+					<td>81</td>
+					<td>70.4</td>
+					<td>6</td>
+					<td>1</td>
+					<td>75</td>
+					<td>-49</td>
+  				
+				<td>10</td>
+				<td>0</td>
+				<td>0</td>
+				<td>2</td>
+				<td>9</td>
+				<td>3</td>
+				<td>0</td>
+				<td>0</td>
+				<td>0</td>
+  				
+					<td>67</td>
+  				
+				<td>6</td>
+				<td>0</td>
+  				
+					<td>100</td>
+  				
+				<td>2</td>
+				<td>48</td>
+ 				
+					<td>5.5</td>
+					<td>6</td>
+				
+			</tr>
+			
+			
+				<tr class="oddStasRow">
+			
+				<td class="tablePlayerName">JP Burns</td>
+				<td>18</td>
+  				
+					<td>13</td>
+					<td>250</td>
+					<td>337.7</td>
+					<td>46.5</td>
+					<td>8</td>
+					<td>203.5</td>
+					<td>-109</td>
+  				
+				<td>96</td>
+				<td>8</td>
+				<td>0</td>
+				<td>13</td>
+				<td>87</td>
+				<td>11</td>
+				<td>0</td>
+				<td>0</td>
+				<td>0</td>
+  				
+					<td>87</td>
+  				
+				<td>78</td>
+				<td>3</td>
+  				
+					<td>96</td>
+  				
+				<td>11</td>
+				<td>3</td>
+ 				
+					<td>3.4</td>
+					<td>0</td>
+				
+			</tr>
+			
+			
+				<tr class="evenStatsRow">
+			
+				<td class="tablePlayerName">Justin M</td>
+				<td>2</td>
+  				
+					<td>3</td>
+					<td>33</td>
+					<td>46.5</td>
+					<td>4</td>
+					<td>-2</td>
+					<td>29</td>
+					<td>-21</td>
+  				
+				<td>6</td>
+				<td>1</td>
+				<td>0</td>
+				<td>0</td>
+				<td>5</td>
+				<td>1</td>
+				<td>0</td>
+				<td>0</td>
+				<td>0</td>
+  				
+					<td>80</td>
+  				
+				<td>4</td>
+				<td>0</td>
+  				
+					<td>100</td>
+  				
+				<td>2</td>
+				<td>0</td>
+ 				
+					<td>0.0</td>
+					<td>0</td>
+				
+			</tr>
+			
+			
+				<tr class="oddStasRow">
+			
+				<td class="tablePlayerName">Kelvin</td>
+				<td>27</td>
+  				
+					<td>13</td>
+					<td>219</td>
+					<td>276.1</td>
+					<td>24.5</td>
+					<td>-8</td>
+					<td>194.5</td>
+					<td>-111</td>
+  				
+				<td>35</td>
+				<td>14</td>
+				<td>0</td>
+				<td>0</td>
+				<td>19</td>
+				<td>2</td>
+				<td>0</td>
+				<td>0</td>
+				<td>0</td>
+  				
+					<td>89</td>
+  				
+				<td>31</td>
+				<td>0</td>
+  				
+					<td>100</td>
+  				
+				<td>15</td>
+				<td>0</td>
+ 				
+					<td>0.0</td>
+					<td>0</td>
+				
+			</tr>
+			
+			
+				<tr class="evenStatsRow">
+			
+				<td class="tablePlayerName">Knowles</td>
+				<td>0</td>
+  				
+					<td>5</td>
+					<td>59</td>
+					<td>68.4</td>
+					<td>9</td>
+					<td>3</td>
+					<td>50</td>
+					<td>-25</td>
+  				
+				<td>23</td>
+				<td>0</td>
+				<td>0</td>
+				<td>0</td>
+				<td>23</td>
+				<td>0</td>
+				<td>0</td>
+				<td>0</td>
+				<td>0</td>
+  				
+					<td>100</td>
+  				
+				<td>15</td>
+				<td>1</td>
+  				
+					<td>94</td>
+  				
+				<td>1</td>
+				<td>0</td>
+ 				
+					<td>0.0</td>
+					<td>0</td>
+				
+			</tr>
+			
+			
+				<tr class="oddStasRow">
+			
+				<td class="tablePlayerName">Kyle S</td>
+				<td>18</td>
+  				
+					<td>12</td>
+					<td>242.5</td>
+					<td>288.6</td>
+					<td>181</td>
+					<td>91</td>
+					<td>61.5</td>
+					<td>-17</td>
+  				
+				<td>267</td>
+				<td>8</td>
+				<td>0</td>
+				<td>15</td>
+				<td>257</td>
+				<td>9</td>
+				<td>0</td>
+				<td>0</td>
+				<td>0</td>
+  				
+					<td>96</td>
+  				
+				<td>198</td>
+				<td>0</td>
+  				
+					<td>100</td>
+  				
+				<td>4</td>
+				<td>29</td>
+ 				
+					<td>6.3</td>
+					<td>1</td>
+				
+			</tr>
+			
+			
+				<tr class="evenStatsRow">
+			
+				<td class="tablePlayerName">Lally</td>
+				<td>21</td>
+  				
+					<td>9</td>
+					<td>176.5</td>
+					<td>206.7</td>
+					<td>49</td>
+					<td>18</td>
+					<td>127.5</td>
+					<td>-59</td>
+  				
+				<td>95</td>
+				<td>13</td>
+				<td>0</td>
+				<td>8</td>
+				<td>81</td>
+				<td>9</td>
+				<td>0</td>
+				<td>0</td>
+				<td>0</td>
+  				
+					<td>89</td>
+  				
+				<td>89</td>
+				<td>1</td>
+  				
+					<td>99</td>
+  				
+				<td>10</td>
+				<td>35</td>
+ 				
+					<td>5.5</td>
+					<td>2</td>
+				
+			</tr>
+			
+			
+				<tr class="oddStasRow">
+			
+				<td class="tablePlayerName">Leonard</td>
+				<td>28</td>
+  				
+					<td>9</td>
+					<td>205.5</td>
+					<td>258.5</td>
+					<td>191</td>
+					<td>85</td>
+					<td>14.5</td>
+					<td>8</td>
+  				
+				<td>349</td>
+				<td>14</td>
+				<td>0</td>
+				<td>24</td>
+				<td>336</td>
+				<td>10</td>
+				<td>0</td>
+				<td>0</td>
+				<td>0</td>
+  				
+					<td>97</td>
+  				
+				<td>250</td>
+				<td>1</td>
+  				
+					<td>100</td>
+  				
+				<td>1</td>
+				<td>0</td>
+ 				
+					<td>0.0</td>
+					<td>0</td>
+				
+			</tr>
+			
+			
+				<tr class="evenStatsRow">
+			
+				<td class="tablePlayerName">M Smith</td>
+				<td>68</td>
+  				
+					<td>13</td>
+					<td>304</td>
+					<td>392.6</td>
+					<td>279.5</td>
+					<td>151</td>
+					<td>24.5</td>
+					<td>8</td>
+  				
+				<td>335</td>
+				<td>54</td>
+				<td>0</td>
+				<td>19</td>
+				<td>282</td>
+				<td>7</td>
+				<td>1</td>
+				<td>0</td>
+				<td>0</td>
+  				
+					<td>97</td>
+  				
+				<td>321</td>
+				<td>4</td>
+  				
+					<td>99</td>
+  				
+				<td>7</td>
+				<td>0</td>
+ 				
+					<td>0.0</td>
+					<td>0</td>
+				
+			</tr>
+			
+			
+				<tr class="oddStasRow">
+			
+				<td class="tablePlayerName">Micah Jo</td>
+				<td>6</td>
+  				
+					<td>2</td>
+					<td>35</td>
+					<td>31.9</td>
+					<td>32</td>
+					<td>22</td>
+					<td>3</td>
+					<td>-1</td>
+  				
+				<td>17</td>
+				<td>4</td>
+				<td>0</td>
+				<td>3</td>
+				<td>13</td>
+				<td>2</td>
+				<td>0</td>
+				<td>0</td>
+				<td>0</td>
+  				
+					<td>85</td>
+  				
+				<td>10</td>
+				<td>0</td>
+  				
+					<td>100</td>
+  				
+				<td>1</td>
+				<td>0</td>
+ 				
+					<td>0.0</td>
+					<td>0</td>
+				
+			</tr>
+			
+			
+				<tr class="evenStatsRow">
+			
+				<td class="tablePlayerName">Newman</td>
+				<td>1</td>
+  				
+					<td>4</td>
+					<td>64.5</td>
+					<td>82.5</td>
+					<td>15</td>
+					<td>7</td>
+					<td>49.5</td>
+					<td>-27</td>
+  				
+				<td>25</td>
+				<td>4</td>
+				<td>0</td>
+				<td>0</td>
+				<td>21</td>
+				<td>5</td>
+				<td>0</td>
+				<td>0</td>
+				<td>0</td>
+  				
+					<td>76</td>
+  				
+				<td>16</td>
+				<td>1</td>
+  				
+					<td>94</td>
+  				
+				<td>3</td>
+				<td>1</td>
+ 				
+					<td>0.0</td>
+					<td>0</td>
+				
+			</tr>
+			
+			
+				<tr class="oddStasRow">
+			
+				<td class="tablePlayerName">Parker</td>
+				<td>8</td>
+  				
+					<td>7</td>
+					<td>148.5</td>
+					<td>188.3</td>
+					<td>52.5</td>
+					<td>7</td>
+					<td>96</td>
+					<td>-56</td>
+  				
+				<td>109</td>
+				<td>5</td>
+				<td>0</td>
+				<td>16</td>
+				<td>105</td>
+				<td>20</td>
+				<td>0</td>
+				<td>0</td>
+				<td>0</td>
+  				
+					<td>81</td>
+  				
+				<td>69</td>
+				<td>2</td>
+  				
+					<td>97</td>
+  				
+				<td>9</td>
+				<td>34</td>
+ 				
+					<td>6.4</td>
+					<td>2</td>
+				
+			</tr>
+			
+			
+				<tr class="evenStatsRow">
+			
+				<td class="tablePlayerName">Sears</td>
+				<td>20</td>
+  				
+					<td>10</td>
+					<td>163.5</td>
+					<td>229.4</td>
+					<td>22</td>
+					<td>0</td>
+					<td>141.5</td>
+					<td>-80</td>
+  				
+				<td>25</td>
+				<td>13</td>
+				<td>0</td>
+				<td>2</td>
+				<td>12</td>
+				<td>0</td>
+				<td>0</td>
+				<td>0</td>
+				<td>0</td>
+  				
+					<td>100</td>
+  				
+				<td>25</td>
+				<td>0</td>
+  				
+					<td>100</td>
+  				
+				<td>5</td>
+				<td>0</td>
+ 				
+					<td>0.0</td>
+					<td>0</td>
+				
+			</tr>
+			
+			
+				<tr class="oddStasRow">
+			
+				<td class="tablePlayerName">Sperling</td>
+				<td>1</td>
+  				
+					<td>3</td>
+					<td>40.5</td>
+					<td>52.8</td>
+					<td>20</td>
+					<td>7</td>
+					<td>20.5</td>
+					<td>-12</td>
+  				
+				<td>20</td>
+				<td>2</td>
+				<td>0</td>
+				<td>1</td>
+				<td>18</td>
+				<td>2</td>
+				<td>0</td>
+				<td>0</td>
+				<td>0</td>
+  				
+					<td>89</td>
+  				
+				<td>19</td>
+				<td>0</td>
+  				
+					<td>100</td>
+  				
+				<td>0</td>
+				<td>0</td>
+ 				
+					<td>0.0</td>
+					<td>0</td>
+				
+			</tr>
+			
+			
+				<tr class="evenStatsRow">
+			
+				<td class="tablePlayerName">Staber</td>
+				<td>2</td>
+  				
+					<td>5</td>
+					<td>91.5</td>
+					<td>111.6</td>
+					<td>16</td>
+					<td>9</td>
+					<td>75.5</td>
+					<td>-41</td>
+  				
+				<td>37</td>
+				<td>2</td>
+				<td>0</td>
+				<td>3</td>
+				<td>34</td>
+				<td>4</td>
+				<td>0</td>
+				<td>0</td>
+				<td>0</td>
+  				
+					<td>88</td>
+  				
+				<td>24</td>
+				<td>0</td>
+  				
+					<td>100</td>
+  				
+				<td>1</td>
+				<td>1</td>
+ 				
+					<td>0.0</td>
+					<td>0</td>
+				
+			</tr>
+			
+			
+				<tr class="oddStasRow">
+			
+				<td class="tablePlayerName">Sun</td>
+				<td>16</td>
+  				
+					<td>12</td>
+					<td>198</td>
+					<td>248.2</td>
+					<td>42.5</td>
+					<td>16</td>
+					<td>155.5</td>
+					<td>-86</td>
+  				
+				<td>129</td>
+				<td>9</td>
+				<td>0</td>
+				<td>12</td>
+				<td>119</td>
+				<td>10</td>
+				<td>0</td>
+				<td>0</td>
+				<td>0</td>
+  				
+					<td>92</td>
+  				
+				<td>105</td>
+				<td>1</td>
+  				
+					<td>99</td>
+  				
+				<td>6</td>
+				<td>49</td>
+ 				
+					<td>6.5</td>
+					<td>7</td>
+				
+			</tr>
+			
+			
+				<tr class="evenStatsRow">
+			
+				<td class="tablePlayerName">Thor</td>
+				<td>12</td>
+  				
+					<td>9</td>
+					<td>118</td>
+					<td>135.5</td>
+					<td>24</td>
+					<td>2</td>
+					<td>94</td>
+					<td>-49</td>
+  				
+				<td>43</td>
+				<td>5</td>
+				<td>0</td>
+				<td>5</td>
+				<td>38</td>
+				<td>2</td>
+				<td>0</td>
+				<td>0</td>
+				<td>0</td>
+  				
+					<td>95</td>
+  				
+				<td>42</td>
+				<td>1</td>
+  				
+					<td>98</td>
+  				
+				<td>5</td>
+				<td>9</td>
+ 				
+					<td>5.1</td>
+					<td>0</td>
+				
+			</tr>
+			
+			
+				<tr class="oddStasRow">
+			
+				<td class="tablePlayerName">Tree</td>
+				<td>4</td>
+  				
+					<td>4</td>
+					<td>50</td>
+					<td>45.7</td>
+					<td>5</td>
+					<td>-1</td>
+					<td>45</td>
+					<td>-25</td>
+  				
+				<td>12</td>
+				<td>1</td>
+				<td>0</td>
+				<td>2</td>
+				<td>11</td>
+				<td>2</td>
+				<td>0</td>
+				<td>0</td>
+				<td>0</td>
+  				
+					<td>82</td>
+  				
+				<td>8</td>
+				<td>0</td>
+  				
+					<td>100</td>
+  				
+				<td>3</td>
+				<td>2</td>
+ 				
+					<td>7.1</td>
+					<td>0</td>
+				
+			</tr>
+			
+			
+				<tr class="evenStatsRow">
+			
+				<td class="tablePlayerName">Trenton</td>
+				<td>11</td>
+  				
+					<td>10</td>
+					<td>173.5</td>
+					<td>225.5</td>
+					<td>33.5</td>
+					<td>12</td>
+					<td>140</td>
+					<td>-78</td>
+  				
+				<td>46</td>
+				<td>5</td>
+				<td>0</td>
+				<td>1</td>
+				<td>40</td>
+				<td>2</td>
+				<td>0</td>
+				<td>0</td>
+				<td>0</td>
+  				
+					<td>95</td>
+  				
+				<td>42</td>
+				<td>1</td>
+  				
+					<td>98</td>
+  				
+				<td>8</td>
+				<td>0</td>
+ 				
+					<td>0.0</td>
+					<td>0</td>
+				
+			</tr>
+			
+			
+				<tr class="oddStasRow">
+			
+				<td class="tablePlayerName">Vickroy</td>
+				<td>61</td>
+  				
+					<td>13</td>
+					<td>309.5</td>
+					<td>379.1</td>
+					<td>272.5</td>
+					<td>143</td>
+					<td>37</td>
+					<td>-3</td>
+  				
+				<td>287</td>
+				<td>41</td>
+				<td>0</td>
+				<td>41</td>
+				<td>244</td>
+				<td>29</td>
+				<td>1</td>
+				<td>0</td>
+				<td>0</td>
+  				
+					<td>88</td>
+  				
+				<td>264</td>
+				<td>2</td>
+  				
+					<td>99</td>
+  				
+				<td>11</td>
+				<td>2</td>
+ 				
+					<td>5.9</td>
+					<td>0</td>
+				
+			</tr>
+			
+			
+				<tr class="evenStatsRow">
+			
+				<td class="tablePlayerName">AVERAGE</td>
+				<td>14.4</td>
+  				
+					<td>7.4</td>
+					<td>139.1</td>
+					<td></td>
+					<td>70.5</td>
+					<td>32.5</td>
+					<td>68.7</td>
+					<td>-34.4</td>
+  				
+				<td>99.6</td>
+				<td>9.1</td>
+				<td>0.0</td>
+				<td>9.1</td>
+				<td>90.1</td>
+				<td>6.9</td>
+				<td>0.1</td>
+				<td>0.0</td>
+				<td>0.0</td>
+  				
+					<td>87.3</td>
+  				
+				<td>82.2</td>
+				<td>1.0</td>
+  				
+					<td>92.9</td>
+  				
+				<td>4.3</td>
+				<td>9.1</td>
+ 				
+					<td></td>
+					<td>0.6</td>
+				
+			</tr>
+			
+			
+				<tr class="oddStasRow">
+			
+				<td class="tablePlayerName">TOTAL</td>
+				<td></td>
+  				
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+  				
+				<td>3486</td>
+				<td>317</td>
+				<td>0</td>
+				<td>317</td>
+				<td>3154</td>
+				<td>240</td>
+				<td>4</td>
+				<td>0</td>
+				<td>1</td>
+  				
+					<td></td>
+  				
+				<td>2876</td>
+				<td>34</td>
+  				
+					<td></td>
+  				
+				<td>149</td>
+				<td>319</td>
+ 				
+					<td></td>
+					<td>21</td>
+				
+			</tr>
+			
+		</tbody>
+	</table>
+		</div>
+	</div>
+	<div class="footer hideWhenBusy">
+		<div class="narrowOnly"><br>Want to produce your own stats? <a class="downlaodRawStatsLink ui-link" href="javascript:void(0)">Download file of Raw Data</a></div>	
+		<div><br><br>Wondering how a statistic is calculated? Check out our calcs: <a href="javascript:void(0)" onclick="window.open(&#39;/calcs.html&#39;);return false;" class="ui-link">Calculations</a></div>
+		<div>&nbsp;</div>
+		<div><br>Problem or suggestion?  <a href="http://www.ultianalytics.com/support.html" rel="external" class="ui-link">Let us know</a></div>
+		<div>&nbsp;</div>	
+	</div>
+</div>
+
+<div id="gamespage" class="pagediv ui-page ui-body-b" data-role="page" data-theme="b" data-title="Ultimate Team - Atlanta Hustle 2017" data-url="gamespage" tabindex="0">
+	<div class="top-section">
+		<img class="players-image" src="./Ultimate Team - Atlanta Hustle 2017_files/ultimate-silhouette.png">
+		<div class="pageHeading">
+			<span class="teamName">Atlanta Hustle 2017</span><br> 
+			<span class="pageTitle">Ultimate Team Statistics</span> 
+		</div>
+	</div>
+
+	<div data-role="navbar" class="ui-navbar ui-navbar-noicons" role="navigation">
+		<ul class="ui-grid-b">
+			<li class="ui-block-a"><a id="playersTab" href="http://www.ultianalytics.com/team/5762298832486400/main-classic#mainpage" data-prefetch="" data-corners="false" data-shadow="false" data-iconshadow="true" data-wrapperels="span" data-theme="b" data-inline="true" class="ui-btn ui-btn-up-b ui-btn-inline"><span class="ui-btn-inner"><span class="ui-btn-text">Players</span></span></a></li>
+			<li class="ui-block-b"><a id="gamesTab" href="http://www.ultianalytics.com/team/5762298832486400/main-classic#gamespage" data-prefetch="" class="ui-btn-active ui-state-persist ui-btn ui-btn-up-b ui-btn-inline" data-corners="false" data-shadow="false" data-iconshadow="true" data-wrapperels="span" data-theme="b" data-inline="true"><span class="ui-btn-inner"><span class="ui-btn-text">Games</span></span></a></li>
+			<li class="ui-block-c"><a id="teamTab" href="http://www.ultianalytics.com/team/5762298832486400/main-classic#teamstatspage" data-prefetch="" data-corners="false" data-shadow="false" data-iconshadow="true" data-wrapperels="span" data-theme="b" data-inline="true" class="ui-btn ui-btn-up-b ui-btn-inline"><span class="ui-btn-inner"><span class="ui-btn-text">Team</span></span></a></li>
+		</ul>
+	</div>
+	
+		<div class="content">
+		<img class="spinner hidden" src="./Ultimate Team - Atlanta Hustle 2017_files/spinner.gif">
+		<div class="insetlist">
+			<div><h4>Games</h4></div>
+			<ul id="games" data-role="listview" data-theme="a" class="game-list ui-listview ui-listview-inset ui-corner-all ui-shadow" data-inset="true">
+				
+			</ul>
+		</div>
+	</div>
+
+</div>
+
+<div id="eventspage" class="pagediv" data-role="page" data-theme="b" data-title="Ultimate Team - Atlanta Hustle 2017" data-url="eventspage">
+	<div class="top-section">
+		<img class="players-image" src="./Ultimate Team - Atlanta Hustle 2017_files/ultimate-silhouette.png">
+		<div class="pageHeading">
+			<span class="teamName">Atlanta Hustle 2017</span><br> 
+			<span class="pageTitle">Ultimate Team Statistics</span> 
+		</div>
+	</div>
+	
+	<div data-role="header" data-position="inline">
+		<a href="http://www.ultianalytics.com/team/5762298832486400/main-classic#gamespage" data-icon="back">Back</a>
+		<h1>Game</h1>
+	</div>
+	<div data-role="content">
+		<img class="spinner hidden" src="./Ultimate Team - Atlanta Hustle 2017_files/spinner.gif">
+		<div><span class="opponentTitle"></span>&nbsp;&nbsp;&nbsp;<span class="gameScore"></span>&nbsp;&nbsp;&nbsp;<span class="gameDetails"></span></div>
+		<div data-role="controlgroup" data-type="horizontal">
+			<a class="gameEventsChoiceLink ui-btn-active" href="http://www.ultianalytics.com/team/5762298832486400/main-classic#eventspage" data-role="button">Points</a> 
+			<a class="gameStatsChoiceLink" href="http://www.ultianalytics.com/team/5762298832486400/main-classic#gamestatspage" data-role="button">Statistics</a>
+		</div>
+		<div><h4>Points</h4></div>
+		<div id="points" data-role="collapsible-set" class="hideWhenBusy"></div>
+	</div>
+</div>
+
+
+<div id="gamestatspage" class="pagediv" data-role="page" data-theme="b" data-title="Ultimate Team - Atlanta Hustle 2017" data-url="gamestatspage">
+	<div class="top-section">
+		<img class="players-image" src="./Ultimate Team - Atlanta Hustle 2017_files/ultimate-silhouette.png">
+		<div class="pageHeading">
+			<span class="teamName">Atlanta Hustle 2017</span><br> 
+			<span class="pageTitle">Ultimate Team Statistics</span> 
+		</div>
+	</div>
+	
+	<div data-role="header" data-position="inline">
+		<a href="http://www.ultianalytics.com/team/5762298832486400/main-classic#gamespage" data-icon="back">Back</a>
+		<h1>Game</h1>
+	</div>
+	<div data-role="content">
+		<img class="spinner hidden" src="./Ultimate Team - Atlanta Hustle 2017_files/spinner.gif">
+		<div><span class="opponentTitle"></span>&nbsp;&nbsp;&nbsp;<span class="gameScore"></span>&nbsp;&nbsp;&nbsp;<span class="gameDetails"></span></div>
+		
+		<fieldset class="ui-grid-a">
+			<div id="gamespageDataSelection" class="ui-block-a">
+				<div data-role="controlgroup" data-type="horizontal">
+					<a class="gameEventsChoiceLink" href="http://www.ultianalytics.com/team/5762298832486400/main-classic#eventspage" data-role="button">Events</a> 
+					<a class="gameStatsChoiceLink ui-btn-active" href="http://www.ultianalytics.com/team/5762298832486400/main-classic#gamestatspage" data-role="button">Statistics</a>
+				</div>
+			</div>
+			<div class="gameStatsDenominatorChooser">
+			</div>
+		</fieldset>
+		
+
+		<div id="playerStatsNarrow" class="hideWhenBusy">
+			<label for="selectPlayerRank" class="select">Statistic:</label>
+			<select name="selectPlayerRank" id="selectPlayerRank">
+				<option value="pointsPlayed">Points Played</option>
+				<option value="minutesPlayed">Time (minutes) Played</option>
+				<option value="opointsPlayed">O Points Played</option>
+				<option value="dpointsPlayed">D Points Played</option>
+				<option value="touches">Touches</option>
+				<option value="goals">Goals</option>
+				<option value="callahans">Callahans</option>
+				<option value="assists">Assists</option>
+				<option value="passes">Throws</option>
+				<option value="catches">Catches</option>
+				<option value="drops">Drops</option>
+				<option value="throwaways">Throwaways</option>
+				<option value="stalls">Stalled's</option>
+				<option value="miscPenalties">Passer penalties (turnovers)</option>
+				<option value="callahaneds">Callahaned's (other team scored)</option>
+				<option value="ds">Ds</option>
+				<option value="pulls">Pulls</option>
+			</select>
+			<table id="playerRankings">
+				<tbody></tbody>
+			</table>
+		</div>
+		<div id="playerStatsWide" class="hideWhenBusy">
+			<table id="playerStatsTable" class="playerStats">
+		<thead>
+			
+				<tr><th class="tablePlayerName"><a href="http://www.ultianalytics.com/team/5762298832486400/main-classic#" data-stattype="playerName" class="selectedColumn">Player</a></th>
+				<th><a href="http://www.ultianalytics.com/team/5762298832486400/main-classic#" data-stattype="plusMinusCount">+/-</a></th>
+  				
+					<th><a href="http://www.ultianalytics.com/team/5762298832486400/main-classic#" data-stattype="gamesPlayed">Games played</a></th>
+					<th><a href="http://www.ultianalytics.com/team/5762298832486400/main-classic#" data-stattype="pointsPlayed">Points played</a></th>
+					<th><a href="http://www.ultianalytics.com/team/5762298832486400/main-classic#" data-stattype="minutesPlayed">Minutes played</a></th>
+					<th><a href="http://www.ultianalytics.com/team/5762298832486400/main-classic#" data-stattype="opointsPlayed">O-line points played</a></th>
+					<th><a href="http://www.ultianalytics.com/team/5762298832486400/main-classic#" data-stattype="plusMinusOLine">+/- O-line</a></th>
+					<th><a href="http://www.ultianalytics.com/team/5762298832486400/main-classic#" data-stattype="dpointsPlayed">D-line points played</a></th>
+					<th><a href="http://www.ultianalytics.com/team/5762298832486400/main-classic#" data-stattype="plusMinusDLine">+/- D-line</a></th>
+  				
+				<th><a href="http://www.ultianalytics.com/team/5762298832486400/main-classic#" data-stattype="touches">Touches</a></th>
+				<th><a href="http://www.ultianalytics.com/team/5762298832486400/main-classic#" data-stattype="goals">Goals</a></th>
+				<th><a href="http://www.ultianalytics.com/team/5762298832486400/main-classic#" data-stattype="callahans">Callahans</a></th>
+				<th><a href="http://www.ultianalytics.com/team/5762298832486400/main-classic#" data-stattype="assists">Assists</a></th>
+				<th><a href="http://www.ultianalytics.com/team/5762298832486400/main-classic#" data-stattype="passes">Throws</a></th>
+				<th><a href="http://www.ultianalytics.com/team/5762298832486400/main-classic#" data-stattype="throwaways">Throw aways</a></th>
+				<th><a href="http://www.ultianalytics.com/team/5762298832486400/main-classic#" data-stattype="stalls">Stalled's</a></th>
+				<th><a href="http://www.ultianalytics.com/team/5762298832486400/main-classic#" data-stattype="miscPenalties">Passer Penalties (turnovers)</a></th>
+				<th><a href="http://www.ultianalytics.com/team/5762298832486400/main-classic#" data-stattype="callahaneds">Callahaned's (other team scored)</a></th>
+  				
+					<th><a href="http://www.ultianalytics.com/team/5762298832486400/main-classic#" data-stattype="passSuccess">Throw %</a></th>
+  				
+				<th><a href="http://www.ultianalytics.com/team/5762298832486400/main-classic#" data-stattype="catches">Catches</a></th>
+				<th><a href="http://www.ultianalytics.com/team/5762298832486400/main-classic#" data-stattype="drops">Drops</a></th>
+  				
+					<th><a href="http://www.ultianalytics.com/team/5762298832486400/main-classic#" data-stattype="catchSuccess">Catch %</a></th>
+  				
+				<th><a href="http://www.ultianalytics.com/team/5762298832486400/main-classic#" data-stattype="ds">Ds</a></th>
+				<th><a href="http://www.ultianalytics.com/team/5762298832486400/main-classic#" data-stattype="pulls">Pulls</a></th>
+  				
+					<th><a href="http://www.ultianalytics.com/team/5762298832486400/main-classic#" data-stattype="pullsAvgHangtimeMillis">Avg Pull Hang Time</a></th>
+					<th><a href="http://www.ultianalytics.com/team/5762298832486400/main-classic#" data-stattype="pullsOB">OB Pulls</a></th>
+  				
+			
+		</tr></thead>
+		<tbody>
+			
+			
+				<tr class="oddStasRow">
+			
+				<td class="tablePlayerName">A Olsen</td>
+				<td>9</td>
+  				
+					<td>8</td>
+					<td>160</td>
+					<td>206.2</td>
+					<td>88.5</td>
+					<td>35</td>
+					<td>71.5</td>
+					<td>-39</td>
+  				
+				<td>94</td>
+				<td>12</td>
+				<td>0</td>
+				<td>6</td>
+				<td>82</td>
+				<td>10</td>
+				<td>0</td>
+				<td>0</td>
+				<td>0</td>
+  				
+					<td>88</td>
+  				
+				<td>90</td>
+				<td>1</td>
+  				
+					<td>99</td>
+  				
+				<td>2</td>
+				<td>0</td>
+ 				
+					<td>0.0</td>
+					<td>0</td>
+				
+			</tr>
+			
+			
+				<tr class="evenStatsRow">
+			
+				<td class="tablePlayerName">A Taylor</td>
+				<td>16</td>
+  				
+					<td>9</td>
+					<td>198</td>
+					<td>223.0</td>
+					<td>160</td>
+					<td>92</td>
+					<td>38</td>
+					<td>-9</td>
+  				
+				<td>146</td>
+				<td>8</td>
+				<td>0</td>
+				<td>15</td>
+				<td>136</td>
+				<td>4</td>
+				<td>1</td>
+				<td>0</td>
+				<td>0</td>
+  				
+					<td>96</td>
+  				
+				<td>141</td>
+				<td>3</td>
+  				
+					<td>98</td>
+  				
+				<td>1</td>
+				<td>0</td>
+ 				
+					<td>0.0</td>
+					<td>0</td>
+				
+			</tr>
+			
+			
+				<tr class="oddStasRow">
+			
+				<td class="tablePlayerName">Allan L</td>
+				<td>21</td>
+  				
+					<td>9</td>
+					<td>205</td>
+					<td>250.3</td>
+					<td>142</td>
+					<td>76</td>
+					<td>63</td>
+					<td>-27</td>
+  				
+				<td>240</td>
+				<td>10</td>
+				<td>0</td>
+				<td>24</td>
+				<td>228</td>
+				<td>17</td>
+				<td>0</td>
+				<td>0</td>
+				<td>0</td>
+  				
+					<td>93</td>
+  				
+				<td>170</td>
+				<td>2</td>
+  				
+					<td>99</td>
+  				
+				<td>6</td>
+				<td>45</td>
+ 				
+					<td>7.2</td>
+					<td>2</td>
+				
+			</tr>
+			
+			
+				<tr class="evenStatsRow">
+			
+				<td class="tablePlayerName">Anonymous</td>
+				<td>1</td>
+  				
+					<td>0</td>
+					<td>0</td>
+					<td>0.0</td>
+					<td>0</td>
+					<td>0</td>
+					<td>0</td>
+					<td>0</td>
+  				
+				<td>0</td>
+				<td>0</td>
+				<td>0</td>
+				<td>0</td>
+				<td>4</td>
+				<td>0</td>
+				<td>0</td>
+				<td>0</td>
+				<td>0</td>
+  				
+					<td>100</td>
+  				
+				<td>0</td>
+				<td>0</td>
+  				
+					<td>0</td>
+  				
+				<td>1</td>
+				<td>19</td>
+ 				
+					<td>2.2</td>
+					<td>0</td>
+				
+			</tr>
+			
+			
+				<tr class="oddStasRow">
+			
+				<td class="tablePlayerName">Archie</td>
+				<td>0</td>
+  				
+					<td>4</td>
+					<td>52</td>
+					<td>57.6</td>
+					<td>4</td>
+					<td>-3</td>
+					<td>48</td>
+					<td>-27</td>
+  				
+				<td>5</td>
+				<td>1</td>
+				<td>0</td>
+				<td>0</td>
+				<td>4</td>
+				<td>1</td>
+				<td>0</td>
+				<td>0</td>
+				<td>0</td>
+  				
+					<td>75</td>
+  				
+				<td>5</td>
+				<td>0</td>
+  				
+					<td>100</td>
+  				
+				<td>0</td>
+				<td>0</td>
+ 				
+					<td>0.0</td>
+					<td>0</td>
+				
+			</tr>
+			
+			
+				<tr class="evenStatsRow">
+			
+				<td class="tablePlayerName">Birdsong</td>
+				<td>0</td>
+  				
+					<td>2</td>
+					<td>19</td>
+					<td>31.6</td>
+					<td>10</td>
+					<td>5</td>
+					<td>9</td>
+					<td>-9</td>
+  				
+				<td>8</td>
+				<td>0</td>
+				<td>0</td>
+				<td>0</td>
+				<td>8</td>
+				<td>0</td>
+				<td>0</td>
+				<td>0</td>
+				<td>0</td>
+  				
+					<td>100</td>
+  				
+				<td>8</td>
+				<td>0</td>
+  				
+					<td>100</td>
+  				
+				<td>0</td>
+				<td>0</td>
+ 				
+					<td>0.0</td>
+					<td>0</td>
+				
+			</tr>
+			
+			
+				<tr class="oddStasRow">
+			
+				<td class="tablePlayerName">Boecking</td>
+				<td>6</td>
+  				
+					<td>12</td>
+					<td>295</td>
+					<td>353.3</td>
+					<td>125.5</td>
+					<td>54</td>
+					<td>169.5</td>
+					<td>-87</td>
+  				
+				<td>294</td>
+				<td>2</td>
+				<td>0</td>
+				<td>14</td>
+				<td>289</td>
+				<td>22</td>
+				<td>0</td>
+				<td>0</td>
+				<td>1</td>
+  				
+					<td>92</td>
+  				
+				<td>209</td>
+				<td>3</td>
+  				
+					<td>99</td>
+  				
+				<td>15</td>
+				<td>34</td>
+ 				
+					<td>5.8</td>
+					<td>1</td>
+				
+			</tr>
+			
+			
+				<tr class="evenStatsRow">
+			
+				<td class="tablePlayerName">Bradham</td>
+				<td>4</td>
+  				
+					<td>8</td>
+					<td>102</td>
+					<td>110.2</td>
+					<td>3.5</td>
+					<td>-2</td>
+					<td>98.5</td>
+					<td>-68</td>
+  				
+				<td>9</td>
+				<td>3</td>
+				<td>0</td>
+				<td>1</td>
+				<td>6</td>
+				<td>0</td>
+				<td>0</td>
+				<td>0</td>
+				<td>0</td>
+  				
+					<td>100</td>
+  				
+				<td>8</td>
+				<td>1</td>
+  				
+					<td>89</td>
+  				
+				<td>1</td>
+				<td>0</td>
+ 				
+					<td>0.0</td>
+					<td>0</td>
+				
+			</tr>
+			
+			
+				<tr class="oddStasRow">
+			
+				<td class="tablePlayerName">Bush</td>
+				<td>52</td>
+  				
+					<td>12</td>
+					<td>279</td>
+					<td>338.6</td>
+					<td>238</td>
+					<td>125</td>
+					<td>41</td>
+					<td>-8</td>
+  				
+				<td>154</td>
+				<td>38</td>
+				<td>0</td>
+				<td>24</td>
+				<td>114</td>
+				<td>9</td>
+				<td>0</td>
+				<td>0</td>
+				<td>0</td>
+  				
+					<td>92</td>
+  				
+				<td>145</td>
+				<td>4</td>
+  				
+					<td>97</td>
+  				
+				<td>3</td>
+				<td>3</td>
+ 				
+					<td>6.5</td>
+					<td>0</td>
+				
+			</tr>
+			
+			
+				<tr class="evenStatsRow">
+			
+				<td class="tablePlayerName">C Olsen</td>
+				<td>23</td>
+  				
+					<td>10</td>
+					<td>204.5</td>
+					<td>265.4</td>
+					<td>92.5</td>
+					<td>39</td>
+					<td>112</td>
+					<td>-40</td>
+  				
+				<td>196</td>
+				<td>16</td>
+				<td>0</td>
+				<td>18</td>
+				<td>178</td>
+				<td>15</td>
+				<td>0</td>
+				<td>0</td>
+				<td>0</td>
+  				
+					<td>92</td>
+  				
+				<td>186</td>
+				<td>1</td>
+  				
+					<td>99</td>
+  				
+				<td>5</td>
+				<td>1</td>
+ 				
+					<td>7.6</td>
+					<td>0</td>
+				
+			</tr>
+			
+			
+				<tr class="oddStasRow">
+			
+				<td class="tablePlayerName">Caldwell</td>
+				<td>0</td>
+  				
+					<td>2</td>
+					<td>22</td>
+					<td>26.9</td>
+					<td>1</td>
+					<td>0</td>
+					<td>21</td>
+					<td>-13</td>
+  				
+				<td>1</td>
+				<td>0</td>
+				<td>0</td>
+				<td>0</td>
+				<td>1</td>
+				<td>1</td>
+				<td>0</td>
+				<td>0</td>
+				<td>0</td>
+  				
+					<td>0</td>
+  				
+				<td>0</td>
+				<td>0</td>
+  				
+					<td>0</td>
+  				
+				<td>1</td>
+				<td>0</td>
+ 				
+					<td>0.0</td>
+					<td>0</td>
+				
+			</tr>
+			
+			
+				<tr class="evenStatsRow">
+			
+				<td class="tablePlayerName">Dylan</td>
+				<td>21</td>
+  				
+					<td>5</td>
+					<td>130</td>
+					<td>153.3</td>
+					<td>121</td>
+					<td>68</td>
+					<td>9</td>
+					<td>4</td>
+  				
+				<td>246</td>
+				<td>12</td>
+				<td>0</td>
+				<td>28</td>
+				<td>237</td>
+				<td>18</td>
+				<td>1</td>
+				<td>0</td>
+				<td>0</td>
+  				
+					<td>92</td>
+  				
+				<td>188</td>
+				<td>0</td>
+  				
+					<td>100</td>
+  				
+				<td>0</td>
+				<td>0</td>
+ 				
+					<td>0.0</td>
+					<td>0</td>
+				
+			</tr>
+			
+			
+				<tr class="oddStasRow">
+			
+				<td class="tablePlayerName">Gainer</td>
+				<td>20</td>
+  				
+					<td>9</td>
+					<td>182</td>
+					<td>208.1</td>
+					<td>133</td>
+					<td>68</td>
+					<td>49</td>
+					<td>-21</td>
+  				
+				<td>106</td>
+				<td>8</td>
+				<td>0</td>
+				<td>16</td>
+				<td>96</td>
+				<td>9</td>
+				<td>0</td>
+				<td>0</td>
+				<td>0</td>
+  				
+					<td>91</td>
+  				
+				<td>92</td>
+				<td>1</td>
+  				
+					<td>99</td>
+  				
+				<td>6</td>
+				<td>0</td>
+ 				
+					<td>0.0</td>
+					<td>0</td>
+				
+			</tr>
+			
+			
+				<tr class="evenStatsRow">
+			
+				<td class="tablePlayerName">Haskell</td>
+				<td>6</td>
+  				
+					<td>3</td>
+					<td>46.5</td>
+					<td>62.6</td>
+					<td>20</td>
+					<td>11</td>
+					<td>26.5</td>
+					<td>-19</td>
+  				
+				<td>18</td>
+				<td>3</td>
+				<td>0</td>
+				<td>4</td>
+				<td>15</td>
+				<td>4</td>
+				<td>0</td>
+				<td>0</td>
+				<td>0</td>
+  				
+					<td>73</td>
+  				
+				<td>15</td>
+				<td>0</td>
+  				
+					<td>100</td>
+  				
+				<td>3</td>
+				<td>4</td>
+ 				
+					<td>6.6</td>
+					<td>0</td>
+				
+			</tr>
+			
+			
+				<tr class="oddStasRow">
+			
+				<td class="tablePlayerName">Hunter</td>
+				<td>1</td>
+  				
+					<td>2</td>
+					<td>12</td>
+					<td>12.1</td>
+					<td>2</td>
+					<td>-1</td>
+					<td>10</td>
+					<td>-8</td>
+  				
+				<td>3</td>
+				<td>1</td>
+				<td>0</td>
+				<td>0</td>
+				<td>2</td>
+				<td>0</td>
+				<td>0</td>
+				<td>0</td>
+				<td>0</td>
+  				
+					<td>100</td>
+  				
+				<td>3</td>
+				<td>0</td>
+  				
+					<td>100</td>
+  				
+				<td>0</td>
+				<td>0</td>
+ 				
+					<td>0.0</td>
+					<td>0</td>
+				
+			</tr>
+			
+			
+				<tr class="evenStatsRow">
+			
+				<td class="tablePlayerName">Jaime</td>
+				<td>1</td>
+  				
+					<td>7</td>
+					<td>81</td>
+					<td>70.4</td>
+					<td>6</td>
+					<td>1</td>
+					<td>75</td>
+					<td>-49</td>
+  				
+				<td>10</td>
+				<td>0</td>
+				<td>0</td>
+				<td>2</td>
+				<td>9</td>
+				<td>3</td>
+				<td>0</td>
+				<td>0</td>
+				<td>0</td>
+  				
+					<td>67</td>
+  				
+				<td>6</td>
+				<td>0</td>
+  				
+					<td>100</td>
+  				
+				<td>2</td>
+				<td>48</td>
+ 				
+					<td>5.5</td>
+					<td>6</td>
+				
+			</tr>
+			
+			
+				<tr class="oddStasRow">
+			
+				<td class="tablePlayerName">JP Burns</td>
+				<td>18</td>
+  				
+					<td>13</td>
+					<td>250</td>
+					<td>337.7</td>
+					<td>46.5</td>
+					<td>8</td>
+					<td>203.5</td>
+					<td>-109</td>
+  				
+				<td>96</td>
+				<td>8</td>
+				<td>0</td>
+				<td>13</td>
+				<td>87</td>
+				<td>11</td>
+				<td>0</td>
+				<td>0</td>
+				<td>0</td>
+  				
+					<td>87</td>
+  				
+				<td>78</td>
+				<td>3</td>
+  				
+					<td>96</td>
+  				
+				<td>11</td>
+				<td>3</td>
+ 				
+					<td>3.4</td>
+					<td>0</td>
+				
+			</tr>
+			
+			
+				<tr class="evenStatsRow">
+			
+				<td class="tablePlayerName">Justin M</td>
+				<td>2</td>
+  				
+					<td>3</td>
+					<td>33</td>
+					<td>46.5</td>
+					<td>4</td>
+					<td>-2</td>
+					<td>29</td>
+					<td>-21</td>
+  				
+				<td>6</td>
+				<td>1</td>
+				<td>0</td>
+				<td>0</td>
+				<td>5</td>
+				<td>1</td>
+				<td>0</td>
+				<td>0</td>
+				<td>0</td>
+  				
+					<td>80</td>
+  				
+				<td>4</td>
+				<td>0</td>
+  				
+					<td>100</td>
+  				
+				<td>2</td>
+				<td>0</td>
+ 				
+					<td>0.0</td>
+					<td>0</td>
+				
+			</tr>
+			
+			
+				<tr class="oddStasRow">
+			
+				<td class="tablePlayerName">Kelvin</td>
+				<td>27</td>
+  				
+					<td>13</td>
+					<td>219</td>
+					<td>276.1</td>
+					<td>24.5</td>
+					<td>-8</td>
+					<td>194.5</td>
+					<td>-111</td>
+  				
+				<td>35</td>
+				<td>14</td>
+				<td>0</td>
+				<td>0</td>
+				<td>19</td>
+				<td>2</td>
+				<td>0</td>
+				<td>0</td>
+				<td>0</td>
+  				
+					<td>89</td>
+  				
+				<td>31</td>
+				<td>0</td>
+  				
+					<td>100</td>
+  				
+				<td>15</td>
+				<td>0</td>
+ 				
+					<td>0.0</td>
+					<td>0</td>
+				
+			</tr>
+			
+			
+				<tr class="evenStatsRow">
+			
+				<td class="tablePlayerName">Knowles</td>
+				<td>0</td>
+  				
+					<td>5</td>
+					<td>59</td>
+					<td>68.4</td>
+					<td>9</td>
+					<td>3</td>
+					<td>50</td>
+					<td>-25</td>
+  				
+				<td>23</td>
+				<td>0</td>
+				<td>0</td>
+				<td>0</td>
+				<td>23</td>
+				<td>0</td>
+				<td>0</td>
+				<td>0</td>
+				<td>0</td>
+  				
+					<td>100</td>
+  				
+				<td>15</td>
+				<td>1</td>
+  				
+					<td>94</td>
+  				
+				<td>1</td>
+				<td>0</td>
+ 				
+					<td>0.0</td>
+					<td>0</td>
+				
+			</tr>
+			
+			
+				<tr class="oddStasRow">
+			
+				<td class="tablePlayerName">Kyle S</td>
+				<td>18</td>
+  				
+					<td>12</td>
+					<td>242.5</td>
+					<td>288.6</td>
+					<td>181</td>
+					<td>91</td>
+					<td>61.5</td>
+					<td>-17</td>
+  				
+				<td>267</td>
+				<td>8</td>
+				<td>0</td>
+				<td>15</td>
+				<td>257</td>
+				<td>9</td>
+				<td>0</td>
+				<td>0</td>
+				<td>0</td>
+  				
+					<td>96</td>
+  				
+				<td>198</td>
+				<td>0</td>
+  				
+					<td>100</td>
+  				
+				<td>4</td>
+				<td>29</td>
+ 				
+					<td>6.3</td>
+					<td>1</td>
+				
+			</tr>
+			
+			
+				<tr class="evenStatsRow">
+			
+				<td class="tablePlayerName">Lally</td>
+				<td>21</td>
+  				
+					<td>9</td>
+					<td>176.5</td>
+					<td>206.7</td>
+					<td>49</td>
+					<td>18</td>
+					<td>127.5</td>
+					<td>-59</td>
+  				
+				<td>95</td>
+				<td>13</td>
+				<td>0</td>
+				<td>8</td>
+				<td>81</td>
+				<td>9</td>
+				<td>0</td>
+				<td>0</td>
+				<td>0</td>
+  				
+					<td>89</td>
+  				
+				<td>89</td>
+				<td>1</td>
+  				
+					<td>99</td>
+  				
+				<td>10</td>
+				<td>35</td>
+ 				
+					<td>5.5</td>
+					<td>2</td>
+				
+			</tr>
+			
+			
+				<tr class="oddStasRow">
+			
+				<td class="tablePlayerName">Leonard</td>
+				<td>28</td>
+  				
+					<td>9</td>
+					<td>205.5</td>
+					<td>258.5</td>
+					<td>191</td>
+					<td>85</td>
+					<td>14.5</td>
+					<td>8</td>
+  				
+				<td>349</td>
+				<td>14</td>
+				<td>0</td>
+				<td>24</td>
+				<td>336</td>
+				<td>10</td>
+				<td>0</td>
+				<td>0</td>
+				<td>0</td>
+  				
+					<td>97</td>
+  				
+				<td>250</td>
+				<td>1</td>
+  				
+					<td>100</td>
+  				
+				<td>1</td>
+				<td>0</td>
+ 				
+					<td>0.0</td>
+					<td>0</td>
+				
+			</tr>
+			
+			
+				<tr class="evenStatsRow">
+			
+				<td class="tablePlayerName">M Smith</td>
+				<td>68</td>
+  				
+					<td>13</td>
+					<td>304</td>
+					<td>392.6</td>
+					<td>279.5</td>
+					<td>151</td>
+					<td>24.5</td>
+					<td>8</td>
+  				
+				<td>335</td>
+				<td>54</td>
+				<td>0</td>
+				<td>19</td>
+				<td>282</td>
+				<td>7</td>
+				<td>1</td>
+				<td>0</td>
+				<td>0</td>
+  				
+					<td>97</td>
+  				
+				<td>321</td>
+				<td>4</td>
+  				
+					<td>99</td>
+  				
+				<td>7</td>
+				<td>0</td>
+ 				
+					<td>0.0</td>
+					<td>0</td>
+				
+			</tr>
+			
+			
+				<tr class="oddStasRow">
+			
+				<td class="tablePlayerName">Micah Jo</td>
+				<td>6</td>
+  				
+					<td>2</td>
+					<td>35</td>
+					<td>31.9</td>
+					<td>32</td>
+					<td>22</td>
+					<td>3</td>
+					<td>-1</td>
+  				
+				<td>17</td>
+				<td>4</td>
+				<td>0</td>
+				<td>3</td>
+				<td>13</td>
+				<td>2</td>
+				<td>0</td>
+				<td>0</td>
+				<td>0</td>
+  				
+					<td>85</td>
+  				
+				<td>10</td>
+				<td>0</td>
+  				
+					<td>100</td>
+  				
+				<td>1</td>
+				<td>0</td>
+ 				
+					<td>0.0</td>
+					<td>0</td>
+				
+			</tr>
+			
+			
+				<tr class="evenStatsRow">
+			
+				<td class="tablePlayerName">Newman</td>
+				<td>1</td>
+  				
+					<td>4</td>
+					<td>64.5</td>
+					<td>82.5</td>
+					<td>15</td>
+					<td>7</td>
+					<td>49.5</td>
+					<td>-27</td>
+  				
+				<td>25</td>
+				<td>4</td>
+				<td>0</td>
+				<td>0</td>
+				<td>21</td>
+				<td>5</td>
+				<td>0</td>
+				<td>0</td>
+				<td>0</td>
+  				
+					<td>76</td>
+  				
+				<td>16</td>
+				<td>1</td>
+  				
+					<td>94</td>
+  				
+				<td>3</td>
+				<td>1</td>
+ 				
+					<td>0.0</td>
+					<td>0</td>
+				
+			</tr>
+			
+			
+				<tr class="oddStasRow">
+			
+				<td class="tablePlayerName">Parker</td>
+				<td>8</td>
+  				
+					<td>7</td>
+					<td>148.5</td>
+					<td>188.3</td>
+					<td>52.5</td>
+					<td>7</td>
+					<td>96</td>
+					<td>-56</td>
+  				
+				<td>109</td>
+				<td>5</td>
+				<td>0</td>
+				<td>16</td>
+				<td>105</td>
+				<td>20</td>
+				<td>0</td>
+				<td>0</td>
+				<td>0</td>
+  				
+					<td>81</td>
+  				
+				<td>69</td>
+				<td>2</td>
+  				
+					<td>97</td>
+  				
+				<td>9</td>
+				<td>34</td>
+ 				
+					<td>6.4</td>
+					<td>2</td>
+				
+			</tr>
+			
+			
+				<tr class="evenStatsRow">
+			
+				<td class="tablePlayerName">Sears</td>
+				<td>20</td>
+  				
+					<td>10</td>
+					<td>163.5</td>
+					<td>229.4</td>
+					<td>22</td>
+					<td>0</td>
+					<td>141.5</td>
+					<td>-80</td>
+  				
+				<td>25</td>
+				<td>13</td>
+				<td>0</td>
+				<td>2</td>
+				<td>12</td>
+				<td>0</td>
+				<td>0</td>
+				<td>0</td>
+				<td>0</td>
+  				
+					<td>100</td>
+  				
+				<td>25</td>
+				<td>0</td>
+  				
+					<td>100</td>
+  				
+				<td>5</td>
+				<td>0</td>
+ 				
+					<td>0.0</td>
+					<td>0</td>
+				
+			</tr>
+			
+			
+				<tr class="oddStasRow">
+			
+				<td class="tablePlayerName">Sperling</td>
+				<td>1</td>
+  				
+					<td>3</td>
+					<td>40.5</td>
+					<td>52.8</td>
+					<td>20</td>
+					<td>7</td>
+					<td>20.5</td>
+					<td>-12</td>
+  				
+				<td>20</td>
+				<td>2</td>
+				<td>0</td>
+				<td>1</td>
+				<td>18</td>
+				<td>2</td>
+				<td>0</td>
+				<td>0</td>
+				<td>0</td>
+  				
+					<td>89</td>
+  				
+				<td>19</td>
+				<td>0</td>
+  				
+					<td>100</td>
+  				
+				<td>0</td>
+				<td>0</td>
+ 				
+					<td>0.0</td>
+					<td>0</td>
+				
+			</tr>
+			
+			
+				<tr class="evenStatsRow">
+			
+				<td class="tablePlayerName">Staber</td>
+				<td>2</td>
+  				
+					<td>5</td>
+					<td>91.5</td>
+					<td>111.6</td>
+					<td>16</td>
+					<td>9</td>
+					<td>75.5</td>
+					<td>-41</td>
+  				
+				<td>37</td>
+				<td>2</td>
+				<td>0</td>
+				<td>3</td>
+				<td>34</td>
+				<td>4</td>
+				<td>0</td>
+				<td>0</td>
+				<td>0</td>
+  				
+					<td>88</td>
+  				
+				<td>24</td>
+				<td>0</td>
+  				
+					<td>100</td>
+  				
+				<td>1</td>
+				<td>1</td>
+ 				
+					<td>0.0</td>
+					<td>0</td>
+				
+			</tr>
+			
+			
+				<tr class="oddStasRow">
+			
+				<td class="tablePlayerName">Sun</td>
+				<td>16</td>
+  				
+					<td>12</td>
+					<td>198</td>
+					<td>248.2</td>
+					<td>42.5</td>
+					<td>16</td>
+					<td>155.5</td>
+					<td>-86</td>
+  				
+				<td>129</td>
+				<td>9</td>
+				<td>0</td>
+				<td>12</td>
+				<td>119</td>
+				<td>10</td>
+				<td>0</td>
+				<td>0</td>
+				<td>0</td>
+  				
+					<td>92</td>
+  				
+				<td>105</td>
+				<td>1</td>
+  				
+					<td>99</td>
+  				
+				<td>6</td>
+				<td>49</td>
+ 				
+					<td>6.5</td>
+					<td>7</td>
+				
+			</tr>
+			
+			
+				<tr class="evenStatsRow">
+			
+				<td class="tablePlayerName">Thor</td>
+				<td>12</td>
+  				
+					<td>9</td>
+					<td>118</td>
+					<td>135.5</td>
+					<td>24</td>
+					<td>2</td>
+					<td>94</td>
+					<td>-49</td>
+  				
+				<td>43</td>
+				<td>5</td>
+				<td>0</td>
+				<td>5</td>
+				<td>38</td>
+				<td>2</td>
+				<td>0</td>
+				<td>0</td>
+				<td>0</td>
+  				
+					<td>95</td>
+  				
+				<td>42</td>
+				<td>1</td>
+  				
+					<td>98</td>
+  				
+				<td>5</td>
+				<td>9</td>
+ 				
+					<td>5.1</td>
+					<td>0</td>
+				
+			</tr>
+			
+			
+				<tr class="oddStasRow">
+			
+				<td class="tablePlayerName">Tree</td>
+				<td>4</td>
+  				
+					<td>4</td>
+					<td>50</td>
+					<td>45.7</td>
+					<td>5</td>
+					<td>-1</td>
+					<td>45</td>
+					<td>-25</td>
+  				
+				<td>12</td>
+				<td>1</td>
+				<td>0</td>
+				<td>2</td>
+				<td>11</td>
+				<td>2</td>
+				<td>0</td>
+				<td>0</td>
+				<td>0</td>
+  				
+					<td>82</td>
+  				
+				<td>8</td>
+				<td>0</td>
+  				
+					<td>100</td>
+  				
+				<td>3</td>
+				<td>2</td>
+ 				
+					<td>7.1</td>
+					<td>0</td>
+				
+			</tr>
+			
+			
+				<tr class="evenStatsRow">
+			
+				<td class="tablePlayerName">Trenton</td>
+				<td>11</td>
+  				
+					<td>10</td>
+					<td>173.5</td>
+					<td>225.5</td>
+					<td>33.5</td>
+					<td>12</td>
+					<td>140</td>
+					<td>-78</td>
+  				
+				<td>46</td>
+				<td>5</td>
+				<td>0</td>
+				<td>1</td>
+				<td>40</td>
+				<td>2</td>
+				<td>0</td>
+				<td>0</td>
+				<td>0</td>
+  				
+					<td>95</td>
+  				
+				<td>42</td>
+				<td>1</td>
+  				
+					<td>98</td>
+  				
+				<td>8</td>
+				<td>0</td>
+ 				
+					<td>0.0</td>
+					<td>0</td>
+				
+			</tr>
+			
+			
+				<tr class="oddStasRow">
+			
+				<td class="tablePlayerName">Vickroy</td>
+				<td>61</td>
+  				
+					<td>13</td>
+					<td>309.5</td>
+					<td>379.1</td>
+					<td>272.5</td>
+					<td>143</td>
+					<td>37</td>
+					<td>-3</td>
+  				
+				<td>287</td>
+				<td>41</td>
+				<td>0</td>
+				<td>41</td>
+				<td>244</td>
+				<td>29</td>
+				<td>1</td>
+				<td>0</td>
+				<td>0</td>
+  				
+					<td>88</td>
+  				
+				<td>264</td>
+				<td>2</td>
+  				
+					<td>99</td>
+  				
+				<td>11</td>
+				<td>2</td>
+ 				
+					<td>5.9</td>
+					<td>0</td>
+				
+			</tr>
+			
+			
+				<tr class="evenStatsRow">
+			
+				<td class="tablePlayerName">AVERAGE</td>
+				<td>14.4</td>
+  				
+					<td>7.4</td>
+					<td>139.1</td>
+					<td></td>
+					<td>70.5</td>
+					<td>32.5</td>
+					<td>68.7</td>
+					<td>-34.4</td>
+  				
+				<td>99.6</td>
+				<td>9.1</td>
+				<td>0.0</td>
+				<td>9.1</td>
+				<td>90.1</td>
+				<td>6.9</td>
+				<td>0.1</td>
+				<td>0.0</td>
+				<td>0.0</td>
+  				
+					<td>87.3</td>
+  				
+				<td>82.2</td>
+				<td>1.0</td>
+  				
+					<td>92.9</td>
+  				
+				<td>4.3</td>
+				<td>9.1</td>
+ 				
+					<td></td>
+					<td>0.6</td>
+				
+			</tr>
+			
+			
+				<tr class="oddStasRow">
+			
+				<td class="tablePlayerName">TOTAL</td>
+				<td></td>
+  				
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+  				
+				<td>3486</td>
+				<td>317</td>
+				<td>0</td>
+				<td>317</td>
+				<td>3154</td>
+				<td>240</td>
+				<td>4</td>
+				<td>0</td>
+				<td>1</td>
+  				
+					<td></td>
+  				
+				<td>2876</td>
+				<td>34</td>
+  				
+					<td></td>
+  				
+				<td>149</td>
+				<td>319</td>
+ 				
+					<td></td>
+					<td>21</td>
+				
+			</tr>
+			
+		</tbody>
+	</table>
+		</div>
+	</div>
+</div>
+
+<div id="playerstatspage" class="pagediv" data-role="page" data-theme="b" data-url="playerstatspage">
+	<div class="top-section">
+		<img class="players-image" src="./Ultimate Team - Atlanta Hustle 2017_files/ultimate-silhouette.png">
+		<div class="pageHeading">
+			<span class="teamName">Atlanta Hustle 2017</span><br> 
+			<span class="pageTitle">Ultimate Team Statistics</span> 
+		</div>
+	</div>
+	
+	<div data-role="header" data-position="inline">
+		<a href="http://www.ultianalytics.com/team/5762298832486400/main-classic#mainpage" data-icon="back">Back</a>
+		<h1>Player Statistics</h1>
+	</div>
+	
+	<div data-role="content">
+		<img class="spinner hidden" src="./Ultimate Team - Atlanta Hustle 2017_files/spinner.gif">
+		<div>
+			Player:&nbsp;&nbsp;<span class="playerName" id="statsPlayerNameHeading">Player</span>
+		</div>
+		<div>&nbsp;</div>
+		<label for="selectGamesForPlayerStats" class="select">Games to include:</label>
+		<div class="ui-select"><div data-corners="true" data-shadow="true" data-iconshadow="true" data-wrapperels="span" data-icon="arrow-d" data-iconpos="right" data-theme="b" data-inline="false" data-mini="false" class="ui-btn ui-btn-up-b ui-shadow ui-btn-corner-all ui-fullsize ui-btn-block ui-btn-icon-right"><span class="ui-btn-inner ui-btn-corner-all"><span class="ui-btn-text">All Games</span><span class="ui-icon ui-icon-arrow-d ui-icon-shadow">&nbsp;</span></span><select id="selectGamesForSinglePlayerStats" name="selectGamesForPlayerStats" class="gameSelect"><option value="AllGames">All Games</option><option value="TOURNAMENT-6-25-2017">6-25 2017</option><option value="TOURNAMENT-6-24-2017">6-24 2017</option><option value="TOURNAMENT-5-21-2017">5-21 2017</option><option value="TOURNAMENT-5-20-2017">5-20 2017</option><option value="game-f502b87d-21cf-4018-8c21-0f4f8c02f303">Sun, 6/25 at 6-25 vs. Austin Sol </option><option value="game-2abb46a6-5ce7-4d16-89ae-21469c640970">Fri, 6/23 at 6-24 vs. Dallas Roughnecks </option><option value="game-0F8DE9ED-F57E-49B3-819D-2109B7A33BB4">Sat, 6/17  vs. Raleigh Flyers </option><option value="game-25BAD013-2F40-4552-B630-8F511E00C1DC">Sat, 6/10  vs. Jacksonville Cannons </option><option value="game-68996CF8-F4A3-471F-9E66-62EF0EDBDA6D">Sun, 6/04  vs. Austin Sol </option><option value="game-7946704A-BC4A-4B39-A5ED-164686BE113E">Sat, 5/27  vs. Jacksonville Cannons </option><option value="game-93e86d68-ceb7-4a05-adcf-9d97b28ae7a2">Sun, 5/21 at 5-21 vs. Dallas Roughnecks </option><option value="game-e2d0a281-b882-49dc-b0ea-82ab812606fb">Sat, 5/20 at 5-20 vs. Austin Sol </option><option value="game-6FF132CA-278D-49BD-96C6-93648384F336">Sat, 5/13  vs. Nashville Nightwatch </option><option value="game-23B5BD77-F4FF-4316-AF13-1E9E2905D9F0">Sun, 4/30  vs. Dallas Roughnecks </option><option value="game-C3B60079-7F2A-4298-B69B-D53F08CB5A39">Sat, 4/22  vs. Jacksonville Cannons </option><option value="game-AFF39515-4A70-465C-9528-1CAD5B30E4F5">Sat, 4/15  vs. Nashville Nightwatch </option><option value="game-532073A4-B5F8-4EFF-B82A-E0AC3A0B0851">Sat, 4/01  vs. Raleigh Flyers </option></select></div></div>
+		<table class="statsTable hideWhenBusy" id="playerStats">  
+			<tbody></tbody>
+		</table>
+	</div>
+	
+	<div><br><br>Wondering how a statistic is calculated? Check out our calcs: <a href="javascript:void(0)" onclick="window.open(&#39;/calcs.html&#39;);return false;">Calculations</a></div>
+</div>
+
+<div id="teamstatspage" class="pagediv ui-page ui-body-b" data-role="page" data-theme="b" data-title="Ultimate Team - Atlanta Hustle 2017" data-url="teamstatspage" tabindex="0">
+	<div class="top-section">
+		<img class="players-image" src="./Ultimate Team - Atlanta Hustle 2017_files/ultimate-silhouette.png">
+		<div class="pageHeading">
+			<span class="teamName">Atlanta Hustle 2017</span><br> 
+			<span class="pageTitle">Ultimate Team Statistics</span> 
+		</div>
+	</div>
+
+	<div data-role="navbar" class="ui-navbar ui-navbar-noicons" role="navigation">
+		<ul class="ui-grid-b">
+			<li class="ui-block-a"><a id="playersTab" href="http://www.ultianalytics.com/team/5762298832486400/main-classic#mainpage" data-prefetch="" data-corners="false" data-shadow="false" data-iconshadow="true" data-wrapperels="span" data-theme="b" data-inline="true" class="ui-btn ui-btn-up-b ui-btn-inline"><span class="ui-btn-inner"><span class="ui-btn-text">Players</span></span></a></li>
+			<li class="ui-block-b"><a id="gamesTab" href="http://www.ultianalytics.com/team/5762298832486400/main-classic#gamespage" data-prefetch="" data-corners="false" data-shadow="false" data-iconshadow="true" data-wrapperels="span" data-theme="b" data-inline="true" class="ui-btn ui-btn-up-b ui-btn-inline"><span class="ui-btn-inner"><span class="ui-btn-text">Games</span></span></a></li>
+			<li class="ui-block-c"><a id="teamTab" href="http://www.ultianalytics.com/team/5762298832486400/main-classic#teamstatspage" data-prefetch="" class="ui-btn-active ui-state-persist ui-btn ui-btn-up-b ui-btn-inline" data-corners="false" data-shadow="false" data-iconshadow="true" data-wrapperels="span" data-theme="b" data-inline="true"><span class="ui-btn-inner"><span class="ui-btn-text">Team</span></span></a></li>
+		</ul>
+	</div>
+	<div class="content">
+		<img class="spinner hidden" src="./Ultimate Team - Atlanta Hustle 2017_files/spinner.gif">
+		<div id="teamStats" class="hideWhenBusy">  
+			<br>
+			
+			<fieldset class="ui-grid-a">
+				<div class="ui-block-a">
+					<div class="ui-select"><div data-corners="true" data-shadow="true" data-iconshadow="true" data-wrapperels="span" data-icon="arrow-d" data-iconpos="right" data-theme="b" data-inline="true" data-mini="false" class="ui-btn ui-btn-up-b ui-btn-inline ui-shadow ui-btn-corner-all ui-fullsize ui-btn-icon-right"><span class="ui-btn-inner ui-btn-corner-all"><span class="ui-btn-text">All Games</span><span class="ui-icon ui-icon-arrow-d ui-icon-shadow">&nbsp;</span></span><select name="selectGamesForTeamStats" class="gameSelect" id="selectGamesForTeamStats" data-inline="true"><option value="AllGames">All Games</option><option value="TOURNAMENT-6-25-2017">6-25 2017</option><option value="TOURNAMENT-6-24-2017">6-24 2017</option><option value="TOURNAMENT-5-21-2017">5-21 2017</option><option value="TOURNAMENT-5-20-2017">5-20 2017</option><option value="game-f502b87d-21cf-4018-8c21-0f4f8c02f303">Sun, 6/25 at 6-25 vs. Austin Sol </option><option value="game-2abb46a6-5ce7-4d16-89ae-21469c640970">Fri, 6/23 at 6-24 vs. Dallas Roughnecks </option><option value="game-0F8DE9ED-F57E-49B3-819D-2109B7A33BB4">Sat, 6/17  vs. Raleigh Flyers </option><option value="game-25BAD013-2F40-4552-B630-8F511E00C1DC">Sat, 6/10  vs. Jacksonville Cannons </option><option value="game-68996CF8-F4A3-471F-9E66-62EF0EDBDA6D">Sun, 6/04  vs. Austin Sol </option><option value="game-7946704A-BC4A-4B39-A5ED-164686BE113E">Sat, 5/27  vs. Jacksonville Cannons </option><option value="game-93e86d68-ceb7-4a05-adcf-9d97b28ae7a2">Sun, 5/21 at 5-21 vs. Dallas Roughnecks </option><option value="game-e2d0a281-b882-49dc-b0ea-82ab812606fb">Sat, 5/20 at 5-20 vs. Austin Sol </option><option value="game-6FF132CA-278D-49BD-96C6-93648384F336">Sat, 5/13  vs. Nashville Nightwatch </option><option value="game-23B5BD77-F4FF-4316-AF13-1E9E2905D9F0">Sun, 4/30  vs. Dallas Roughnecks </option><option value="game-C3B60079-7F2A-4298-B69B-D53F08CB5A39">Sat, 4/22  vs. Jacksonville Cannons </option><option value="game-AFF39515-4A70-465C-9528-1CAD5B30E4F5">Sat, 4/15  vs. Nashville Nightwatch </option><option value="game-532073A4-B5F8-4EFF-B82A-E0AC3A0B0851">Sat, 4/01  vs. Raleigh Flyers </option></select></div></div>
+				</div>
+			</fieldset>
+			
+			<h3 class="chartTitle">O-line vs. D-line Goals</h3>
+			<table class="pieSideBySideChartTable">
+				<thead>
+					<tr>
+						<th><h2>Atlanta Hustle 2017</h2></th>
+						<th></th>
+						<th><h2>Opponents</h2></th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td class="pieSideBySideChartCell"><div id="ourGoalSummaryPie" class="pieSideBySideChart"></div></td>
+						<td class="pieSideBySideChartSeparatorCell"><div>&nbsp;</div></td>
+						<td class="pieSideBySideChartCell"><div id="theirGoalSummaryPie" class="pieSideBySideChart"></div></td>
+					</tr>
+				</tbody>
+			</table>
+
+			<h3 class="chartTitle">Breaks</h3>
+			<div id="breaksGraph" class="singleTeamGraph"></div>
+			
+			<h3 class="chartTitle">Goals Scored per Opportunity to Score (Percent)</h3>
+			<div id="goalPerOpportunityGraph" class="singleTeamGraph"></div>
+			
+			<h3 class="chartTitle">Seasonal Turnovers Trend (Turnovers per Touch)<br>
+			(as the season progresses is the team experiencing more or less turns each game?)</h3>
+			<div id="trendLineGraph" class="singleTeamGraph"></div>
+			<div class="xAxisLabel">Game</div>
+
+		</div>
+	</div>
+</div>
+
+<div id="teamPasswordDialog" class="pagediv" data-role="dialog" data-theme="b" data-url="teamPasswordDialog">
+
+	<div data-role="header">
+		<h1>Enter Password</h1>
+	</div>
+
+	<div data-role="content" data-tem="c">
+		<div>
+			&nbsp;&nbsp;Enter <span id="teamName"></span> team password&nbsp;&nbsp;&nbsp;<span class="errorMessage" id="passwordErrorMessage"></span>
+			<input id="teamPasswordInput" type="text" name="name" data-mini="true">
+		</div> 
+		<a id="passwordSubmitButton" href="http://www.ultianalytics.com/team/5762298832486400/main-classic#" data-role="button" data-inline="true" data-theme="a">Submit</a> 
+		<a id="passwordCancelButton" href="http://www.ultianalytics.com/team/5762298832486400/main-classic#" data-role="button" data-inline="true" data-theme="a">Cancel</a> 
+	</div>
+</div>
+
+
+<div id="unauthorizedpage" class="pagediv" data-role="page" data-theme="b" data-url="unauthorizedpage">
+	<div class="top-section">
+		<img class="players-image" src="./Ultimate Team - Atlanta Hustle 2017_files/ultimate-silhouette.png">
+		<div class="pageHeading">
+			<span class="teamName">Atlanta Hustle 2017</span><br> 
+			<span class="pageTitle">Ultimate Team Statistics</span> 
+		</div>
+	</div>
+	<div>
+		<span class="unauthorizedmessage">Sorry, this team requires a password to view their stats</span>
+	</div>
+</div>
+
+
+<div class="ui-loader ui-corner-all ui-body-a ui-loader-default"><span class="ui-icon ui-icon-loading"></span><h1>loading</h1></div></body></html>
