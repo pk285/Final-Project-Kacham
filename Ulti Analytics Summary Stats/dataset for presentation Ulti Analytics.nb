@@ -10,7 +10,7 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[   1051374,      21836]
+NotebookDataLength[   1051364,      21836]
 NotebookOptionsPosition[   1046346,      21716]
 NotebookOutlinePosition[   1046689,      21731]
 CellTagsIndexPosition[   1046646,      21728]
@@ -21811,7 +21811,7 @@ Cell[882399, 18660, 564, 16, 30, "Input", "ExpressionUUID" -> \
 Cell[882966, 18678, 106, 1, 30, "Input", "ExpressionUUID" -> \
 "3d7f219c-491c-44cd-9d37-f57e682769f7"],
 Cell[CellGroupData[{
-Cell[883097, 18683, 72324, 1331, 3204, InheritFromParent, "ExpressionUUID" -> \
+Cell[883097, 18683, 72324, 1331, 3204, "Input", "ExpressionUUID" -> \
 "310ce96f-f886-4034-96c9-cb48e502acf3"],
 Cell[955424, 20016, 72310, 1327, 2862, "Output", "ExpressionUUID" -> \
 "5263cf4c-e33a-41f8-bf58-fc90b97c63ee"]

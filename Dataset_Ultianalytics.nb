@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[   1941914,      40582]
-NotebookOptionsPosition[   1932972,      40363]
-NotebookOutlinePosition[   1933346,      40379]
-CellTagsIndexPosition[   1933303,      40376]
+NotebookDataLength[   1942314,      40576]
+NotebookOptionsPosition[   1933024,      40349]
+NotebookOutlinePosition[   1933397,      40365]
+CellTagsIndexPosition[   1933354,      40362]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -27130,8 +27130,7 @@ Cell[BoxData[
     DynamicModuleBox[{
      TypeSystem`NestedGrid`PackagePrivate`$state$$ = 
       Data`UnorderedAssociation[
-       "RowCount" -> 20, "Length" -> 4659, "InitialType" -> 
-        TypeSystem`Vector[
+       "RowCount" -> 20, "Length" -> 4659, "InitialType" -> TypeSystem`Vector[
           
           TypeSystem`Struct[{
            "Date/Time", "Tournamemnt", "Opponent", "Point Elapsed Seconds", 
@@ -31029,8 +31028,7 @@ Cell[BoxData[
                 Alignment -> {Left, Baseline}], 
                Pane[
                 Annotation["", 
-                 TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[1255532916]
-                 [
+                 TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[1255532916][
                   GeneralUtilities`Slice[8, 
                    Key["Player 20"]]], "Mouse"], 
                 ImageSize -> {{27., Full}, Automatic}, 
@@ -34972,6 +34970,7 @@ Cell[BoxData[
                     FilledCurve[{{{0, 2, 0}, {0, 1, 0}, {0, 1, 0}}}, {{{
                     36.571, 1.031}, {42.440999999999995`, 1.031}, {
                     42.440999999999995`, 60.967}, {36.571, 60.967}}}], 
+                    
                     FilledCurve[{{{0, 2, 0}, {0, 1, 0}, {0, 1, 0}, {0, 1, 
                     0}, {0, 1, 0}}}, {{{0.5598000000000001, 
                     53.788500000000006`}, {26.5668, 31.015500000000007`}, {
@@ -35216,6 +35215,7 @@ Cell[BoxData[
                     FilledCurve[{{{0, 2, 0}, {0, 1, 0}, {0, 1, 0}}}, {{{
                     36.571, 1.031}, {42.440999999999995`, 1.031}, {
                     42.440999999999995`, 60.967}, {36.571, 60.967}}}], 
+                    
                     FilledCurve[{{{0, 2, 0}, {0, 1, 0}, {0, 1, 0}, {0, 1, 
                     0}, {0, 1, 0}}}, {{{0.5598000000000001, 
                     53.788500000000006`}, {26.5668, 31.015500000000007`}, {
@@ -37981,7 +37981,6 @@ Cell[BoxData[
                     TypeSystem`NestedGrid`PackagePrivate`$grid$$, 906411079][{
                     All, "Our Score - End of Point"}]], 
                  TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[906411079][
-                 
                   GeneralUtilities`Slice[All, "Our Score - End of Point"]], 
                  "Mouse"], Background -> GrayLevel[0.95], 
                 Alignment -> {Left, Baseline}], 
@@ -38013,7 +38012,6 @@ Cell[BoxData[
                     TypeSystem`NestedGrid`PackagePrivate`$grid$$, 906411079][{
                     All, "Elapsed Time (secs)"}]], 
                  TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[906411079][
-                 
                   GeneralUtilities`Slice[All, "Elapsed Time (secs)"]], 
                  "Mouse"], Background -> GrayLevel[0.95], 
                 Alignment -> {Left, Baseline}]}, {
@@ -38021,7 +38019,6 @@ Cell[BoxData[
                 Annotation[
                  RawBoxes["1"], 
                  TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[906411079][
-                 
                   GeneralUtilities`Slice[1, 
                    Key["Our Score - End of Point"]]], "Mouse"], 
                 ImageSize -> {{34, Full}, Automatic}, 
@@ -38035,7 +38032,6 @@ Cell[BoxData[
                     Rational[27, 74], 
                     Rational[117, 370]}]]], 
                  TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[906411079][
-                 
                   GeneralUtilities`Slice[1, 
                    Key["Elapsed Time (secs)"]]], "Mouse"], 
                 ImageSize -> {{75, Full}, Automatic}, 
@@ -38044,7 +38040,6 @@ Cell[BoxData[
                 Annotation[
                  RawBoxes["1"], 
                  TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[906411079][
-                 
                   GeneralUtilities`Slice[2, 
                    Key["Our Score - End of Point"]]], "Mouse"], 
                 ImageSize -> {{34, Full}, Automatic}, 
@@ -38058,7 +38053,6 @@ Cell[BoxData[
                     Rational[27, 74], 
                     Rational[117, 370]}]]], 
                  TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[906411079][
-                 
                   GeneralUtilities`Slice[2, 
                    Key["Elapsed Time (secs)"]]], "Mouse"], 
                 ImageSize -> {{75, Full}, Automatic}, 
@@ -38067,7 +38061,6 @@ Cell[BoxData[
                 Annotation[
                  RawBoxes["1"], 
                  TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[906411079][
-                 
                   GeneralUtilities`Slice[3, 
                    Key["Our Score - End of Point"]]], "Mouse"], 
                 ImageSize -> {{34, Full}, Automatic}, 
@@ -38081,7 +38074,6 @@ Cell[BoxData[
                     Rational[27, 74], 
                     Rational[117, 370]}]]], 
                  TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[906411079][
-                 
                   GeneralUtilities`Slice[3, 
                    Key["Elapsed Time (secs)"]]], "Mouse"], 
                 ImageSize -> {{75, Full}, Automatic}, 
@@ -38090,7 +38082,6 @@ Cell[BoxData[
                 Annotation[
                  RawBoxes["1"], 
                  TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[906411079][
-                 
                   GeneralUtilities`Slice[4, 
                    Key["Our Score - End of Point"]]], "Mouse"], 
                 ImageSize -> {{34, Full}, Automatic}, 
@@ -38104,7 +38095,6 @@ Cell[BoxData[
                     Rational[27, 74], 
                     Rational[117, 370]}]]], 
                  TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[906411079][
-                 
                   GeneralUtilities`Slice[4, 
                    Key["Elapsed Time (secs)"]]], "Mouse"], 
                 ImageSize -> {{75, Full}, Automatic}, 
@@ -38113,7 +38103,6 @@ Cell[BoxData[
                 Annotation[
                  RawBoxes["1"], 
                  TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[906411079][
-                 
                   GeneralUtilities`Slice[5, 
                    Key["Our Score - End of Point"]]], "Mouse"], 
                 ImageSize -> {{34, Full}, Automatic}, 
@@ -38127,7 +38116,6 @@ Cell[BoxData[
                     Rational[27, 74], 
                     Rational[117, 370]}]]], 
                  TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[906411079][
-                 
                   GeneralUtilities`Slice[5, 
                    Key["Elapsed Time (secs)"]]], "Mouse"], 
                 ImageSize -> {{75, Full}, Automatic}, 
@@ -38136,7 +38124,6 @@ Cell[BoxData[
                 Annotation[
                  RawBoxes["1"], 
                  TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[906411079][
-                 
                   GeneralUtilities`Slice[6, 
                    Key["Our Score - End of Point"]]], "Mouse"], 
                 ImageSize -> {{34, Full}, Automatic}, 
@@ -38150,7 +38137,6 @@ Cell[BoxData[
                     Rational[27, 74], 
                     Rational[117, 370]}]]], 
                  TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[906411079][
-                 
                   GeneralUtilities`Slice[6, 
                    Key["Elapsed Time (secs)"]]], "Mouse"], 
                 ImageSize -> {{75, Full}, Automatic}, 
@@ -38159,7 +38145,6 @@ Cell[BoxData[
                 Annotation[
                  RawBoxes["1"], 
                  TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[906411079][
-                 
                   GeneralUtilities`Slice[7, 
                    Key["Our Score - End of Point"]]], "Mouse"], 
                 ImageSize -> {{34, Full}, Automatic}, 
@@ -38173,7 +38158,6 @@ Cell[BoxData[
                     Rational[27, 74], 
                     Rational[117, 370]}]]], 
                  TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[906411079][
-                 
                   GeneralUtilities`Slice[7, 
                    Key["Elapsed Time (secs)"]]], "Mouse"], 
                 ImageSize -> {{75, Full}, Automatic}, 
@@ -38182,7 +38166,6 @@ Cell[BoxData[
                 Annotation[
                  RawBoxes["2"], 
                  TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[906411079][
-                 
                   GeneralUtilities`Slice[8, 
                    Key["Our Score - End of Point"]]], "Mouse"], 
                 ImageSize -> {{34, Full}, Automatic}, 
@@ -38196,7 +38179,6 @@ Cell[BoxData[
                     Rational[27, 74], 
                     Rational[117, 370]}]]], 
                  TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[906411079][
-                 
                   GeneralUtilities`Slice[8, 
                    Key["Elapsed Time (secs)"]]], "Mouse"], 
                 ImageSize -> {{75, Full}, Automatic}, 
@@ -38205,7 +38187,6 @@ Cell[BoxData[
                 Annotation[
                  RawBoxes["2"], 
                  TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[906411079][
-                 
                   GeneralUtilities`Slice[9, 
                    Key["Our Score - End of Point"]]], "Mouse"], 
                 ImageSize -> {{34, Full}, Automatic}, 
@@ -38219,7 +38200,6 @@ Cell[BoxData[
                     Rational[27, 74], 
                     Rational[117, 370]}]]], 
                  TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[906411079][
-                 
                   GeneralUtilities`Slice[9, 
                    Key["Elapsed Time (secs)"]]], "Mouse"], 
                 ImageSize -> {{75, Full}, Automatic}, 
@@ -38228,7 +38208,6 @@ Cell[BoxData[
                 Annotation[
                  RawBoxes["2"], 
                  TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[906411079][
-                 
                   GeneralUtilities`Slice[10, 
                    Key["Our Score - End of Point"]]], "Mouse"], 
                 ImageSize -> {{34, Full}, Automatic}, 
@@ -38242,7 +38221,6 @@ Cell[BoxData[
                     Rational[27, 74], 
                     Rational[117, 370]}]]], 
                  TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[906411079][
-                 
                   GeneralUtilities`Slice[10, 
                    Key["Elapsed Time (secs)"]]], "Mouse"], 
                 ImageSize -> {{75, Full}, Automatic}, 
@@ -38251,7 +38229,6 @@ Cell[BoxData[
                 Annotation[
                  RawBoxes["2"], 
                  TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[906411079][
-                 
                   GeneralUtilities`Slice[11, 
                    Key["Our Score - End of Point"]]], "Mouse"], 
                 ImageSize -> {{34, Full}, Automatic}, 
@@ -38265,7 +38242,6 @@ Cell[BoxData[
                     Rational[27, 74], 
                     Rational[117, 370]}]]], 
                  TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[906411079][
-                 
                   GeneralUtilities`Slice[11, 
                    Key["Elapsed Time (secs)"]]], "Mouse"], 
                 ImageSize -> {{75, Full}, Automatic}, 
@@ -38274,7 +38250,6 @@ Cell[BoxData[
                 Annotation[
                  RawBoxes["2"], 
                  TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[906411079][
-                 
                   GeneralUtilities`Slice[12, 
                    Key["Our Score - End of Point"]]], "Mouse"], 
                 ImageSize -> {{34, Full}, Automatic}, 
@@ -38288,7 +38263,6 @@ Cell[BoxData[
                     Rational[27, 74], 
                     Rational[117, 370]}]]], 
                  TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[906411079][
-                 
                   GeneralUtilities`Slice[12, 
                    Key["Elapsed Time (secs)"]]], "Mouse"], 
                 ImageSize -> {{75, Full}, Automatic}, 
@@ -38297,7 +38271,6 @@ Cell[BoxData[
                 Annotation[
                  RawBoxes["2"], 
                  TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[906411079][
-                 
                   GeneralUtilities`Slice[13, 
                    Key["Our Score - End of Point"]]], "Mouse"], 
                 ImageSize -> {{34, Full}, Automatic}, 
@@ -38311,7 +38284,6 @@ Cell[BoxData[
                     Rational[27, 74], 
                     Rational[117, 370]}]]], 
                  TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[906411079][
-                 
                   GeneralUtilities`Slice[13, 
                    Key["Elapsed Time (secs)"]]], "Mouse"], 
                 ImageSize -> {{75, Full}, Automatic}, 
@@ -38320,7 +38292,6 @@ Cell[BoxData[
                 Annotation[
                  RawBoxes["2"], 
                  TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[906411079][
-                 
                   GeneralUtilities`Slice[14, 
                    Key["Our Score - End of Point"]]], "Mouse"], 
                 ImageSize -> {{34, Full}, Automatic}, 
@@ -38334,7 +38305,6 @@ Cell[BoxData[
                     Rational[27, 74], 
                     Rational[117, 370]}]]], 
                  TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[906411079][
-                 
                   GeneralUtilities`Slice[14, 
                    Key["Elapsed Time (secs)"]]], "Mouse"], 
                 ImageSize -> {{75, Full}, Automatic}, 
@@ -38343,7 +38313,6 @@ Cell[BoxData[
                 Annotation[
                  RawBoxes["2"], 
                  TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[906411079][
-                 
                   GeneralUtilities`Slice[15, 
                    Key["Our Score - End of Point"]]], "Mouse"], 
                 ImageSize -> {{34, Full}, Automatic}, 
@@ -38357,7 +38326,6 @@ Cell[BoxData[
                     Rational[27, 74], 
                     Rational[117, 370]}]]], 
                  TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[906411079][
-                 
                   GeneralUtilities`Slice[15, 
                    Key["Elapsed Time (secs)"]]], "Mouse"], 
                 ImageSize -> {{75, Full}, Automatic}, 
@@ -38366,7 +38334,6 @@ Cell[BoxData[
                 Annotation[
                  RawBoxes["2"], 
                  TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[906411079][
-                 
                   GeneralUtilities`Slice[16, 
                    Key["Our Score - End of Point"]]], "Mouse"], 
                 ImageSize -> {{34, Full}, Automatic}, 
@@ -38380,7 +38347,6 @@ Cell[BoxData[
                     Rational[27, 74], 
                     Rational[117, 370]}]]], 
                  TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[906411079][
-                 
                   GeneralUtilities`Slice[16, 
                    Key["Elapsed Time (secs)"]]], "Mouse"], 
                 ImageSize -> {{75, Full}, Automatic}, 
@@ -38389,7 +38355,6 @@ Cell[BoxData[
                 Annotation[
                  RawBoxes["2"], 
                  TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[906411079][
-                 
                   GeneralUtilities`Slice[17, 
                    Key["Our Score - End of Point"]]], "Mouse"], 
                 ImageSize -> {{34, Full}, Automatic}, 
@@ -38403,7 +38368,6 @@ Cell[BoxData[
                     Rational[27, 74], 
                     Rational[117, 370]}]]], 
                  TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[906411079][
-                 
                   GeneralUtilities`Slice[17, 
                    Key["Elapsed Time (secs)"]]], "Mouse"], 
                 ImageSize -> {{75, Full}, Automatic}, 
@@ -38412,7 +38376,6 @@ Cell[BoxData[
                 Annotation[
                  RawBoxes["2"], 
                  TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[906411079][
-                 
                   GeneralUtilities`Slice[18, 
                    Key["Our Score - End of Point"]]], "Mouse"], 
                 ImageSize -> {{34, Full}, Automatic}, 
@@ -38426,7 +38389,6 @@ Cell[BoxData[
                     Rational[27, 74], 
                     Rational[117, 370]}]]], 
                  TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[906411079][
-                 
                   GeneralUtilities`Slice[18, 
                    Key["Elapsed Time (secs)"]]], "Mouse"], 
                 ImageSize -> {{75, Full}, Automatic}, 
@@ -38435,7 +38397,6 @@ Cell[BoxData[
                 Annotation[
                  RawBoxes["2"], 
                  TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[906411079][
-                 
                   GeneralUtilities`Slice[19, 
                    Key["Our Score - End of Point"]]], "Mouse"], 
                 ImageSize -> {{34, Full}, Automatic}, 
@@ -38449,7 +38410,6 @@ Cell[BoxData[
                     Rational[27, 74], 
                     Rational[117, 370]}]]], 
                  TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[906411079][
-                 
                   GeneralUtilities`Slice[19, 
                    Key["Elapsed Time (secs)"]]], "Mouse"], 
                 ImageSize -> {{75, Full}, Automatic}, 
@@ -38458,7 +38418,6 @@ Cell[BoxData[
                 Annotation[
                  RawBoxes["2"], 
                  TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[906411079][
-                 
                   GeneralUtilities`Slice[20, 
                    Key["Our Score - End of Point"]]], "Mouse"], 
                 ImageSize -> {{34, Full}, Automatic}, 
@@ -38472,7 +38431,6 @@ Cell[BoxData[
                     Rational[27, 74], 
                     Rational[117, 370]}]]], 
                  TypeSystem`NestedGrid`PackagePrivate`$SliceMarker[906411079][
-                 
                   GeneralUtilities`Slice[20, 
                    Key["Elapsed Time (secs)"]]], "Mouse"], 
                 ImageSize -> {{75, Full}, Automatic}, 
@@ -39001,7 +38959,8 @@ Cell[BoxData[
               TypeSystem`NestedGrid`PackagePrivate`LookupCacheValue[
                 TypeSystem`NestedGrid`PackagePrivate`$state$$["Data"]]}, 
              TypeSystem`NestedGrid`PackagePrivate`tmpGrid$ = 
-              If[TypeSystem`NestedGrid`PackagePrivate`tmpData$ === 
+              If[
+               TypeSystem`NestedGrid`PackagePrivate`tmpData$ === 
                 TypeSystem`NestedGrid`PackagePrivate`$NotCached, 
                 TypeSystem`NestedGrid`PackagePrivate`renderedGrid, 
                 TypeSystem`NestedGrid`PackagePrivate`renderGrid[
@@ -39465,8 +39424,9 @@ Cell[BoxData[
           
           ImageSize->
            Dynamic[{
-            Automatic, 3.5 CurrentValue["FontCapHeight"]/AbsoluteCurrentValue[
-             Magnification]}]], 
+            Automatic, 
+             3.5 (CurrentValue["FontCapHeight"]/AbsoluteCurrentValue[
+              Magnification])}]], 
          GraphicsBox[{{{}, {}, 
             TagBox[
              {RGBColor[0.368417, 0.506779, 0.709798], AbsoluteThickness[1.6], 
@@ -39505,8 +39465,9 @@ gn/Bmf/X28cIPgBilOd2
           
           ImageSize->
            Dynamic[{
-            Automatic, 3.5 CurrentValue["FontCapHeight"]/AbsoluteCurrentValue[
-             Magnification]}],
+            Automatic, 
+             3.5 (CurrentValue["FontCapHeight"]/AbsoluteCurrentValue[
+              Magnification])}],
           
           Method->{
            "DefaultBoundaryStyle" -> Automatic, "DefaultMeshStyle" -> 
@@ -39561,8 +39522,7 @@ gn/Bmf/X28cIPgBilOd2
        BaselinePosition->{1, 1},
        GridBoxAlignment->{"Rows" -> {{Top}}},
        GridBoxItemSize->{
-        "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}], True->
-      GridBox[{
+        "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}], True->GridBox[{
         {
          PaneBox[
           ButtonBox[
@@ -39577,8 +39537,9 @@ gn/Bmf/X28cIPgBilOd2
           
           ImageSize->
            Dynamic[{
-            Automatic, 3.5 CurrentValue["FontCapHeight"]/AbsoluteCurrentValue[
-             Magnification]}]], 
+            Automatic, 
+             3.5 (CurrentValue["FontCapHeight"]/AbsoluteCurrentValue[
+              Magnification])}]], 
          GraphicsBox[{{{}, {}, 
             TagBox[
              {RGBColor[0.368417, 0.506779, 0.709798], AbsoluteThickness[1.6], 
@@ -39617,8 +39578,9 @@ gn/Bmf/X28cIPgBilOd2
           
           ImageSize->
            Dynamic[{
-            Automatic, 3.5 CurrentValue["FontCapHeight"]/AbsoluteCurrentValue[
-             Magnification]}],
+            Automatic, 
+             3.5 (CurrentValue["FontCapHeight"]/AbsoluteCurrentValue[
+              Magnification])}],
           
           Method->{
            "DefaultBoundaryStyle" -> Automatic, "DefaultMeshStyle" -> 
@@ -39725,8 +39687,7 @@ lFNJhE800FwJJNKOfDaymR084gNfON5W7DyjYZJ+ZBwTmUwms5hHNsu4RAVt
 23kDVrCK1eSRz04ivKSWXyS018skkkQKaYxkKlkUUsxpSijl9799yWqPRSyh
 iM/U8ZOoFLVHPMn0oDcDKaaWn7TpEEJ3BrGW7ZTxgJUdxZTqX2Ieb+nSSd7p
 z1C2sof9FHCEY3RIC+Es9eT62Faxmg3U5TYNfwFnfLZ5
-    "], 1, {"Continuous", 1}, {
-    "Discrete", 1}, 1, {
+    "], 1, {"Continuous", 1}, {"Discrete", 1}, 1, {
     ValueDimensions -> 1, DateFunction -> Automatic, 
      ResamplingMethod -> {"Interpolation", InterpolationOrder -> 1}}}, False, 
    11.1],
@@ -40359,10 +40320,35 @@ Cell[BoxData[
    3.707488693995271*^9, 
    3.7075808653897343`*^9},ExpressionUUID->"8bce4ca7-a378-4dd0-a50e-\
 973f97912548"]
+}, Open  ]],
+
+Cell[BoxData[
+ RowBox[{"curatedData", " ", "=", " ", 
+  RowBox[{
+  "Get", "[", 
+   "\"\<C:\\\\Users\\\\User 1\\\\Documents\\\\Final-Project-Kacham\\\\dataset\
+\\\\dataset.mx\>\"", "]"}]}]], "Input",
+ CellChangeTimes->{{3.708097730898017*^9, 
+  3.7080977658357706`*^9}},ExpressionUUID->"1aec3ac2-2edc-4fd9-8c8e-\
+91a591830b92"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"curatedData", "[", "1", "]"}]], "Input",
+ CellChangeTimes->{{3.708097782368969*^9, 
+  3.708097784853799*^9}},ExpressionUUID->"3bbadda8-e31c-46b9-8141-\
+08209620b423"],
+
+Cell[BoxData[
+ RowBox[{"Null", "[", "1", "]"}]], "Output",
+ CellChangeTimes->{
+  3.7080977852697306`*^9},ExpressionUUID->"3d7838f9-fd97-4a87-b73a-\
+e422ab9b345a"]
 }, Open  ]]
 },
-WindowSize->{1280, 637},
-WindowMargins->{{-8, Automatic}, {Automatic, -8}},
+WindowSize->{1264, 637},
+WindowMargins->{{-8, Automatic}, {Automatic, 0}},
 Magnification:>1.1 Inherited,
 FrontEndVersion->"11.1 for Microsoft Windows (64-bit) (April 18, 2017)",
 StyleDefinitions->"Default.nb"
@@ -40495,7 +40481,7 @@ Cell[98186, 2321, 296, 6, 34, "Output", "ExpressionUUID" -> \
 Cell[CellGroupData[{
 Cell[98519, 2332, 449, 10, 34, "Input", "ExpressionUUID" -> \
 "fac340fc-932c-45a7-aad3-6ca3173d5529"],
-Cell[98971, 2344, 193, 4, 67, "Output", "ExpressionUUID" -> \
+Cell[98971, 2344, 193, 4, 34, "Output", "ExpressionUUID" -> \
 "23fe51ca-4ae0-45c1-ac5d-31880962adb9"]
 }, Open  ]],
 Cell[CellGroupData[{
@@ -40527,62 +40513,70 @@ Cell[1304488, 27110, 193, 4, 34, "Output", "ExpressionUUID" -> \
 Cell[CellGroupData[{
 Cell[1304718, 27119, 264, 6, 34, "Input", "ExpressionUUID" -> \
 "e4307938-7a72-46b0-8c13-46e3a4da3b9e"],
-Cell[1304985, 27127, 403575, 8295, 614, "Output", "ExpressionUUID" -> \
+Cell[1304985, 27127, 403590, 8295, 614, "Output", "ExpressionUUID" -> \
 "b56d7b44-6122-4cf5-a8c9-5a60e94ddd06"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[1708597, 35427, 773, 19, 34, "Input", "ExpressionUUID" -> \
+Cell[1708612, 35427, 773, 19, 34, "Input", "ExpressionUUID" -> \
 "68971da2-dbdf-4ded-8348-fe0921258ef2"],
-Cell[1709373, 35448, 41068, 911, 76, "Output", "ExpressionUUID" -> \
+Cell[1709388, 35448, 41068, 911, 76, "Output", "ExpressionUUID" -> \
 "41ad5949-d467-4cba-805f-95b25c759fc8"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[1750478, 36364, 548, 16, 34, "Input", "ExpressionUUID" -> \
+Cell[1750493, 36364, 548, 16, 34, "Input", "ExpressionUUID" -> \
 "b8792dab-8b26-4670-bcd4-4d3f1fae563f"],
-Cell[1751029, 36382, 41330, 944, 76, "Output", "ExpressionUUID" -> \
+Cell[1751044, 36382, 41330, 944, 76, "Output", "ExpressionUUID" -> \
 "0aca2787-21f5-46b1-a68b-5857355eb8f4"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[1792396, 37331, 322, 7, 34, "Input", "ExpressionUUID" -> \
+Cell[1792411, 37331, 322, 7, 34, "Input", "ExpressionUUID" -> \
 "af4410fe-d7e5-4da2-b7ee-b8a597dfcfd7"],
-Cell[1792721, 37340, 28196, 480, 346, "Output", "ExpressionUUID" -> \
+Cell[1792736, 37340, 28196, 480, 346, "Output", "ExpressionUUID" -> \
 "6751c070-6c27-4b45-b75c-bdec7ee6d9ae"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[1820954, 37825, 216, 5, 34, "Input", "ExpressionUUID" -> \
+Cell[1820969, 37825, 216, 5, 34, "Input", "ExpressionUUID" -> \
 "3b5ff79b-a176-41e5-9fd4-aa5cbe30dc65"],
-Cell[1821173, 37832, 3611, 64, 165, "Output", "ExpressionUUID" -> \
+Cell[1821188, 37832, 3611, 64, 165, "Output", "ExpressionUUID" -> \
 "5efc635d-8f01-4eaf-87a8-b3bf27f43d7c"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[1824821, 37901, 454, 13, 34, "Input", "ExpressionUUID" -> \
+Cell[1824836, 37901, 454, 13, 34, "Input", "ExpressionUUID" -> \
 "9a6da5d0-79ed-4b1f-91ed-4f9947826b9a"],
-Cell[1825278, 37916, 57028, 1181, 614, "Output", "ExpressionUUID" -> \
+Cell[1825293, 37916, 56288, 1140, 614, "Output", "ExpressionUUID" -> \
 "7bfb1638-89f7-4905-8ab3-f0ac8d85e00b"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[1882343, 39102, 799, 20, 34, "Input", "ExpressionUUID" -> \
+Cell[1881618, 39061, 799, 20, 34, "Input", "ExpressionUUID" -> \
 "32f8d84f-5acd-4855-a16d-ebf7fe3f57d8"],
-Cell[1883145, 39124, 11829, 295, 76, "Output", "ExpressionUUID" -> \
+Cell[1882420, 39083, 11829, 295, 76, "Output", "ExpressionUUID" -> \
 "8c316ada-9c25-4724-bca3-a368e5c05630"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[1895011, 39424, 625, 18, 34, "Input", "ExpressionUUID" -> \
+Cell[1894286, 39383, 625, 18, 34, "Input", "ExpressionUUID" -> \
 "f46955d3-969e-47de-a644-ab6f37150a6a"],
-Cell[1895639, 39444, 11673, 293, 76, "Output", "ExpressionUUID" -> \
+Cell[1894914, 39403, 11729, 295, 76, "Output", "ExpressionUUID" -> \
 "eb019871-377f-4742-b159-5bc4ad44f09f"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[1907349, 39742, 347, 7, 34, "Input", "ExpressionUUID" -> \
+Cell[1906680, 39703, 347, 7, 34, "Input", "ExpressionUUID" -> \
 "2020b0c4-24b4-4bda-9834-6950b67911b2"],
-Cell[1907699, 39751, 3652, 77, 270, "Output", "ExpressionUUID" -> \
+Cell[1907030, 39712, 3652, 77, 270, "Output", "ExpressionUUID" -> \
 "162f5dc2-464c-4976-9f2b-fdd5e9ed8537"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[1911388, 39833, 368, 8, 34, "Input", "ExpressionUUID" -> \
+Cell[1910719, 39794, 368, 8, 34, "Input", "ExpressionUUID" -> \
 "857fc2db-d4f5-4f87-beac-01cc93c6b275"],
-Cell[1911759, 39843, 21197, 517, 239, "Output", "ExpressionUUID" -> \
+Cell[1911090, 39804, 21197, 517, 239, "Output", "ExpressionUUID" -> \
 "8bce4ca7-a378-4dd0-a50e-973f97912548"]
+}, Open  ]],
+Cell[1932302, 40324, 326, 8, 34, "Input", "ExpressionUUID" -> \
+"1aec3ac2-2edc-4fd9-8c8e-91a591830b92"],
+Cell[CellGroupData[{
+Cell[1932653, 40336, 190, 4, 34, "Input", "ExpressionUUID" -> \
+"3bbadda8-e31c-46b9-8141-08209620b423"],
+Cell[1932846, 40342, 162, 4, 34, "Output", "ExpressionUUID" -> \
+"3d7838f9-fd97-4a87-b73a-e422ab9b345a"]
 }, Open  ]]
 }
 ]
