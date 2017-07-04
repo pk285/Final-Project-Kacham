@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[     61167,       1494]
-NotebookOptionsPosition[     58227,       1419]
-NotebookOutlinePosition[     58601,       1435]
-CellTagsIndexPosition[     58558,       1432]
+NotebookDataLength[     60582,       1478]
+NotebookOptionsPosition[     57846,       1407]
+NotebookOutlinePosition[     58220,       1423]
+CellTagsIndexPosition[     58177,       1420]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -1403,19 +1403,7 @@ Cell[BoxData[
    3.708179000178214*^9}, {3.7081790581651945`*^9, 
    3.708179088018564*^9}},ExpressionUUID->"3683312a-4eb3-47f1-9b5c-\
 83153318bfaf"]
-}, Open  ]],
-
-Cell[BoxData[
- RowBox[{
-  RowBox[{"frisbeeradius", " ", "=", " ", "0.3"}], ";"}]], "Input",
- CellChangeTimes->{{3.7081791680543933`*^9, 
-  3.7081791697550864`*^9}},ExpressionUUID->"c5cae33e-618a-4604-ab2a-\
-3546453051a8"],
-
-Cell[BoxData[""], "Input",
- CellChangeTimes->{{3.7081789197664733`*^9, 
-  3.708178921025428*^9}},ExpressionUUID->"5f05db22-9d30-4dda-bd7d-\
-a0de8d1428c1"]
+}, Open  ]]
 },
 WindowSize->{1280, 637},
 WindowMargins->{{-8, Automatic}, {Automatic, -8}},
@@ -1491,11 +1479,7 @@ Cell[56134, 1365, 629, 16, 65, "Input", "ExpressionUUID" -> \
 "808e4cf0-078c-4f90-867d-a87de175e575"],
 Cell[56766, 1383, 1064, 21, 266, "Output", "ExpressionUUID" -> \
 "3683312a-4eb3-47f1-9b5c-83153318bfaf"]
-}, Open  ]],
-Cell[57845, 1407, 221, 5, 28, "Input", "ExpressionUUID" -> \
-"c5cae33e-618a-4604-ab2a-3546453051a8"],
-Cell[58069, 1414, 154, 3, 28, "Input", "ExpressionUUID" -> \
-"5f05db22-9d30-4dda-bd7d-a0de8d1428c1"]
+}, Open  ]]
 }
 ]
 *)
