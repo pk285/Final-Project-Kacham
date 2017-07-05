@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[     61619,       1504]
-NotebookOptionsPosition[     58745,       1429]
-NotebookOutlinePosition[     59119,       1445]
-CellTagsIndexPosition[     59076,       1442]
+NotebookDataLength[     73236,       1793]
+NotebookOptionsPosition[     70267,       1716]
+NotebookOutlinePosition[     70640,       1732]
+CellTagsIndexPosition[     70597,       1729]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -641,12 +641,19 @@ Cell[BoxData[
 2903b6632062"]
 }, Open  ]],
 
+Cell[BoxData[
+ RowBox[{"(*", " ", 
+  RowBox[{"Vertical", " ", "Stack"}], " ", "*)"}]], "Input",
+ CellChangeTimes->{{3.7082238511192446`*^9, 
+  3.7082238636114664`*^9}},ExpressionUUID->"cea6fe67-53e3-46ad-80aa-\
+ed0b6f0dceed"],
+
 Cell[CellGroupData[{
 
 Cell[BoxData[{
  RowBox[{
   RowBox[{"list", "=", 
-   RowBox[{"{", 
+   RowBox[{"{", "\[IndentingNewLine]", 
     RowBox[{
      RowBox[{"Graphics", "[", 
       RowBox[{"{", 
@@ -662,8 +669,39 @@ Cell[BoxData[{
         RowBox[{"Disk", "[", 
          RowBox[{
           RowBox[{"{", 
-           RowBox[{"2", ",", "3"}], "}"}], ",", ".1"}], "]"}]}], "}"}], " ", 
-      "]"}], ",", 
+           RowBox[{"2", ",", "3"}], "}"}], ",", ".1"}], "]"}], ",", "Blue", 
+        ",", 
+        RowBox[{"Disk", "[", 
+         RowBox[{
+          RowBox[{"{", 
+           RowBox[{"2", ",", "3.5"}], "}"}], ",", ".1"}], "]"}], ",", "Thick",
+         ",", "Blue", ",", 
+        RowBox[{"Disk", "[", 
+         RowBox[{
+          RowBox[{"{", 
+           RowBox[{"2", ",", "4"}], "}"}], ",", ".1"}], "]"}], ",", "Blue", 
+        ",", 
+        RowBox[{"Disk", "[", 
+         RowBox[{
+          RowBox[{"{", 
+           RowBox[{"2", ",", "4.5"}], "}"}], ",", ".1"}], "]"}], ",", "Blue", 
+        ",", 
+        RowBox[{"Disk", "[", 
+         RowBox[{
+          RowBox[{"{", 
+           RowBox[{"2", ",", "5"}], "}"}], ",", ".1"}], "]"}], ",", "Blue", 
+        ",", 
+        RowBox[{"Disk", "[", 
+         RowBox[{
+          RowBox[{"{", 
+           RowBox[{"2", ",", "6.5"}], "}"}], ",", ".1"}], "]"}], ",", "Blue", 
+        ",", 
+        RowBox[{"Disk", "[", 
+         RowBox[{
+          RowBox[{"{", 
+           RowBox[{"3", ",", "6.5"}], "}"}], ",", ".1"}], "]"}]}], "}"}], " ",
+       "]"}], ",", " ", 
+     RowBox[{"(*", " ", "1", " ", "*)"}], "\[IndentingNewLine]", 
      RowBox[{"Graphics", "[", 
       RowBox[{"{", 
        RowBox[{
@@ -671,9 +709,46 @@ Cell[BoxData[{
         RowBox[{"Rectangle", "[", 
          RowBox[{
           RowBox[{"{", 
-           RowBox[{"3", ",", "0"}], "}"}], ",", 
+           RowBox[{"0", ",", "0"}], "}"}], ",", 
           RowBox[{"{", 
-           RowBox[{"2", ",", "2"}], "}"}]}], "]"}]}], "}"}], "]"}], ",", 
+           RowBox[{"5", ",", "10"}], "}"}]}], "]"}], ",", "Thick", ",", 
+        "Blue", ",", 
+        RowBox[{"Disk", "[", 
+         RowBox[{
+          RowBox[{"{", 
+           RowBox[{"1", ",", "4.5"}], "}"}], ",", ".1"}], "]"}], ",", "Blue", 
+        ",", 
+        RowBox[{"Disk", "[", 
+         RowBox[{
+          RowBox[{"{", 
+           RowBox[{"2", ",", "3.5"}], "}"}], ",", ".1"}], "]"}], ",", "Thick",
+         ",", "Blue", ",", 
+        RowBox[{"Disk", "[", 
+         RowBox[{
+          RowBox[{"{", 
+           RowBox[{"2", ",", "4"}], "}"}], ",", ".1"}], "]"}], ",", "Blue", 
+        ",", 
+        RowBox[{"Disk", "[", 
+         RowBox[{
+          RowBox[{"{", 
+           RowBox[{"2", ",", "4.5"}], "}"}], ",", ".1"}], "]"}], ",", "Blue", 
+        ",", 
+        RowBox[{"Disk", "[", 
+         RowBox[{
+          RowBox[{"{", 
+           RowBox[{"2", ",", "5"}], "}"}], ",", ".1"}], "]"}], ",", "Blue", 
+        ",", 
+        RowBox[{"Disk", "[", 
+         RowBox[{
+          RowBox[{"{", 
+           RowBox[{"2", ",", "6.5"}], "}"}], ",", ".1"}], "]"}], ",", "Blue", 
+        ",", 
+        RowBox[{"Disk", "[", 
+         RowBox[{
+          RowBox[{"{", 
+           RowBox[{"3", ",", "7.5"}], "}"}], ",", ".1"}], "]"}]}], "}"}], " ",
+       "]"}], ",", 
+     RowBox[{"(*", " ", "2", " ", "*)"}], "\[IndentingNewLine]", 
      RowBox[{"Graphics", "[", 
       RowBox[{"{", 
        RowBox[{
@@ -681,9 +756,46 @@ Cell[BoxData[{
         RowBox[{"Rectangle", "[", 
          RowBox[{
           RowBox[{"{", 
-           RowBox[{"3", ",", "0"}], "}"}], ",", 
+           RowBox[{"0", ",", "0"}], "}"}], ",", 
           RowBox[{"{", 
-           RowBox[{"2", ",", "2"}], "}"}]}], "]"}]}], "}"}], "]"}], ",", 
+           RowBox[{"5", ",", "10"}], "}"}]}], "]"}], ",", "Thick", ",", 
+        "Blue", ",", 
+        RowBox[{"Disk", "[", 
+         RowBox[{
+          RowBox[{"{", 
+           RowBox[{"2", ",", "4.5"}], "}"}], ",", ".1"}], "]"}], ",", "Blue", 
+        ",", 
+        RowBox[{"Disk", "[", 
+         RowBox[{
+          RowBox[{"{", 
+           RowBox[{"2", ",", "5"}], "}"}], ",", ".1"}], "]"}], ",", "Thick", 
+        ",", "Blue", ",", 
+        RowBox[{"Disk", "[", 
+         RowBox[{
+          RowBox[{"{", 
+           RowBox[{"2", ",", "4"}], "}"}], ",", ".1"}], "]"}], ",", "Blue", 
+        ",", 
+        RowBox[{"Disk", "[", 
+         RowBox[{
+          RowBox[{"{", 
+           RowBox[{"2", ",", "3"}], "}"}], ",", ".1"}], "]"}], ",", "Blue", 
+        ",", 
+        RowBox[{"Disk", "[", 
+         RowBox[{
+          RowBox[{"{", 
+           RowBox[{"2", ",", "5"}], "}"}], ",", ".1"}], "]"}], ",", "Blue", 
+        ",", 
+        RowBox[{"Disk", "[", 
+         RowBox[{
+          RowBox[{"{", 
+           RowBox[{"2", ",", "7.5"}], "}"}], ",", ".1"}], "]"}], ",", "Blue", 
+        ",", 
+        RowBox[{"Disk", "[", 
+         RowBox[{
+          RowBox[{"{", 
+           RowBox[{"3", ",", "7.5"}], "}"}], ",", ".1"}], "]"}]}], "}"}], " ",
+       "]"}], ",", 
+     RowBox[{"(*", " ", "3", " ", "*)"}], "\[IndentingNewLine]", 
      RowBox[{"Graphics", "[", 
       RowBox[{"{", 
        RowBox[{
@@ -691,9 +803,46 @@ Cell[BoxData[{
         RowBox[{"Rectangle", "[", 
          RowBox[{
           RowBox[{"{", 
-           RowBox[{"3", ",", "0"}], "}"}], ",", 
+           RowBox[{"0", ",", "0"}], "}"}], ",", 
           RowBox[{"{", 
-           RowBox[{"2", ",", "2"}], "}"}]}], "]"}]}], "}"}], "]"}], ",", 
+           RowBox[{"5", ",", "10"}], "}"}]}], "]"}], ",", "Thick", ",", 
+        "Blue", ",", 
+        RowBox[{"Disk", "[", 
+         RowBox[{
+          RowBox[{"{", 
+           RowBox[{"2", ",", "3"}], "}"}], ",", ".1"}], "]"}], ",", "Blue", 
+        ",", 
+        RowBox[{"Disk", "[", 
+         RowBox[{
+          RowBox[{"{", 
+           RowBox[{"2", ",", "3.5"}], "}"}], ",", ".1"}], "]"}], ",", "Thick",
+         ",", "Blue", ",", 
+        RowBox[{"Disk", "[", 
+         RowBox[{
+          RowBox[{"{", 
+           RowBox[{"2", ",", "4"}], "}"}], ",", ".1"}], "]"}], ",", "Blue", 
+        ",", 
+        RowBox[{"Disk", "[", 
+         RowBox[{
+          RowBox[{"{", 
+           RowBox[{"2", ",", "4.5"}], "}"}], ",", ".1"}], "]"}], ",", "Blue", 
+        ",", 
+        RowBox[{"Disk", "[", 
+         RowBox[{
+          RowBox[{"{", 
+           RowBox[{"2", ",", "5"}], "}"}], ",", ".1"}], "]"}], ",", "Blue", 
+        ",", 
+        RowBox[{"Disk", "[", 
+         RowBox[{
+          RowBox[{"{", 
+           RowBox[{"2", ",", "6.5"}], "}"}], ",", ".1"}], "]"}], ",", "Blue", 
+        ",", 
+        RowBox[{"Disk", "[", 
+         RowBox[{
+          RowBox[{"{", 
+           RowBox[{"3", ",", "6.5"}], "}"}], ",", ".1"}], "]"}]}], "}"}], " ",
+       "]"}], ",", 
+     RowBox[{"(*", " ", "4", " ", "*)"}], "\[IndentingNewLine]", 
      RowBox[{"Graphics", "[", 
       RowBox[{"{", 
        RowBox[{
@@ -701,10 +850,94 @@ Cell[BoxData[{
         RowBox[{"Rectangle", "[", 
          RowBox[{
           RowBox[{"{", 
-           RowBox[{"3", ",", "0"}], "}"}], ",", 
+           RowBox[{"0", ",", "0"}], "}"}], ",", 
           RowBox[{"{", 
-           RowBox[{"2", ",", "2"}], "}"}]}], "]"}]}], "}"}], "]"}]}], "}"}]}],
-   ";"}], "\[IndentingNewLine]", 
+           RowBox[{"5", ",", "10"}], "}"}]}], "]"}], ",", "Thick", ",", 
+        "Blue", ",", 
+        RowBox[{"Disk", "[", 
+         RowBox[{
+          RowBox[{"{", 
+           RowBox[{"2", ",", "3"}], "}"}], ",", ".1"}], "]"}], ",", "Blue", 
+        ",", 
+        RowBox[{"Disk", "[", 
+         RowBox[{
+          RowBox[{"{", 
+           RowBox[{"2", ",", "3.5"}], "}"}], ",", ".1"}], "]"}], ",", "Thick",
+         ",", "Blue", ",", 
+        RowBox[{"Disk", "[", 
+         RowBox[{
+          RowBox[{"{", 
+           RowBox[{"2", ",", "4"}], "}"}], ",", ".1"}], "]"}], ",", "Blue", 
+        ",", 
+        RowBox[{"Disk", "[", 
+         RowBox[{
+          RowBox[{"{", 
+           RowBox[{"2", ",", "4.5"}], "}"}], ",", ".1"}], "]"}], ",", "Blue", 
+        ",", 
+        RowBox[{"Disk", "[", 
+         RowBox[{
+          RowBox[{"{", 
+           RowBox[{"2", ",", "5"}], "}"}], ",", ".1"}], "]"}], ",", "Blue", 
+        ",", 
+        RowBox[{"Disk", "[", 
+         RowBox[{
+          RowBox[{"{", 
+           RowBox[{"2", ",", "6.5"}], "}"}], ",", ".1"}], "]"}], ",", "Blue", 
+        ",", 
+        RowBox[{"Disk", "[", 
+         RowBox[{
+          RowBox[{"{", 
+           RowBox[{"3", ",", "6.5"}], "}"}], ",", ".1"}], "]"}]}], "}"}], " ",
+       "]"}], ",", 
+     RowBox[{"(*", " ", "5", " ", "*)"}], 
+     RowBox[{"Graphics", "[", 
+      RowBox[{"{", 
+       RowBox[{
+        RowBox[{"Darker", "[", "Green", "]"}], ",", 
+        RowBox[{"Rectangle", "[", 
+         RowBox[{
+          RowBox[{"{", 
+           RowBox[{"0", ",", "0"}], "}"}], ",", 
+          RowBox[{"{", 
+           RowBox[{"5", ",", "10"}], "}"}]}], "]"}], ",", "Thick", ",", 
+        "Blue", ",", 
+        RowBox[{"Disk", "[", 
+         RowBox[{
+          RowBox[{"{", 
+           RowBox[{"2", ",", "3"}], "}"}], ",", ".1"}], "]"}], ",", "Blue", 
+        ",", 
+        RowBox[{"Disk", "[", 
+         RowBox[{
+          RowBox[{"{", 
+           RowBox[{"2", ",", "3.5"}], "}"}], ",", ".1"}], "]"}], ",", "Thick",
+         ",", "Blue", ",", 
+        RowBox[{"Disk", "[", 
+         RowBox[{
+          RowBox[{"{", 
+           RowBox[{"2", ",", "4"}], "}"}], ",", ".1"}], "]"}], ",", "Blue", 
+        ",", 
+        RowBox[{"Disk", "[", 
+         RowBox[{
+          RowBox[{"{", 
+           RowBox[{"2", ",", "4.5"}], "}"}], ",", ".1"}], "]"}], ",", "Blue", 
+        ",", 
+        RowBox[{"Disk", "[", 
+         RowBox[{
+          RowBox[{"{", 
+           RowBox[{"2", ",", "5"}], "}"}], ",", ".1"}], "]"}], ",", "Blue", 
+        ",", 
+        RowBox[{"Disk", "[", 
+         RowBox[{
+          RowBox[{"{", 
+           RowBox[{"2", ",", "6.5"}], "}"}], ",", ".1"}], "]"}], ",", "Blue", 
+        ",", 
+        RowBox[{"Disk", "[", 
+         RowBox[{
+          RowBox[{"{", 
+           RowBox[{"3", ",", "6.5"}], "}"}], ",", ".1"}], "]"}]}], "}"}], " ",
+       "]"}]}], 
+    RowBox[{"(*", " ", "6", " ", "*)"}], "\[IndentingNewLine]", "}"}]}], 
+  ";"}], "\[IndentingNewLine]", 
  RowBox[{"ListAnimate", "[", 
   RowBox[{"list", ",", 
    RowBox[{"AnimationRunning", "\[Rule]", "False"}]}], "]"}]}], "Input",
@@ -714,22 +947,26 @@ Cell[BoxData[{
   3.7081693574549475`*^9, 3.7081693679398565`*^9}, {3.7081694021239147`*^9, 
   3.708169404693611*^9}, {3.7081694500923414`*^9, 3.708169613915069*^9}, {
   3.7081770140167627`*^9, 3.7081770350411396`*^9}, {3.708178039931824*^9, 
-  3.7081780561298337`*^9}, {3.708178154914104*^9, 
-  3.708178234116831*^9}},ExpressionUUID->"ceeaf16f-f969-4634-9b8c-\
+  3.7081780561298337`*^9}, {3.708178154914104*^9, 3.708178234116831*^9}, {
+  3.7082234919770966`*^9, 3.7082238404078636`*^9}, {3.7082238768086014`*^9, 
+  3.708224009500029*^9}, {3.7082240874657507`*^9, 3.7082241525591145`*^9}, {
+  3.708224184533938*^9, 3.708224234407559*^9}, {3.708224272401019*^9, 
+  3.708224310861923*^9}, {3.70822435459311*^9, 
+  3.7082243685494084`*^9}},ExpressionUUID->"ceeaf16f-f969-4634-9b8c-\
 20d0e42c48b3"],
 
 Cell[BoxData[
  TagBox[
   StyleBox[
-   DynamicModuleBox[{$CellContext`i52$$ = 1, Typeset`show$$ = True, 
+   DynamicModuleBox[{$CellContext`i52$$ = 2, Typeset`show$$ = True, 
     Typeset`bookmarkList$$ = {
     "\"min\"" :> {$CellContext`i52$$ = 1}, 
-     "\"max\"" :> {$CellContext`i52$$ = 5}}, Typeset`bookmarkMode$$ = "Menu", 
+     "\"max\"" :> {$CellContext`i52$$ = 6}}, Typeset`bookmarkMode$$ = "Menu", 
     Typeset`animator$$, Typeset`animvar$$ = 1, Typeset`name$$ = 
     "\"untitled\"", Typeset`specs$$ = {{{
-       Hold[$CellContext`i52$$], 1, ""}, 1, 5, 1}}, Typeset`size$$ = 
+       Hold[$CellContext`i52$$], 1, ""}, 1, 6, 1}}, Typeset`size$$ = 
     Automatic, Typeset`update$$ = 0, Typeset`initDone$$, 
-    Typeset`skipInitDone$$ = True, $CellContext`i52$1068316$$ = 0}, 
+    Typeset`skipInitDone$$ = True, $CellContext`i52$1088470$$ = 0}, 
     PaneBox[
      PanelBox[
       DynamicWrapperBox[GridBox[{
@@ -739,10 +976,11 @@ Cell[BoxData[
             TagBox[
              StyleBox[GridBox[{
                 {"\<\"\"\>", 
-                 AnimatorBox[Dynamic[$CellContext`i52$$], {1, 5, 1},
+                 AnimatorBox[Dynamic[$CellContext`i52$$], {1, 6, 1},
                   AnimationRate->Automatic,
                   AnimationRunTime->0.,
                   AnimationRunning->False,
+                  AnimationTimeIndex->1.,
                   
                   AppearanceElements->{
                    "ProgressSlider", "PlayPauseButton", "FasterSlowerButtons",
@@ -777,28 +1015,76 @@ Cell[BoxData[
                     NCache[
                     Rational[2, 3], 0.6666666666666666], 0], 
                    RectangleBox[{0, 0}, {5, 10}]}, 
+                  {RGBColor[0, 0, 1], Thickness[Large], DiskBox[{2, 3}, 0.1], 
+                   {RGBColor[0, 0, 1], DiskBox[{2, 3.5}, 0.1]}, 
+                   {RGBColor[0, 0, 1], Thickness[Large], DiskBox[{2, 4}, 0.1], 
+                    {RGBColor[0, 0, 1], DiskBox[{2, 4.5}, 0.1]}, 
+                    {RGBColor[0, 0, 1], DiskBox[{2, 5}, 0.1]}, 
+                    {RGBColor[0, 0, 1], DiskBox[{2, 6.5}, 0.1]}, 
+                    {RGBColor[0, 0, 1], DiskBox[{3, 6.5}, 0.1]}}}}], 2->
+                GraphicsBox[{
+                  {RGBColor[0, 
+                    NCache[
+                    Rational[2, 3], 0.6666666666666666], 0], 
+                   RectangleBox[{0, 0}, {5, 10}]}, 
                   {RGBColor[0, 0, 1], Thickness[Large], 
-                   DiskBox[{2, 3}, 0.1]}}], 2->
-                GraphicsBox[
-                 {RGBColor[0, 
-                   NCache[
+                   DiskBox[{1, 4.5}, 0.1], 
+                   {RGBColor[0, 0, 1], DiskBox[{2, 3.5}, 0.1]}, 
+                   {RGBColor[0, 0, 1], Thickness[Large], DiskBox[{2, 4}, 0.1], 
+                    {RGBColor[0, 0, 1], DiskBox[{2, 4.5}, 0.1]}, 
+                    {RGBColor[0, 0, 1], DiskBox[{2, 5}, 0.1]}, 
+                    {RGBColor[0, 0, 1], DiskBox[{2, 6.5}, 0.1]}, 
+                    {RGBColor[0, 0, 1], DiskBox[{3, 7.5}, 0.1]}}}}], 3->
+                GraphicsBox[{
+                  {RGBColor[0, 
+                    NCache[
                     Rational[2, 3], 0.6666666666666666], 0], 
-                  RectangleBox[{3, 0}, {2, 2}]}], 3->
-                GraphicsBox[
-                 {RGBColor[0, 
-                   NCache[
+                   RectangleBox[{0, 0}, {5, 10}]}, 
+                  {RGBColor[0, 0, 1], Thickness[Large], 
+                   DiskBox[{2, 4.5}, 0.1], 
+                   {RGBColor[0, 0, 1], DiskBox[{2, 5}, 0.1]}, 
+                   {RGBColor[0, 0, 1], Thickness[Large], DiskBox[{2, 4}, 0.1], 
+                    {RGBColor[0, 0, 1], DiskBox[{2, 3}, 0.1]}, 
+                    {RGBColor[0, 0, 1], DiskBox[{2, 5}, 0.1]}, 
+                    {RGBColor[0, 0, 1], DiskBox[{2, 7.5}, 0.1]}, 
+                    {RGBColor[0, 0, 1], DiskBox[{3, 7.5}, 0.1]}}}}], 4->
+                GraphicsBox[{
+                  {RGBColor[0, 
+                    NCache[
                     Rational[2, 3], 0.6666666666666666], 0], 
-                  RectangleBox[{3, 0}, {2, 2}]}], 4->
-                GraphicsBox[
-                 {RGBColor[0, 
-                   NCache[
+                   RectangleBox[{0, 0}, {5, 10}]}, 
+                  {RGBColor[0, 0, 1], Thickness[Large], DiskBox[{2, 3}, 0.1], 
+                   {RGBColor[0, 0, 1], DiskBox[{2, 3.5}, 0.1]}, 
+                   {RGBColor[0, 0, 1], Thickness[Large], DiskBox[{2, 4}, 0.1], 
+                    {RGBColor[0, 0, 1], DiskBox[{2, 4.5}, 0.1]}, 
+                    {RGBColor[0, 0, 1], DiskBox[{2, 5}, 0.1]}, 
+                    {RGBColor[0, 0, 1], DiskBox[{2, 6.5}, 0.1]}, 
+                    {RGBColor[0, 0, 1], DiskBox[{3, 6.5}, 0.1]}}}}], 5->
+                GraphicsBox[{
+                  {RGBColor[0, 
+                    NCache[
                     Rational[2, 3], 0.6666666666666666], 0], 
-                  RectangleBox[{3, 0}, {2, 2}]}], 5->
-                GraphicsBox[
-                 {RGBColor[0, 
-                   NCache[
+                   RectangleBox[{0, 0}, {5, 10}]}, 
+                  {RGBColor[0, 0, 1], Thickness[Large], DiskBox[{2, 3}, 0.1], 
+                   {RGBColor[0, 0, 1], DiskBox[{2, 3.5}, 0.1]}, 
+                   {RGBColor[0, 0, 1], Thickness[Large], DiskBox[{2, 4}, 0.1], 
+                    {RGBColor[0, 0, 1], DiskBox[{2, 4.5}, 0.1]}, 
+                    {RGBColor[0, 0, 1], DiskBox[{2, 5}, 0.1]}, 
+                    {RGBColor[0, 0, 1], DiskBox[{2, 6.5}, 0.1]}, 
+                    {RGBColor[0, 0, 1], DiskBox[{3, 6.5}, 0.1]}}}}], 6->
+                GraphicsBox[{
+                  {RGBColor[0, 
+                    NCache[
                     Rational[2, 3], 0.6666666666666666], 0], 
-                  RectangleBox[{3, 0}, {2, 2}]}]}, Dynamic[$CellContext`i52$$],
+                   RectangleBox[{0, 0}, {5, 10}]}, 
+                  {RGBColor[0, 0, 1], Thickness[Large], DiskBox[{2, 3}, 0.1], 
+                   {RGBColor[0, 0, 1], DiskBox[{2, 3.5}, 0.1]}, 
+                   {RGBColor[0, 0, 1], Thickness[Large], DiskBox[{2, 4}, 0.1], 
+                    {RGBColor[0, 0, 1], DiskBox[{2, 4.5}, 0.1]}, 
+                    {RGBColor[0, 0, 1], DiskBox[{2, 5}, 0.1]}, 
+                    {RGBColor[0, 0, 1], DiskBox[{2, 6.5}, 0.1]}, 
+                    {RGBColor[0, 0, 1], DiskBox[{3, 6.5}, 0.1]}}}}]}, 
+                Dynamic[$CellContext`i52$$],
                 Alignment->Automatic,
                 BaseStyle->"ListAnimateCore",
                 ImageSize->All,
@@ -848,8 +1134,8 @@ Cell[BoxData[
            CurrentValue["CurrentFormatTime"]]& , {
            
            Manipulate`Dump`controllerLink[{$CellContext`i52$$, \
-$CellContext`i52$1068316$$}, "X1", 
-            If["DefaultAbsolute", True, "JB1"], False, {1, 5, 1}, 5, 1.]}], 
+$CellContext`i52$1088470$$}, "X1", 
+            If["DefaultAbsolute", True, "JB1"], False, {1, 6, 1}, 6, 1.]}], 
          CurrentValue[{
           "ControllerData", {
            "Gamepad", "Joystick", "Multi-Axis Controller"}}], {}]],
@@ -867,11 +1153,12 @@ $CellContext`i52$1068316$$}, "X1",
    Deployed->True,
    StripOnInput->False],
   Manipulate`InterpretManipulate[1]]], "Output",
- CellChangeTimes->{
-  3.708178069232689*^9, {3.7081781596902556`*^9, 3.7081781892638683`*^9}, {
-   3.7081782285874586`*^9, 
-   3.7081782409313726`*^9}},ExpressionUUID->"95a55867-45ab-4f85-b5d6-\
-2fbef0906e31"]
+ CellChangeTimes->{{3.708223957162529*^9, 3.7082239814042664`*^9}, 
+   3.708224011680127*^9, {3.708224099194543*^9, 3.7082241155932035`*^9}, 
+   3.708224153475402*^9, {3.708224188499566*^9, 3.7082242348389645`*^9}, {
+   3.7082242925766*^9, 3.7082243131686993`*^9}, 
+   3.7082243697132163`*^9},ExpressionUUID->"7762129b-b939-4970-8532-\
+34ccf384bc5b"]
 }, Open  ]],
 
 Cell[BoxData[
@@ -1427,8 +1714,8 @@ Cell[BoxData[
 83153318bfaf"]
 }, Open  ]]
 },
-WindowSize->{1280, 637},
-WindowMargins->{{-8, Automatic}, {Automatic, -8}},
+WindowSize->{1264, 637},
+WindowMargins->{{-8, Automatic}, {Automatic, 0}},
 Magnification:>0.9 Inherited,
 FrontEndVersion->"11.1 for Microsoft Windows (64-bit) (April 18, 2017)",
 StyleDefinitions->"Default.nb"
@@ -1482,28 +1769,30 @@ Cell[22417, 587, 261, 6, 28, "Input", "ExpressionUUID" -> \
 Cell[22681, 595, 1345, 45, 403, "Output", "ExpressionUUID" -> \
 "0f921a09-1bd6-4c32-bf99-2903b6632062"]
 }, Open  ]],
+Cell[24041, 643, 225, 5, 28, "Input", "ExpressionUUID" -> \
+"cea6fe67-53e3-46ad-80aa-ed0b6f0dceed"],
 Cell[CellGroupData[{
-Cell[24063, 645, 2736, 73, 65, "Input", "ExpressionUUID" -> \
+Cell[24291, 652, 10729, 303, 281, "Input", "ExpressionUUID" -> \
 "ceeaf16f-f969-4634-9b8c-20d0e42c48b3"],
-Cell[26802, 720, 6014, 153, 476, "Output", "ExpressionUUID" -> \
-"95a55867-45ab-4f85-b5d6-2fbef0906e31"]
+Cell[35023, 957, 9315, 203, 476, "Output", "ExpressionUUID" -> \
+"7762129b-b939-4970-8532-34ccf384bc5b"]
 }, Open  ]],
-Cell[32831, 876, 346, 10, 28, "Input", "ExpressionUUID" -> \
+Cell[44353, 1163, 346, 10, 28, "Input", "ExpressionUUID" -> \
 "e02e0dc2-afc7-4982-93e0-5987e38cce48"],
-Cell[33180, 888, 18965, 361, 476, InheritFromParent, "ExpressionUUID" -> \
+Cell[44702, 1175, 18965, 361, 476, "Input", "ExpressionUUID" -> \
 "cb906c42-8d20-4253-a1ce-bdd4633df103"],
-Cell[52148, 1251, 178, 3, 28, "Input", "ExpressionUUID" -> \
+Cell[63670, 1538, 178, 3, 28, "Input", "ExpressionUUID" -> \
 "c2830060-d29a-47d4-a186-1ed9fb8ee177"],
 Cell[CellGroupData[{
-Cell[52351, 1258, 4003, 108, 173, "Input", "ExpressionUUID" -> \
+Cell[63873, 1545, 4003, 108, 173, "Input", "ExpressionUUID" -> \
 "3ad78bd0-f0f3-476c-9b2c-7d50e7c81375"],
-Cell[56357, 1368, 642, 14, 194, "Output", "ExpressionUUID" -> \
+Cell[67879, 1655, 642, 14, 174, "Output", "ExpressionUUID" -> \
 "e3567112-8239-4a20-b740-bf6c80fb0137"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[57036, 1387, 629, 16, 65, "Input", "ExpressionUUID" -> \
+Cell[68558, 1674, 629, 16, 58, "Input", "ExpressionUUID" -> \
 "808e4cf0-078c-4f90-867d-a87de175e575"],
-Cell[57668, 1405, 1061, 21, 266, "Output", "ExpressionUUID" -> \
+Cell[69190, 1692, 1061, 21, 239, "Output", "ExpressionUUID" -> \
 "3683312a-4eb3-47f1-9b5c-83153318bfaf"]
 }, Open  ]]
 }

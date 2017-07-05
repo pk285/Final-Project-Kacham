@@ -1,0 +1,276 @@
+/*  custom css for ultimate site */
+
+/* center the page if we are not running on a smart phone */
+@media only screen and (min-width: 500px) {
+	body {
+		margin: 0px !important;
+		font-size: .8em;
+	}
+	.ui-page {
+		 width: 1200px !important;
+		 margin: 0 auto !important;
+		 position: relative !important;
+	}
+	.statsTableDescriptionColumn {
+		width: 200px !important;
+	}
+	.narrowOnly {
+		display: none !important;
+	}
+	.wideOnly {
+		display: block !important;
+	} 
+} 
+
+.ui-page {
+	 background-color: #E0E0E0  !important;
+}
+
+.ui-mobile-viewport {
+	background-color: #E0E0E0 !important;
+}
+
+.ui-body-b {
+	background: #E0E0E0 !important;
+}
+
+.narrowOnly {
+	display: block;
+}
+
+.wideOnly {
+	display: none;
+}
+
+.spinner {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    margin-top: -24px;
+    margin-left: -24px;
+    z-index: 100;
+}
+
+.pageHeading {
+	margin: 15px;
+}
+#adminTeamHeading {
+	font-size: large;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+.teamPasswordLabel {
+	font-size: large;
+	font-weight: bold;
+}
+.teamName {
+	font-size: xx-large;
+	font-weight: bold;
+}
+.teamTitle {
+	font-size: large;
+	font-weight: bold;
+}
+.adminUser {
+	font-size: medium;
+	font-weight: bold;
+}
+#statsPlayerNameHeading {
+	font-size: x-large;
+	font-weight: bold;
+}
+.content {
+	margin: 0 10px;
+}
+.insetlist h4 {
+	margin: .5em .5em;
+}
+.ourlead {
+	color: green;
+}
+.theirlead {
+	color: red;
+}
+.game-list {
+	font-size: small;
+}
+.opponent {
+	color: blue;
+}
+#points li {
+    min-height: 25px;
+}
+.listImage {
+	height: 40px;
+	width: 40px;
+}
+.opponentTitle {
+	font-size: x-large;
+}
+#playerRankings {
+	margin-left: 50px;
+}
+.statsTableDescriptionColumn {
+	width: 130px;
+}
+.statsTableValueColumn1 {
+	width: 60px;
+	text-align: right;
+}
+.statsTableValueColumn2 {
+	width: 100px;
+	text-align: right;
+}
+.evenStatsRow {
+	background-color: white;	
+}
+.oddStatsRow {
+		
+}
+.playerStats { 
+  border-spacing:0;
+  border-collapse:collapse;
+}
+.players-image {
+	float: right;
+	margin-right: 20px;
+}
+.logout {
+	float: right;
+	margin-right: 20px;
+}
+#admin-games {
+	font-size: small;
+}
+#admin-games li {
+    min-height: 25px;
+}
+#admin-teams {
+	font-size: small;
+}
+#admin-teams a {
+    min-height: 25px;
+}
+.hidden {
+	display: none;
+}
+.clear{
+	clear: both;
+}
+.playerStats {
+	table-layout:fixed;
+}
+.playerStats td {
+	width:5%;
+	text-align: center;
+}
+.playerStats th {
+		text-align: center;
+	vertical-align: bottom;
+	padding-bottom: 5px;
+}
+.playerStats th a {
+	color:#000000; 
+}
+.selectedColumn {
+	color:#0000FF !important; 
+}
+.tablePlayerName {
+	text-align: left !important;
+}
+.gameSelect option {
+	font-size: medium;
+}
+.chartTitle {
+	text-align: center;
+	margin-top: 3em;
+}
+.xAxisLabel {
+	font-size:  medium;
+	text-align: center;
+}
+.singleTeamGraph {
+	width: 100%;
+	height: 300px;
+}
+.pieSideBySideChartTable {
+	width: 100%;
+	height: 300px;
+}
+.pieSideBySideChartCell {
+	width: 45%;
+	height: 300px;
+}
+.pieSideBySideChartSeparatorCell {
+	width: 10%;
+}
+.pieSideBySideChart {
+	height: 300px;
+}
+.notEnoughData {
+	color: red;
+}
+.downlaodRawStatsLink {
+	color:#0c5881 !important;
+}
+.errorMessage {
+	color: red;
+}
+.gamesTitle {
+	margin-top: .5em;
+	margin-bottom: .5em;
+	font-size:  medium;
+	font-weight: bold;
+}
+.unauthorizedmessage {
+	margin-top: 3em;
+	font-size:  medium;
+	color: red;
+}
+.lineDescription {
+	font-size:  x-small;
+}
+.playerListName {
+	font-size: large;
+	font-weight: bold;
+	float: left;
+	width: 240px;
+}
+.gameActionLink {
+	font-size: small;
+	font-weight: bold;
+	float: left;
+	width: 120px;
+}
+.dialogInstructions {
+	font-size:  medium;
+}
+.gameFileUploadInput {
+
+}
+.importGameForm {
+	font-size:  large;
+}
+.footer {
+	margin: 1em;
+}
+.underline {
+  text-decoration: underline; /* Makes underline */
+}
+
+.deleted-entity {
+  text-decoration:line-through  !important;
+}
+
+.teamDeleteButton, .gameDeleteButton {
+   margin-left: 6px;
+   margin-top: 3px;
+}
+
+#gameVersionsList {
+	font-size:  medium;
+}
+
+
+
+
