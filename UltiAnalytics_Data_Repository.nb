@@ -1,0 +1,1644 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 11.1' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[     71010,       1636]
+NotebookOptionsPosition[     48733,       1158]
+NotebookOutlinePosition[     55018,       1337]
+CellTagsIndexPosition[     54036,       1307]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+Cell["", "DataResourceNameSection",ExpressionUUID->"ff889f05-4b2e-4e27-95c4-54cc9a29e2a7"],
+
+Cell["", "DataResourceNameMoreInfo",
+ CellOpen->False,ExpressionUUID->"128a5c7e-0595-46c3-843c-9c79e6b1e6ee"],
+
+Cell["Ultimate Frisbee AUDL 2014 - 2017 Raw Data ", "DataResourceTextInput",
+ CellChangeTimes->{{3.696377005707614*^9, 3.69637702247129*^9}, {
+   3.696377225845625*^9, 3.696377236186659*^9}, 3.696377278504891*^9, {
+   3.696377319054945*^9, 3.6963773247475147`*^9}, 3.6963774601870575`*^9, {
+   3.696377490692107*^9, 3.696377510279066*^9}, {3.7078319525082088`*^9, 
+   3.707831960372054*^9}, {3.7080960937469683`*^9, 3.7080961058823605`*^9}},
+ CellTags->
+  "ResourceName",ExpressionUUID->"c17e3277-9491-48b9-b72b-415340da0286"],
+
+Cell["", "DataResourceDescriptionSection",
+ CellChangeTimes->{
+  3.6957246542224283`*^9},ExpressionUUID->"7e9df715-bddc-4e20-bcf6-\
+13d035c3cb3f"],
+
+Cell["", "DataResourceDescriptionMoreInfo",
+ CellOpen->False,ExpressionUUID->"8be584c1-4371-44e9-8a11-f8f7d0ee74d4"],
+
+Cell["\<\
+Dataset of Ultimate Frisbee AUDL 2014 - 2017 tournament data \
+\>", "DataResourceTextInput",
+ CellChangeTimes->{{3.696377005707614*^9, 3.69637702247129*^9}, {
+   3.696377225845625*^9, 3.696377236186659*^9}, 3.696377278504891*^9, {
+   3.696377319054945*^9, 3.6963773247475147`*^9}, 3.6963774601870575`*^9, {
+   3.696377490692107*^9, 3.696377510279066*^9}, {3.7078319703037567`*^9, 
+   3.7078319879101944`*^9}, {3.708096109935437*^9, 3.7080961102195196`*^9}},
+ CellTags->
+  "ResourceDescription",ExpressionUUID->"78ca67c8-69a9-460c-9783-\
+8f8576b5e186"],
+
+Cell["", "DataResourceDetailsSection",ExpressionUUID->"3fd47770-8efd-4622-96d0-8afcb277a6a9"],
+
+Cell["", "DataResourceDetailsMoreInfo",
+ CellOpen->False,
+ CellChangeTimes->{{3.6957296171598377`*^9, 
+  3.695729619792101*^9}},ExpressionUUID->"ff026474-270d-4965-beb4-\
+e7f0a5d0c7f7"],
+
+Cell["", "DataResourceTextInput",
+ CellElementSpacings->{"CellMinHeight"->80},
+ CellTags->
+  "ResourceDetails",ExpressionUUID->"29f83947-ca0e-445e-8eb8-8fc7bf3accbf"],
+
+Cell[BoxData[GridBox[{
+   {Cell["Metadata ", "DataResourceChapterText",
+     CellSize->{Automatic, 37},ExpressionUUID->
+     "0d6ee766-5729-4c90-b6ed-d1c443b19923"], Cell[
+    " (Required for public submissions)", "DataResourceInstructionText",
+     FontSlant->Plain,ExpressionUUID->"1216af1a-9f38-4b52-b796-9924654f9dd1"]}
+  },
+  GridBoxAlignment->{"Columns" -> {Left}, "Rows" -> {Center}},
+  GridBoxSpacings->{"Columns" -> {{0}}}]], "DataResourceChapter",
+ Editable->False,
+ Deletable->False,
+ CellFrame->0,
+ CellDingbat->ButtonBox[
+   DynamicBox[
+    ToBoxes[
+     Grid[{{
+        If[
+         TrueQ[
+          DataResource`Private`mdsectionOpen[
+          "9cf2a74b-0d91-4cbe-a87a-5bf5b4bfde09"]], 
+         Graphics[{
+           RGBColor[61/255, 122/255, 158/255], 
+           Triangle[{{0, 1}, {1, 1}, {1/2, 0}}]}, ImageSize -> {15, 15}], 
+         Graphics[{
+           RGBColor[61/255, 122/255, 158/255], 
+           Triangle[{{0, 0}, {0, 1}, {1, 1/2}}]}, ImageSize -> {15, 15}]]}, {
+       Null}}, ItemSize -> {{{Automatic}, 3}, {Full, 0.025}}], StandardForm]],
+    ButtonFunction :> (
+    DataResource`Private`mdsectionOpen[
+     "9cf2a74b-0d91-4cbe-a87a-5bf5b4bfde09"] = Not[
+      TrueQ[
+       DataResource`Private`mdsectionOpen[
+       "9cf2a74b-0d91-4cbe-a87a-5bf5b4bfde09"]]]), Appearance -> None, Method -> 
+   "Queued", Evaluator -> Automatic],
+ ShowCellBracket->True,
+ CellMargins->{{50, Automatic}, {Automatic, Automatic}},
+ Evaluatable->False,
+ CellContext->"Global`",
+ $CellContext`WholeCellGroupOpener -> 
+ True,ExpressionUUID->"7f63ee51-f18b-4f62-9e7d-376dca569240"],
+
+Cell["", "DataResourceContributedBySection",
+ CellChangeTimes->{{3.695726857689909*^9, 
+  3.6957268581749573`*^9}},ExpressionUUID->"e4e00d48-4af5-4cc9-badf-\
+3b00908b4c43"],
+
+Cell["", "DataResourceContributedByMoreInfo",
+ CellOpen->True,
+ CellChangeTimes->{{3.6957296171598377`*^9, 
+  3.695729619792101*^9}},ExpressionUUID->"4d9cd40d-ed3b-44b2-871e-\
+79f074657b84"],
+
+Cell["\<\
+Prahasi Kacham
+Wolfram Summer School 2017
+Nova Southeastern University\
+\>", "DataResourceTextInput",
+ CellChangeTimes->{
+  3.695649352600193*^9, {3.6963781570131893`*^9, 3.696378157595189*^9}, {
+   3.701165337402727*^9, 3.701165339853196*^9}, {3.707832013173253*^9, 
+   3.707832063044672*^9}, {3.708096305575906*^9, 3.708096319962953*^9}},
+ CellTags->
+  "ResourceContributedBy",ExpressionUUID->"9df67180-cc9d-4f16-870b-\
+390e31563b5d"],
+
+Cell["", "DataResourceOriginatorSection",
+ CellChangeTimes->{{3.695726857689909*^9, 
+  3.6957268581749573`*^9}},ExpressionUUID->"3ac19e46-3508-4bea-b6ae-\
+d27d1658d2e6"],
+
+Cell["", "DataResourceOriginatorMoreInfo",
+ CellOpen->True,
+ CellChangeTimes->{{3.6957296171598377`*^9, 
+  3.695729619792101*^9}},ExpressionUUID->"71e0ccd4-645f-4ad3-af79-\
+919114fff7bf"],
+
+Cell["Ulti Analytics", "DataResourceTextInput",
+ CellChangeTimes->{{3.696377005707614*^9, 3.69637702247129*^9}, {
+   3.696377225845625*^9, 3.696377236186659*^9}, 3.696377278504891*^9, {
+   3.696377319054945*^9, 3.6963773247475147`*^9}, 3.6963774601870575`*^9, {
+   3.696377490692107*^9, 3.696377510279066*^9}, {3.7078320275338845`*^9, 
+   3.7078320575200386`*^9}, {3.7080962753145514`*^9, 3.708096293536244*^9}},
+ CellTags->
+  "ResourceOriginator",ExpressionUUID->"d78025e4-285a-41a5-b02f-8157fab22b55"],
+
+Cell["", "DataResourceCitationSection",
+ CellChangeTimes->{{3.695726857689909*^9, 
+  3.6957268581749573`*^9}},ExpressionUUID->"c7d69ad4-ee29-4695-8b8f-\
+002f606ce555"],
+
+Cell["", "DataResourceCitationMoreInfo",
+ CellOpen->True,
+ CellChangeTimes->{{3.6957296171598377`*^9, 
+  3.695729619792101*^9}},ExpressionUUID->"639080f1-9d2d-4d02-bee7-\
+7b45d09e5e37"],
+
+Cell["\<\
+http://www.ultianalytics.com
+Featured: The AUDL 2014
+Featured: The AUDL 2015
+Featured: The AUDL 2016
+Featured: The AUDL 2017\
+\>", "DataResourceTextInput",
+ CellChangeTimes->{{3.696377005707614*^9, 3.69637702247129*^9}, {
+   3.696377225845625*^9, 3.696377236186659*^9}, 3.696377278504891*^9, {
+   3.696377319054945*^9, 3.6963773247475147`*^9}, 3.6963774601870575`*^9, {
+   3.696377490692107*^9, 3.696377510279066*^9}, {3.7078320912567873`*^9, 
+   3.7078321262323394`*^9}, 3.7078323323392982`*^9, {3.7080964039003444`*^9, 
+   3.7080964096981654`*^9}},
+ CellTags->
+  "CitationSMD",ExpressionUUID->"e749d412-9baa-4a3e-aaab-1540311f397b"],
+
+Cell["", "DataResourceSourceSection",
+ CellChangeTimes->{{3.695726857689909*^9, 
+  3.6957268581749573`*^9}},ExpressionUUID->"b7ea150e-76af-49f1-8e2a-\
+032f3f8aefa7"],
+
+Cell["", "DataResourceSourceMoreInfo",
+ CellOpen->False,
+ CellChangeTimes->{{3.6957296171598377`*^9, 
+  3.695729619792101*^9}},ExpressionUUID->"72852a36-12a0-4147-903c-\
+e2b771b079ed"],
+
+Cell["http://www.ultianalytics.com/", "DataResourceTextInput",
+ CellChangeTimes->{
+  3.695649352600193*^9, {3.6963781570131893`*^9, 3.696378157595189*^9}, {
+   3.7011653453534946`*^9, 3.7011653462680435`*^9}, 3.70783210683492*^9},
+ CellTags->"SourceSMD",ExpressionUUID->"f7412448-b56e-4be0-806e-79cb1040cfe6"],
+
+Cell["", "DataResourceExternalLinksSection",
+ CellChangeTimes->{{3.695726857689909*^9, 
+  3.6957268581749573`*^9}},ExpressionUUID->"08956a09-bfbf-4a3d-a22d-\
+ddf6597b94f3"],
+
+Cell["", "DataResourceExternalLinksMoreInfo",
+ CellOpen->True,
+ CellChangeTimes->{{3.6957296171598377`*^9, 
+  3.695729619792101*^9}},ExpressionUUID->"699ac812-6df3-4a6f-b2c9-\
+b2ea867940f3"],
+
+Cell["", "DataResourceTextInput",
+ CellChangeTimes->{{3.696377005707614*^9, 3.69637702247129*^9}, {
+   3.696377225845625*^9, 3.696377236186659*^9}, 3.696377278504891*^9, {
+   3.696377319054945*^9, 3.6963773247475147`*^9}, 3.6963774601870575`*^9, {
+   3.696377490692107*^9, 3.696377510279066*^9}, {3.7078324109933023`*^9, 
+   3.7078324162758656`*^9}, {3.708096468608224*^9, 3.708096473866253*^9}},
+ CellTags->
+  "ResourceExternalLinks",ExpressionUUID->"405073b9-8b7e-41cd-9834-\
+8818e6574a4d"],
+
+Cell["", "DataResourceRelatedResourcesSection",ExpressionUUID->"ff7f9bb3-2e98-41e4-b240-ae9d07757e29"],
+
+Cell["", "DataResourceRelatedResourcesMoreInfo",
+ CellOpen->True,
+ CellChangeTimes->{{3.6957296171598377`*^9, 
+  3.695729619792101*^9}},ExpressionUUID->"09074c52-5a90-4e43-920b-\
+a13ac1472558"],
+
+Cell["different websites", "DataResourceTextInput",
+ CellOpen->True,
+ CellChangeTimes->{{3.69573626232893*^9, 3.6957363015518517`*^9}, 
+   3.6957461236628757`*^9, {3.708096514326812*^9, 3.708096518152316*^9}},
+ CellTags->
+  "ResourceSeeAlso",ExpressionUUID->"942f0ef0-111c-4f48-a40c-8303fc633836"],
+
+Cell["", "DataResourceCategoriesSection",
+ CellGroupingRules->
+  "NormalGrouping",ExpressionUUID->"6d26a1ef-a1cb-4d1d-b04c-29e2950b68ef"],
+
+Cell["", "DataResourceCategoriesMoreInfo",
+ CellOpen->False,ExpressionUUID->"7d8602fa-b969-4cb2-b2cb-9421e8b9cea4"],
+
+Cell[BoxData[
+ TagBox[GridBox[{
+    {
+     TemplateBox[{CheckboxBox[False, {False, "Agriculture"}],InterpretationBox[
+        StyleBox[
+         GraphicsBox[{}, ImageSize -> {10, 0}, BaselinePosition -> Baseline], 
+         "CacheGraphics" -> False], 
+        Spacer[10], Selectable -> False],StyleBox[
+       "\"Agriculture\"", "CheckBoxBarOutput", StripOnInput -> False]},
+      "RowDefault"], 
+     TemplateBox[{CheckboxBox[False, {False, "Astronomy"}],InterpretationBox[
+        StyleBox[
+         GraphicsBox[{}, ImageSize -> {10, 0}, BaselinePosition -> Baseline], 
+         "CacheGraphics" -> False], 
+        Spacer[10], Selectable -> False],StyleBox[
+       "\"Astronomy\"", "CheckBoxBarOutput", StripOnInput -> False]},
+      "RowDefault"], 
+     TemplateBox[{CheckboxBox[False, {False, "Chemistry"}],InterpretationBox[
+        StyleBox[
+         GraphicsBox[{}, ImageSize -> {10, 0}, BaselinePosition -> Baseline], 
+         "CacheGraphics" -> False], 
+        Spacer[10], Selectable -> False],StyleBox[
+       "\"Chemistry\"", "CheckBoxBarOutput", StripOnInput -> False]},
+      "RowDefault"], 
+     TemplateBox[{
+      CheckboxBox[False, {False, "Computational Universe"}],InterpretationBox[
+        StyleBox[
+         GraphicsBox[{}, ImageSize -> {10, 0}, BaselinePosition -> Baseline], 
+         "CacheGraphics" -> False], 
+        Spacer[10], Selectable -> False],StyleBox[
+       "\"Computational Universe\"", "CheckBoxBarOutput", StripOnInput -> 
+        False]},
+      "RowDefault"]},
+    {
+     TemplateBox[{
+      CheckboxBox[False, {False, "Computer Systems"}],InterpretationBox[
+        StyleBox[
+         GraphicsBox[{}, ImageSize -> {10, 0}, BaselinePosition -> Baseline], 
+         "CacheGraphics" -> False], 
+        Spacer[10], Selectable -> False],StyleBox[
+       "\"Computer Systems\"", "CheckBoxBarOutput", StripOnInput -> False]},
+      "RowDefault"], 
+     TemplateBox[{CheckboxBox[False, {False, "Culture"}],InterpretationBox[
+        StyleBox[
+         GraphicsBox[{}, ImageSize -> {10, 0}, BaselinePosition -> Baseline], 
+         "CacheGraphics" -> False], 
+        Spacer[10], Selectable -> False],StyleBox[
+       "\"Culture\"", "CheckBoxBarOutput", StripOnInput -> False]},
+      "RowDefault"], 
+     TemplateBox[{
+      CheckboxBox[False, {False, "Demographics"}],InterpretationBox[
+        StyleBox[
+         GraphicsBox[{}, ImageSize -> {10, 0}, BaselinePosition -> Baseline], 
+         "CacheGraphics" -> False], 
+        Spacer[10], Selectable -> False],StyleBox[
+       "\"Demographics\"", "CheckBoxBarOutput", StripOnInput -> False]},
+      "RowDefault"], 
+     TemplateBox[{
+      CheckboxBox[False, {False, "Earth Science"}],InterpretationBox[
+        StyleBox[
+         GraphicsBox[{}, ImageSize -> {10, 0}, BaselinePosition -> Baseline], 
+         "CacheGraphics" -> False], 
+        Spacer[10], Selectable -> False],StyleBox[
+       "\"Earth Science\"", "CheckBoxBarOutput", StripOnInput -> False]},
+      "RowDefault"]},
+    {
+     TemplateBox[{CheckboxBox[False, {False, "Economics"}],InterpretationBox[
+        StyleBox[
+         GraphicsBox[{}, ImageSize -> {10, 0}, BaselinePosition -> Baseline], 
+         "CacheGraphics" -> False], 
+        Spacer[10], Selectable -> False],StyleBox[
+       "\"Economics\"", "CheckBoxBarOutput", StripOnInput -> False]},
+      "RowDefault"], 
+     TemplateBox[{CheckboxBox[False, {False, "Education"}],InterpretationBox[
+        StyleBox[
+         GraphicsBox[{}, ImageSize -> {10, 0}, BaselinePosition -> Baseline], 
+         "CacheGraphics" -> False], 
+        Spacer[10], Selectable -> False],StyleBox[
+       "\"Education\"", "CheckBoxBarOutput", StripOnInput -> False]},
+      "RowDefault"], 
+     TemplateBox[{CheckboxBox[False, {False, "Engineering"}],InterpretationBox[
+        StyleBox[
+         GraphicsBox[{}, ImageSize -> {10, 0}, BaselinePosition -> Baseline], 
+         "CacheGraphics" -> False], 
+        Spacer[10], Selectable -> False],StyleBox[
+       "\"Engineering\"", "CheckBoxBarOutput", StripOnInput -> False]},
+      "RowDefault"], 
+     TemplateBox[{CheckboxBox[False, {False, "Geography"}],InterpretationBox[
+        StyleBox[
+         GraphicsBox[{}, ImageSize -> {10, 0}, BaselinePosition -> Baseline], 
+         "CacheGraphics" -> False], 
+        Spacer[10], Selectable -> False],StyleBox[
+       "\"Geography\"", "CheckBoxBarOutput", StripOnInput -> False]},
+      "RowDefault"]},
+    {
+     TemplateBox[{
+      CheckboxBox[False, {False, "Geometry Data"}],InterpretationBox[
+        StyleBox[
+         GraphicsBox[{}, ImageSize -> {10, 0}, BaselinePosition -> Baseline], 
+         "CacheGraphics" -> False], 
+        Spacer[10], Selectable -> False],StyleBox[
+       "\"Geometry Data\"", "CheckBoxBarOutput", StripOnInput -> False]},
+      "RowDefault"], 
+     TemplateBox[{CheckboxBox[False, {False, "Government"}],InterpretationBox[
+        StyleBox[
+         GraphicsBox[{}, ImageSize -> {10, 0}, BaselinePosition -> Baseline], 
+         "CacheGraphics" -> False], 
+        Spacer[10], Selectable -> False],StyleBox[
+       "\"Government\"", "CheckBoxBarOutput", StripOnInput -> False]},
+      "RowDefault"], 
+     TemplateBox[{CheckboxBox[False, {False, "Graphics"}],InterpretationBox[
+        StyleBox[
+         GraphicsBox[{}, ImageSize -> {10, 0}, BaselinePosition -> Baseline], 
+         "CacheGraphics" -> False], 
+        Spacer[10], Selectable -> False],StyleBox[
+       "\"Graphics\"", "CheckBoxBarOutput", StripOnInput -> False]},
+      "RowDefault"], 
+     TemplateBox[{CheckboxBox[False, {False, "Health"}],InterpretationBox[
+        StyleBox[
+         GraphicsBox[{}, ImageSize -> {10, 0}, BaselinePosition -> Baseline], 
+         "CacheGraphics" -> False], 
+        Spacer[10], Selectable -> False],StyleBox[
+       "\"Health\"", "CheckBoxBarOutput", StripOnInput -> False]},
+      "RowDefault"]},
+    {
+     TemplateBox[{CheckboxBox[False, {False, "Healthcare"}],InterpretationBox[
+        StyleBox[
+         GraphicsBox[{}, ImageSize -> {10, 0}, BaselinePosition -> Baseline], 
+         "CacheGraphics" -> False], 
+        Spacer[10], Selectable -> False],StyleBox[
+       "\"Healthcare\"", "CheckBoxBarOutput", StripOnInput -> False]},
+      "RowDefault"], 
+     TemplateBox[{CheckboxBox[False, {False, "History"}],InterpretationBox[
+        StyleBox[
+         GraphicsBox[{}, ImageSize -> {10, 0}, BaselinePosition -> Baseline], 
+         "CacheGraphics" -> False], 
+        Spacer[10], Selectable -> False],StyleBox[
+       "\"History\"", "CheckBoxBarOutput", StripOnInput -> False]},
+      "RowDefault"], 
+     TemplateBox[{
+      CheckboxBox["Human Activities", {False, "Human Activities"}],
+       InterpretationBox[
+        StyleBox[
+         GraphicsBox[{}, ImageSize -> {10, 0}, BaselinePosition -> Baseline], 
+         "CacheGraphics" -> False], 
+        Spacer[10], Selectable -> False],StyleBox[
+       "\"Human Activities\"", "CheckBoxBarOutput", StripOnInput -> False]},
+      "RowDefault"], 
+     TemplateBox[{CheckboxBox[False, {False, "Images"}],InterpretationBox[
+        StyleBox[
+         GraphicsBox[{}, ImageSize -> {10, 0}, BaselinePosition -> Baseline], 
+         "CacheGraphics" -> False], 
+        Spacer[10], Selectable -> False],StyleBox[
+       "\"Images\"", "CheckBoxBarOutput", StripOnInput -> False]},
+      "RowDefault"]},
+    {
+     TemplateBox[{CheckboxBox[False, {False, "Language"}],InterpretationBox[
+        StyleBox[
+         GraphicsBox[{}, ImageSize -> {10, 0}, BaselinePosition -> Baseline], 
+         "CacheGraphics" -> False], 
+        Spacer[10], Selectable -> False],StyleBox[
+       "\"Language\"", "CheckBoxBarOutput", StripOnInput -> False]},
+      "RowDefault"], 
+     TemplateBox[{
+      CheckboxBox[False, {False, "Life Science"}],InterpretationBox[
+        StyleBox[
+         GraphicsBox[{}, ImageSize -> {10, 0}, BaselinePosition -> Baseline], 
+         "CacheGraphics" -> False], 
+        Spacer[10], Selectable -> False],StyleBox[
+       "\"Life Science\"", "CheckBoxBarOutput", StripOnInput -> False]},
+      "RowDefault"], 
+     TemplateBox[{CheckboxBox[False, {False, "Literature"}],InterpretationBox[
+        StyleBox[
+         GraphicsBox[{}, ImageSize -> {10, 0}, BaselinePosition -> Baseline], 
+         "CacheGraphics" -> False], 
+        Spacer[10], Selectable -> False],StyleBox[
+       "\"Literature\"", "CheckBoxBarOutput", StripOnInput -> False]},
+      "RowDefault"], 
+     TemplateBox[{
+      CheckboxBox[False, {False, "Machine Learning"}],InterpretationBox[
+        StyleBox[
+         GraphicsBox[{}, ImageSize -> {10, 0}, BaselinePosition -> Baseline], 
+         "CacheGraphics" -> False], 
+        Spacer[10], Selectable -> False],StyleBox[
+       "\"Machine Learning\"", "CheckBoxBarOutput", StripOnInput -> False]},
+      "RowDefault"]},
+    {
+     TemplateBox[{
+      CheckboxBox[False, {False, "Manufacturing"}],InterpretationBox[
+        StyleBox[
+         GraphicsBox[{}, ImageSize -> {10, 0}, BaselinePosition -> Baseline], 
+         "CacheGraphics" -> False], 
+        Spacer[10], Selectable -> False],StyleBox[
+       "\"Manufacturing\"", "CheckBoxBarOutput", StripOnInput -> False]},
+      "RowDefault"], 
+     TemplateBox[{CheckboxBox[False, {False, "Mathematics"}],InterpretationBox[
+        StyleBox[
+         GraphicsBox[{}, ImageSize -> {10, 0}, BaselinePosition -> Baseline], 
+         "CacheGraphics" -> False], 
+        Spacer[10], Selectable -> False],StyleBox[
+       "\"Mathematics\"", "CheckBoxBarOutput", StripOnInput -> False]},
+      "RowDefault"], 
+     TemplateBox[{CheckboxBox[False, {False, "Medicine"}],InterpretationBox[
+        StyleBox[
+         GraphicsBox[{}, ImageSize -> {10, 0}, BaselinePosition -> Baseline], 
+         "CacheGraphics" -> False], 
+        Spacer[10], Selectable -> False],StyleBox[
+       "\"Medicine\"", "CheckBoxBarOutput", StripOnInput -> False]},
+      "RowDefault"], 
+     TemplateBox[{CheckboxBox[False, {False, "Meteorology"}],InterpretationBox[
+        StyleBox[
+         GraphicsBox[{}, ImageSize -> {10, 0}, BaselinePosition -> Baseline], 
+         "CacheGraphics" -> False], 
+        Spacer[10], Selectable -> False],StyleBox[
+       "\"Meteorology\"", "CheckBoxBarOutput", StripOnInput -> False]},
+      "RowDefault"]},
+    {
+     TemplateBox[{CheckboxBox[False, {False, "Politics"}],InterpretationBox[
+        StyleBox[
+         GraphicsBox[{}, ImageSize -> {10, 0}, BaselinePosition -> Baseline], 
+         "CacheGraphics" -> False], 
+        Spacer[10], Selectable -> False],StyleBox[
+       "\"Politics\"", "CheckBoxBarOutput", StripOnInput -> False]},
+      "RowDefault"], 
+     TemplateBox[{CheckboxBox[False, {False, "Reference"}],InterpretationBox[
+        StyleBox[
+         GraphicsBox[{}, ImageSize -> {10, 0}, BaselinePosition -> Baseline], 
+         "CacheGraphics" -> False], 
+        Spacer[10], Selectable -> False],StyleBox[
+       "\"Reference\"", "CheckBoxBarOutput", StripOnInput -> False]},
+      "RowDefault"], 
+     TemplateBox[{
+      CheckboxBox[False, {False, "Social Media"}],InterpretationBox[
+        StyleBox[
+         GraphicsBox[{}, ImageSize -> {10, 0}, BaselinePosition -> Baseline], 
+         "CacheGraphics" -> False], 
+        Spacer[10], Selectable -> False],StyleBox[
+       "\"Social Media\"", "CheckBoxBarOutput", StripOnInput -> False]},
+      "RowDefault"], 
+     TemplateBox[{CheckboxBox[False, {False, "Sociology"}],InterpretationBox[
+        StyleBox[
+         GraphicsBox[{}, ImageSize -> {10, 0}, BaselinePosition -> Baseline], 
+         "CacheGraphics" -> False], 
+        Spacer[10], Selectable -> False],StyleBox[
+       "\"Sociology\"", "CheckBoxBarOutput", StripOnInput -> False]},
+      "RowDefault"]},
+    {
+     TemplateBox[{
+      CheckboxBox["Statistics", {False, "Statistics"}],InterpretationBox[
+        StyleBox[
+         GraphicsBox[{}, ImageSize -> {10, 0}, BaselinePosition -> Baseline], 
+         "CacheGraphics" -> False], 
+        Spacer[10], Selectable -> False],StyleBox[
+       "\"Statistics\"", "CheckBoxBarOutput", StripOnInput -> False]},
+      "RowDefault"], 
+     TemplateBox[{
+      CheckboxBox[False, {False, "Transportation"}],InterpretationBox[
+        StyleBox[
+         GraphicsBox[{}, ImageSize -> {10, 0}, BaselinePosition -> Baseline], 
+         "CacheGraphics" -> False], 
+        Spacer[10], Selectable -> False],StyleBox[
+       "\"Transportation\"", "CheckBoxBarOutput", StripOnInput -> False]},
+      "RowDefault"], "", ""}
+   },
+   AutoDelete->False,
+   GridBoxAlignment->{"Columns" -> {{Left}}},
+   GridBoxItemSize->{"Columns" -> {{13}}, "Rows" -> {{2}}}],
+  "Grid"]], "DataResourceSortingPropertyField",
+ CellChangeTimes->{
+  3.6998724071638556`*^9, 3.699872500834157*^9, 3.700907366753851*^9, {
+   3.7023743639416943`*^9, 3.702374375728694*^9}, 3.7078321582960835`*^9, 
+   3.7080967233720474`*^9},
+ CellTags->
+  "DataResourceCategories",ExpressionUUID->"97b716ee-07ab-436e-b618-\
+89d0e3f0b622"],
+
+Cell["", "DataResourceContentTypesSection",ExpressionUUID->"8f55dcd2-3c1a-4afe-a849-8f48d5507fba"],
+
+Cell["", "DataResourceContentTypesMoreInfo",
+ CellOpen->False,ExpressionUUID->"e6ccbae2-6928-4f18-bdef-fa0109f6209e"],
+
+Cell[BoxData[
+ TagBox[GridBox[{
+    {
+     TemplateBox[{CheckboxBox[False, {False, "Audio"}],InterpretationBox[
+        StyleBox[
+         GraphicsBox[{}, ImageSize -> {10, 0}, BaselinePosition -> Baseline], 
+         "CacheGraphics" -> False], Null, Selectable -> False],StyleBox[
+       "\"Audio\"", "CheckBoxBarOutput", StripOnInput -> False]},
+      "RowDefault"], 
+     TemplateBox[{
+      CheckboxBox[False, {False, "Entity Store"}],InterpretationBox[
+        StyleBox[
+         GraphicsBox[{}, ImageSize -> {10, 0}, BaselinePosition -> Baseline], 
+         "CacheGraphics" -> False], Null, Selectable -> False],StyleBox[
+       "\"Entity Store\"", "CheckBoxBarOutput", StripOnInput -> False]},
+      "RowDefault"], 
+     TemplateBox[{
+      CheckboxBox[False, {False, "Geospatial Data"}],InterpretationBox[
+        StyleBox[
+         GraphicsBox[{}, ImageSize -> {10, 0}, BaselinePosition -> Baseline], 
+         "CacheGraphics" -> False], Null, Selectable -> False],StyleBox[
+       "\"Geospatial Data\"", "CheckBoxBarOutput", StripOnInput -> False]},
+      "RowDefault"], 
+     TemplateBox[{CheckboxBox[False, {False, "Graphs"}],InterpretationBox[
+        StyleBox[
+         GraphicsBox[{}, ImageSize -> {10, 0}, BaselinePosition -> Baseline], 
+         "CacheGraphics" -> False], Null, Selectable -> False],StyleBox[
+       "\"Graphs\"", "CheckBoxBarOutput", StripOnInput -> False]},
+      "RowDefault"]},
+    {
+     TemplateBox[{CheckboxBox[False, {False, "Image"}],InterpretationBox[
+        StyleBox[
+         GraphicsBox[{}, ImageSize -> {10, 0}, BaselinePosition -> Baseline], 
+         "CacheGraphics" -> False], Null, Selectable -> False],StyleBox[
+       "\"Image\"", "CheckBoxBarOutput", StripOnInput -> False]},
+      "RowDefault"], 
+     TemplateBox[{
+      CheckboxBox["Numerical Data", {False, "Numerical Data"}],
+       InterpretationBox[
+        StyleBox[
+         GraphicsBox[{}, ImageSize -> {10, 0}, BaselinePosition -> Baseline], 
+         "CacheGraphics" -> False], Null, Selectable -> False],StyleBox[
+       "\"Numerical Data\"", "CheckBoxBarOutput", StripOnInput -> False]},
+      "RowDefault"], 
+     TemplateBox[{CheckboxBox[False, {False, "Text"}],InterpretationBox[
+        StyleBox[
+         GraphicsBox[{}, ImageSize -> {10, 0}, BaselinePosition -> Baseline], 
+         "CacheGraphics" -> False], Null, Selectable -> False],StyleBox[
+       "\"Text\"", "CheckBoxBarOutput", StripOnInput -> False]},
+      "RowDefault"], 
+     TemplateBox[{CheckboxBox[False, {False, "Time Series"}],InterpretationBox[
+        StyleBox[
+         GraphicsBox[{}, ImageSize -> {10, 0}, BaselinePosition -> Baseline], 
+         "CacheGraphics" -> False], Null, Selectable -> False],StyleBox[
+       "\"Time Series\"", "CheckBoxBarOutput", StripOnInput -> False]},
+      "RowDefault"]}
+   },
+   AutoDelete->False,
+   GridBoxAlignment->{"Columns" -> {{Left}}},
+   GridBoxItemSize->{"Columns" -> {{13}}, "Rows" -> {{2}}}],
+  "Grid"]], "DataResourceSortingPropertyField",
+ CellChangeTimes->{
+  3.6998724071638556`*^9, 3.699872500834157*^9, 3.700991116747925*^9, {
+   3.7078321665062113`*^9, 3.7078321686697383`*^9}, {3.708096704571805*^9, 
+   3.7080967054202347`*^9}},
+ CellTags->
+  "DataResourceContentTypes",ExpressionUUID->"4bf90b56-3fb1-4e3f-98c5-\
+21387403c99d"],
+
+Cell["", "DataResourceKeywordsSection",ExpressionUUID->"08fa89fd-0e4f-4d10-9d75-2469de962790"],
+
+Cell["", "DataResourceKeywordsMoreInfo",
+ CellOpen->True,ExpressionUUID->"a17d3198-8948-484a-892a-d50361ec398f"],
+
+Cell["\<\
+Ultimate Frisbee
+Frisbee
+Ultimate 
+Sports
+AUDL
+USA Ultimate\
+\>", "DataResourceTextInput",
+ CellElementSpacings->{"CellMinHeight"->80},
+ CellChangeTimes->{{3.696377005707614*^9, 3.69637702247129*^9}, {
+   3.696377225845625*^9, 3.696377236186659*^9}, 3.696377278504891*^9, {
+   3.696377319054945*^9, 3.6963773247475147`*^9}, 3.6963774601870575`*^9, {
+   3.696377490692107*^9, 3.696377510279066*^9}, {3.707832213335337*^9, 
+   3.7078322283468904`*^9}},
+ CellTags->
+  "ResourceKeywords",ExpressionUUID->"74e2044e-6400-4eaa-9e59-abdddeb89c9b"],
+
+Cell["", "DataResourceDetailsMoreInfo",
+ CellOpen->False,
+ CellChangeTimes->{{3.6957296171598377`*^9, 
+  3.695729619792101*^9}},ExpressionUUID->"238f63ed-9028-4c4b-a3ff-\
+c1bda90b1356"],
+
+Cell["DETAILED SOURCE INFORMATION", "DataResourceSubsection",
+ Editable->False,
+ Deletable->False,
+ CellFrame->0,
+ CellDingbat->ButtonBox[
+   DynamicBox[
+    ToBoxes[
+     Grid[{{
+        If[
+         TrueQ[
+          DataResource`Private`smdsectionOpen[
+          "9cf2a74b-0d91-4cbe-a87a-5bf5b4bfde09"]], 
+         Graphics[{
+           RGBColor[61/255, 122/255, 158/255], 
+           Triangle[{{0, 1}, {1, 1}, {1/2, 0}}]}, ImageSize -> {15, 15}], 
+         Graphics[{
+           RGBColor[61/255, 122/255, 158/255], 
+           Triangle[{{0, 0}, {0, 1}, {1, 1/2}}]}, ImageSize -> {15, 15}]]}, {
+       Null}}, ItemSize -> {{{Automatic}, 3}, {Full, 0.025}}], StandardForm]],
+    ButtonFunction :> (
+    DataResource`Private`smdsectionOpen[
+     "9cf2a74b-0d91-4cbe-a87a-5bf5b4bfde09"] = Not[
+      TrueQ[
+       DataResource`Private`smdsectionOpen[
+       "9cf2a74b-0d91-4cbe-a87a-5bf5b4bfde09"]]]), Appearance -> None, Method -> 
+   "Queued", Evaluator -> Automatic],
+ ShowCellBracket->True,
+ CellMargins->{{50, Automatic}, {Automatic, Automatic}},
+ Evaluatable->False,
+ CellContext->"Global`",
+ $CellContext`WholeCellGroupOpener -> 
+ True,ExpressionUUID->"a0f25951-31ee-4be9-b8e5-dcc28614dfa0"],
+
+Cell["", "DataResourceCreatorSMDSection",ExpressionUUID->"63fdb8f4-0a58-4943-80be-e42c0f80cb94"],
+
+Cell["", "DataResourceCreatorSMDMoreInfo",
+ CellOpen->True,ExpressionUUID->"b9d7f16e-29be-4c66-bdc6-ff3ecadca648"],
+
+Cell["Ulti Analytics", "DataResourceSMDTextInput",
+ CellChangeTimes->{
+  3.695649352600193*^9, {3.707832251080819*^9, 3.7078322647611523`*^9}, {
+   3.708096834923238*^9, 3.7080968385095835`*^9}},
+ CellTags->
+  "CreatorSMD",ExpressionUUID->"0734ac92-900d-4f99-93fd-ea38e2ff99fa"],
+
+Cell["", "DataResourceContributorsSMDSection",ExpressionUUID->"83b2f058-3042-431b-a756-9eb88c19ed7d"],
+
+Cell["", "DataResourceContributorsSMDMoreInfo",
+ CellOpen->True,ExpressionUUID->"61d439fb-69a9-4533-bdad-3a809b94a4e7"],
+
+Cell["Team Names", "DataResourceSMDTextInput",
+ CellChangeTimes->{
+  3.695649352600193*^9, {3.707832266860345*^9, 3.7078322850492125`*^9}, {
+   3.7080968417274942`*^9, 3.7080968653771415`*^9}},
+ CellTags->
+  "ContributorSMD",ExpressionUUID->"25ccb54a-92f4-4e52-93da-b7176c417451"],
+
+Cell["", "DataResourceTitleSMDSection",ExpressionUUID->"b1b37352-4073-450e-9182-8b2ef00581ba"],
+
+Cell["", "DataResourceTitleSMDMoreInfo",
+ CellOpen->False,ExpressionUUID->"5d036429-f7e7-447c-8c2f-f34550c7ec6b"],
+
+Cell["\<\
+Featured: The AUDL 2014
+Featured: The AUDL 2015
+Featured: The AUDL 2016
+Featured: The AUDL 2017\
+\>", "DataResourceSMDTextInput",
+ CellChangeTimes->{
+  3.695649352600193*^9, {3.707832316468268*^9, 3.7078323274369874`*^9}},
+ CellTags->"TitleSMD",ExpressionUUID->"0447bf98-cfa6-410f-bba2-e76743da7a6d"],
+
+Cell["", "DataResourceDescriptionSMDSection",ExpressionUUID->"e1e62f07-e78a-48d6-a12f-79e2370cadbc"],
+
+Cell["", "DataResourceDescriptionSMDMoreInfo",
+ CellOpen->True,ExpressionUUID->"4a6b76ab-7ac2-41df-8f1c-8a628f7bbaa6"],
+
+Cell["what is ulti analytics", "DataResourceSMDTextInput",
+ CellChangeTimes->{
+  3.695649352600193*^9, {3.708097037940955*^9, 3.7080970450608864`*^9}},
+ CellTags->
+  "DescriptionSMD",ExpressionUUID->"8c4607b0-974a-4c23-a91e-5cac46606370"],
+
+Cell["", "DataResourceDateSMDSection",ExpressionUUID->"1e06ec71-e730-444b-be01-d60e70bba780"],
+
+Cell["", "DataResourceDateSMDMoreInfo",
+ CellOpen->True,ExpressionUUID->"edcb48ba-6739-4d1d-8960-812434c25b66"],
+
+Cell["day collected data", "DataResourceSMDTextInput",
+ CellChangeTimes->{
+  3.695649352600193*^9, {3.708097061151505*^9, 3.708097064020732*^9}},
+ CellTags->"DateSMD",ExpressionUUID->"952c6f31-2655-4985-82c9-49d06c8c78f3"],
+
+Cell["", "DataResourcePublisherSMDSection",ExpressionUUID->"f871cc57-42bf-4ae5-9b00-c6675ef12b66"],
+
+Cell["", "DataResourcePublisherSMDMoreInfo",
+ CellOpen->False,ExpressionUUID->"f8470987-acc5-403b-9bd8-6f38a41ff373"],
+
+Cell["Summit Hill Software", "DataResourceSMDTextInput",
+ CellChangeTimes->{
+  3.695649352600193*^9, {3.707832359359923*^9, 3.7078323621991053`*^9}, {
+   3.7080970880917187`*^9, 3.7080970918478003`*^9}},
+ CellTags->
+  "PublisherSMD",ExpressionUUID->"347bce06-3949-4505-92a9-556821a2c88f"],
+
+Cell["", "DataResourceGeographicCoverageSMDSection",ExpressionUUID->"988aa7af-cf87-4392-89e4-8fe9a3605f08"],
+
+Cell["", "DataResourceGeographicCoverageSMDMoreInfo",
+ CellOpen->False,ExpressionUUID->"616113a0-d518-4528-8185-dd8071522138"],
+
+Cell["North America", "DataResourceSMDTextInput",
+ CellChangeTimes->{
+  3.695649352600193*^9, {3.70783236561611*^9, 3.7078323670161734`*^9}},
+ CellTags->
+  "GeographicCoverageSMD",ExpressionUUID->"30604fe8-415d-4d6b-bfe9-\
+1b3fe4a1232e"],
+
+Cell["", "DataResourceTemporalCoverageSMDSection",ExpressionUUID->"fbfb830c-3ec9-42e6-b56a-fe924f7dad0d"],
+
+Cell["", "DataResourceTemporalCoverageSMDMoreInfo",
+ CellOpen->True,ExpressionUUID->"3d65696c-468f-41f7-9ecf-897a9814070f"],
+
+Cell["2014-2017", "DataResourceSMDTextInput",
+ CellChangeTimes->{
+  3.695649352600193*^9, {3.7078323746791945`*^9, 3.7078323797003393`*^9}},
+ CellTags->
+  "TemporalCoverageSMD",ExpressionUUID->"7d584b0b-3692-45e7-a680-\
+3a780af25c1a"],
+
+Cell["", "DataResourceLanguageSMDSection",ExpressionUUID->"3e5ebbf6-4cb2-4b89-9cfe-fecacc9807b0"],
+
+Cell["", "DataResourceLanguageSMDMoreInfo",
+ CellOpen->False,ExpressionUUID->"479f2f6c-ba17-424c-9d5f-62e26f35aad7"],
+
+Cell["English", "DataResourceSMDTextInput",
+ CellChangeTimes->{
+  3.695649352600193*^9, {3.707832383198897*^9, 3.707832383898631*^9}},
+ CellTags->
+  "LanguageSMD",ExpressionUUID->"5f45d568-c87c-49f8-aa77-14d2c276c996"],
+
+Cell["", "DataResourceRightsSMDSection",ExpressionUUID->"0e588a14-1e9e-4580-a09b-6b99d8f76e1a"],
+
+Cell["", "DataResourceRightsSMDMoreInfo",
+ CellOpen->False,ExpressionUUID->"07f8b97e-d90c-4f3c-88c8-ddd9293db11d"],
+
+Cell["\[Copyright] 2016 Summit Hill Software, Inc., all rights reserved", \
+"DataResourceSMDTextInput",
+ CellChangeTimes->{3.695649352600193*^9, 3.7078324836181912`*^9},
+ CellTags->"RightsSMD",ExpressionUUID->"39f454d1-193c-44c0-9542-39a72f065126"],
+
+Cell["", "DataResourcePageBreak",
+ CellMargins->{{Inherited, Inherited}, {35, 70}},
+ CellChangeTimes->{{3.696377005707614*^9, 3.69637702247129*^9}, {
+   3.696377225845625*^9, 3.696377236186659*^9}, 3.696377278504891*^9, {
+   3.696377319054945*^9, 3.6963773247475147`*^9}, 3.6963774601870575`*^9, {
+   3.696377490692107*^9, 3.696377510279066*^9}, 
+   3.7022081110835724`*^9},ExpressionUUID->"120f875e-dbba-40aa-9944-\
+04ba29961449"],
+
+Cell["", "DataResourceContentSection",ExpressionUUID->"b5d7e0ab-4d55-425d-942d-c095faae27be"],
+
+Cell["", "DataResourceConstructionArea",ExpressionUUID->"cbf19fd6-a177-4173-96dd-54cbc6e079b0"],
+
+Cell["", "DataResourceWhiteSection",
+ CellFrameMargins->0,ExpressionUUID->"7ca9fed2-9d6f-47f3-8cc5-b656e58f050c"],
+
+Cell[BoxData[""], "Input",ExpressionUUID->"cd63eabd-3378-456c-a65c-7ea90f9f7902"],
+
+Cell["", "DataResourceHiddenPageBreak",
+ CellMargins->0,ExpressionUUID->"05d8f4e1-ff66-4f7d-bb6b-9643b45111b1"],
+
+Cell["", "DataResourceInitializationArea",ExpressionUUID->"ad8e3ab8-c573-44f1-a5d4-32904b9bc80e"],
+
+Cell["", "DataResourceWhiteSection",
+ CellFrameMargins->0,ExpressionUUID->"8fdc82ec-727a-466c-82ca-879bea4d1d00"],
+
+Cell[BoxData[""], "Input",
+ CellTags->
+  "DataResourceInitialization",ExpressionUUID->"67eb2619-21ff-43ce-ae43-\
+ebc8272400e7"],
+
+Cell["", "DataResourceHiddenPageBreak",
+ CellMargins->0,ExpressionUUID->"54352650-e504-49c8-94f5-7d05b073e855"],
+
+Cell["", "DataResourceContentElements",ExpressionUUID->"58398e81-87c7-4259-a0a6-b656e385b1bc"],
+
+Cell["", "DataResourceDefaultContentElementSection",
+ CellChangeTimes->{{3.696095993999254*^9, 
+  3.696095994593254*^9}},ExpressionUUID->"4a8d14a6-ff9d-449e-a5b3-\
+1775e253eb77"],
+
+Cell["", "DataResourceDefaultContentElementMoreInfo",
+ CellOpen->True,
+ CellChangeTimes->{
+  3.696096184020254*^9},ExpressionUUID->"e7ba7e11-7bda-4529-8d8c-\
+70fe366bcf39"],
+
+Cell[BoxData[
+ StyleBox[
+  RowBox[{
+   RowBox[{
+    RowBox[{"$$Object", "[", "\"\<DefaultContentElement\>\"", "]"}], "=", 
+    "\"\<Ultimate Frisbee\>\""}], ";"}],
+  FontSize->11]], "DataResourceContentInput",
+ CellMargins->{{Inherited, 50}, {Inherited, Inherited}},
+ CellContext->Notebook,
+ CellFrameMargins->{{Inherited, Inherited}, {20, Inherited}},
+ CellFrameLabels->None,
+ CellChangeTimes->{{3.6960941302595205`*^9, 3.6960941333951473`*^9}, 
+   3.696094299282291*^9, {3.696248037416626*^9, 3.6962480418546257`*^9}, {
+   3.696248072862626*^9, 3.696248079258626*^9}, {3.700993127021266*^9, 
+   3.7009931272033205`*^9}, 3.702714732324393*^9, 
+   3.7080972353534465`*^9},ExpressionUUID->"c51a28d0-9ff2-4b4a-bcbb-\
+7ee8c4113f80"],
+
+Cell["", "DataResourceContentElementsSection",ExpressionUUID->"88fbe0d2-6346-4035-91d8-78af6187e5af"],
+
+Cell["", "DataResourceContentElementsMoreInfo",
+ CellOpen->True,
+ CellChangeTimes->{{3.696095829883254*^9, 
+  3.696095835618254*^9}},ExpressionUUID->"6b8cbadf-d83c-4611-ad2a-\
+802dc5cfaff5"],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{
+   StyleBox[
+    RowBox[{"$$Object", "[", "\"\<FullContent\>\"", "]"}],
+    FontSize->11], 
+   StyleBox["=",
+    FontSize->11], 
+   RowBox[{
+    StyleBox["DataResource`$$ContentConversion",
+     FontSize->11], 
+    StyleBox["@",
+     FontSize->11], 
+    StyleBox["\[IndentingNewLine]",
+     FontSize->11], 
+    RowBox[{"<|", "\[IndentingNewLine]", "\[IndentingNewLine]", "|>"}]}]}], 
+  ";"}]], "DataResourceContentInput",
+ CellMargins->{{Inherited, 50}, {20, 0}},
+ Evaluatable->True,
+ CellContext->Notebook,
+ CellProlog:>(Needs["ResourceSystemClient`"]; Needs["DataResource`"]; Null),
+ CellFrameLabels->None,
+ ShowCellTags->False,
+ CellChangeTimes->{{3.696377005707614*^9, 3.69637702247129*^9}, {
+   3.696377225845625*^9, 3.696377236186659*^9}, 3.696377278504891*^9, {
+   3.696377319054945*^9, 3.6963773247475147`*^9}, 3.6963774601870575`*^9, {
+   3.696377490692107*^9, 3.696377510279066*^9}, {3.7011653735043755`*^9, 
+   3.701165375669674*^9}, {3.702209323893564*^9, 3.7022093620815644`*^9}, 
+   3.7027146992074986`*^9, 3.7080972530705967`*^9, {3.7080973632325697`*^9, 
+   3.7080973634336357`*^9}, {3.708097485597397*^9, 3.708097525686332*^9}, 
+   3.708180616165854*^9},
+ CellTags->
+  "DataResourceContentInputObject",ExpressionUUID->"99c70a5b-3bcc-4541-9f6c-\
+245f7bee0add"],
+
+Cell[BoxData[
+ StyleBox[
+  RowBox[{
+   RowBox[{"$$Data", "=", 
+    RowBox[{
+     RowBox[{"$$Object", "[", "\"\<FullContent\>\"", "]"}], "[", 
+     RowBox[{"$$Object", "[", "\"\<DefaultContentElement\>\"", "]"}], "]"}]}],
+    ";"}],
+  FontSize->11]], "DataResourceContentInput",
+ CellMargins->{{Inherited, 50}, {Inherited, Inherited}},
+ CellContext->Notebook,
+ CellFrameMargins->{{Inherited, Inherited}, {20, Inherited}},
+ CellFrameLabels->None,
+ CellChangeTimes->{{3.6960941302595205`*^9, 3.6960941333951473`*^9}, 
+   3.6960943034297056`*^9, {3.701165380474555*^9, 
+   3.701165381362087*^9}},ExpressionUUID->"3d66450f-9dca-4864-9e4f-\
+235150c4d56b"],
+
+Cell["", "DataResourcePageBreak",
+ CellMargins->{{Inherited, Inherited}, {0, 
+   60}},ExpressionUUID->"b0c0166b-5c27-401d-97b9-919e964d7ca8"],
+
+Cell["Resource Examples", "DataResourceExamplesChapter",
+ CellFrameMargins->{{Inherited, Inherited}, {
+   Inherited, 30}},ExpressionUUID->"54e8b35a-4ec1-4961-9c82-009a45ba80c2"],
+
+Cell["", "DataResourceExamplesSection",ExpressionUUID->"1bbcbac6-db9f-4609-95e4-a6ed110b0edd"],
+
+Cell[BoxData[
+ TagBox[GridBox[{
+    {Cell[TextData[{
+      Cell[
+      "\"ExampleNotebook\": ", "DataResourceMoreInfoNameText",ExpressionUUID->
+       "04201553-b6cd-4e19-8bde-8e22404c0841"],
+      "\nExamples added here will be included in the example notebook for the \
+resource and will appear on the webpage for the resource. Give examples, \
+including section headings, text and code. Examples should be self-contained, \
+and the simplest examples should be given first. Browse the Data Repository \
+website for examples.\n\nUse subsection cells to divide examples into groups.\
+\nCommon section names are \"Basic Examples\", \"Visualization\" and \
+\"Analysis\".\nUse text cells to provide a brief explanation of each example.\
+\n\nUse $$Data to represent ResourceData[...].\nUse $$Object to represent the \
+completed ResourceObject[...].\nUse $$Object[\"FullContent\"] to represent \
+ResourceData[...,All].\n\nBe sure to evaluate definitions of $$Data etc. in \
+the Resource Content section. The $$Data etc. symbols will automatically be \
+replaced by ResourceData[...] or ResourceObject, as appropriate, when the \
+output is built.\nThe symbols in this notebook, including $$Data, have a \
+local context and will not be defined in the Global context. \n\nExample \
+code: Histogram[$$Data[All,\"col1\"]]"
+     }],ExpressionUUID->"c06334c2-0e71-494d-98b5-0db0b450a5b8"]}
+   },
+   AutoDelete->False,
+   GridBoxAlignment->{"Columns" -> {{Left}}},
+   GridBoxItemSize->{"Columns" -> {60, Automatic}}],
+  "Grid"]], "DataResourceMoreInfo",
+ PageWidth->1000,
+ ShowCellBracket->False,
+ CellBracketOptions->{"OverlapContent"->True},
+ CellOpen->False,
+ CellChangeTimes->{{3.6962473727415485`*^9, 3.696247396431917*^9}, 
+   3.6962474409983735`*^9},
+ FontFamily->
+  "SourceSansPro",ExpressionUUID->"dbf18045-2180-4fa8-b4fd-8b8a5cea9a3c"],
+
+Cell["", "DataResourceWhiteSection",
+ CellFrameMargins->0,
+ CellTags->
+  "DataResourceExampleArea",ExpressionUUID->"19cd0baa-f9b7-4e7b-9884-\
+be5d1203d159"],
+
+Cell[CellGroupData[{
+
+Cell["Basic Examples", "Subsection",
+ CellFrame->False,
+ ShowCellBracket->True,
+ CellMargins->0,
+ CellFrameMargins->{{66, 8}, {8, 8}},
+ CellFrameColor->GrayLevel[1],
+ CellFrameLabelMargins->6,
+ CellSize->{
+  Automatic, 
+   Automatic},ExpressionUUID->"75f78dbe-7493-43f5-88f4-db872aeed6c3"],
+
+Cell["Retrieve the resource:", "Text",
+ CellGroupingRules->"NormalGrouping",
+ CellChangeTimes->{{3.696186645510051*^9, 3.6961866545240507`*^9}, 
+   3.696187841532233*^9},ExpressionUUID->"7ee9a0f5-0005-4a9d-8065-\
+70d81dc7cd05"],
+
+Cell[BoxData["$$Object"], "Input",
+ CellContext->Notebook,
+ CellFrameLabels->None,
+ CellChangeTimes->{{3.696186325360051*^9, 3.696186327021051*^9}, {
+  3.696186470495051*^9, 3.6961864722920513`*^9}, {3.696187844212501*^9, 
+  3.6961878453076105`*^9}},ExpressionUUID->"a22664fb-6a9f-4ad1-ad0a-\
+982b9700f2ff"],
+
+Cell["Retrieve the default content:", "Text",
+ CellChangeTimes->{{3.696186645510051*^9, 3.6961866545240507`*^9}, {
+  3.696187841532233*^9, 
+  3.696187852829363*^9}},ExpressionUUID->"72349757-4435-4262-88ec-\
+8a240cff11d6"],
+
+Cell[BoxData["$$Data"], "Input",
+ CellContext->Notebook,
+ CellFrameLabels->None,
+ CellChangeTimes->{{3.696186325360051*^9, 3.696186327021051*^9}, {
+  3.696186470495051*^9, 3.6961864722920513`*^9}, {3.696187844212501*^9, 
+  3.6961878557606554`*^9}},ExpressionUUID->"db375ba5-837b-42c0-9175-\
+e000eb56c4d5"],
+
+Cell["", "DataResourceHiddenPageBreak",
+ CellMargins->{{Inherited, Inherited}, {
+   Inherited, 50}},ExpressionUUID->"3ed6c2c5-f02e-464a-b831-ab95e2ef5e9e"],
+
+Cell["", "DataResourcePageBreak",
+ CellFrameMargins->0,
+ Background->RGBColor[
+   Rational[8, 255], 
+   Rational[23, 85], 
+   Rational[107, 255]],ExpressionUUID->"854c0e42-6e60-4d78-a7a3-7f51d88a2d4a"],
+
+Cell["", "DataResourceCreateChapter",ExpressionUUID->"480efff6-bc44-447e-9b1e-76821908fbde"],
+
+Cell[BoxData[
+ RowBox[{"$$ResourceObject", "=", 
+  RowBox[{"ResourceObject", "[", 
+   RowBox[{"EvaluationNotebook", "[", "]"}], "]"}]}]], "DataResourceOperation",
+ ShowCellBracket->True,
+ CellMargins->{{Inherited, 50}, {40, Inherited}},
+ CellContext->Notebook,
+ CellFrameMargins->{{Inherited, Inherited}, {20, Inherited}},
+ CellFrameLabels->None,
+ CellChangeTimes->{{3.696377005707614*^9, 3.69637702247129*^9}, {
+   3.696377225845625*^9, 3.696377236186659*^9}, 3.696377278504891*^9, {
+   3.696377319054945*^9, 3.6963773247475147`*^9}, 3.6963774601870575`*^9, {
+   3.696377490692107*^9, 3.696377510279066*^9}, {3.702220900304572*^9, 
+   3.702220912702812*^9}, {3.7022211725607953`*^9, 
+   3.7022211911736565`*^9}},ExpressionUUID->"426a4ec7-7a86-4ec6-9b6f-\
+f1ade60fdb27"],
+
+Cell["", "DataResourcePageBreak",
+ CellFrameMargins->0,
+ Background->RGBColor[
+   Rational[8, 255], 
+   Rational[23, 85], 
+   Rational[107, 255]],ExpressionUUID->"76110451-6f11-4850-a29d-785ee37fd12a"],
+
+Cell["", "DataResourceDeployChapter",ExpressionUUID->"5907475b-e6a6-41d4-af08-7861bb2c8cd4"],
+
+Cell["", "DataResourceLocalDeploy",ExpressionUUID->"566fb5bc-bce7-4410-8ea3-f91f29b03c61"],
+
+Cell["", "DataResourceLocalDeploySubsection",
+ CellChangeTimes->{{3.696377005707614*^9, 3.69637702247129*^9}, {
+   3.696377225845625*^9, 3.696377236186659*^9}, 3.696377278504891*^9, {
+   3.696377319054945*^9, 3.6963773247475147`*^9}, 3.6963774601870575`*^9, {
+   3.696377490692107*^9, 3.696377510279066*^9}, 
+   3.7022261612989817`*^9},ExpressionUUID->"62abfec3-749b-4671-94d2-\
+029899f09c82"],
+
+Cell[BoxData[
+ RowBox[{"LocalCache", "[", "$$ResourceObject", 
+  "]"}]], "DataResourceOperation",
+ ShowCellBracket->True,
+ CellMargins->{{Inherited, 50}, {Inherited, Inherited}},
+ CellContext->Notebook,
+ CellFrameMargins->{{Inherited, Inherited}, {20, Inherited}},
+ CellFrameLabels->None,
+ CellChangeTimes->{{3.696377005707614*^9, 3.69637702247129*^9}, {
+   3.696377225845625*^9, 3.696377236186659*^9}, 3.696377278504891*^9, {
+   3.696377319054945*^9, 3.6963773247475147`*^9}, 3.6963774601870575`*^9, {
+   3.696377490692107*^9, 3.696377510279066*^9}, {3.702220900304572*^9, 
+   3.702220912702812*^9}, {3.7022211725607953`*^9, 3.7022211911736565`*^9}, {
+   3.702226054095982*^9, 
+   3.702226061429982*^9}},ExpressionUUID->"f267f503-f121-40ed-8bf8-\
+47ef58612cd1"],
+
+Cell["", "DataResourceCloudDeploy",ExpressionUUID->"bae2cee5-21eb-4df0-ba82-21eada184b30"],
+
+Cell["", "DataResourcePrivateCloudDeploySubsection",ExpressionUUID->"af7b7225-e973-42d8-937a-18372f2da464"],
+
+Cell[BoxData[
+ RowBox[{"CloudDeploy", "[", 
+  RowBox[{"$$ResourceObject", ",", 
+   RowBox[{"Permissions", "\[Rule]", "\"\<Private\>\""}]}], 
+  "]"}]], "DataResourceOperation",
+ ShowCellBracket->True,
+ CellMargins->{{Inherited, 50}, {Inherited, Inherited}},
+ CellContext->Notebook,
+ CellFrameMargins->{{Inherited, Inherited}, {20, Inherited}},
+ CellFrameLabels->None,
+ CellChangeTimes->{{3.696377005707614*^9, 3.69637702247129*^9}, {
+   3.696377225845625*^9, 3.696377236186659*^9}, 3.696377278504891*^9, {
+   3.696377319054945*^9, 3.6963773247475147`*^9}, 3.6963774601870575`*^9, {
+   3.696377490692107*^9, 3.696377510279066*^9}, {3.702220900304572*^9, 
+   3.702220912702812*^9}, {3.7022211725607953`*^9, 3.7022211911736565`*^9}, {
+   3.702226054095982*^9, 3.702226061429982*^9}, {3.702226567399982*^9, 
+   3.7022265699279823`*^9}},ExpressionUUID->"206f49d7-dff2-4afa-86c7-\
+8f3ca2daa6da"],
+
+Cell["", "DataResourcePublicCloudDeploySubsection",ExpressionUUID->"18d70c38-0dcb-4a1b-8f7b-0ca3c37c4c9f"],
+
+Cell[BoxData[
+ RowBox[{"CloudDeploy", "[", 
+  RowBox[{"$$ResourceObject", ",", 
+   RowBox[{"Permissions", "\[Rule]", "\"\<Public\>\""}]}], 
+  "]"}]], "DataResourceOperation",
+ ShowCellBracket->True,
+ CellMargins->{{Inherited, 50}, {Inherited, Inherited}},
+ CellContext->Notebook,
+ CellFrameMargins->{{Inherited, Inherited}, {20, Inherited}},
+ CellFrameLabels->None,
+ CellChangeTimes->{{3.696377005707614*^9, 3.69637702247129*^9}, {
+   3.696377225845625*^9, 3.696377236186659*^9}, 3.696377278504891*^9, {
+   3.696377319054945*^9, 3.6963773247475147`*^9}, 3.6963774601870575`*^9, {
+   3.696377490692107*^9, 3.696377510279066*^9}, {3.702220900304572*^9, 
+   3.702220912702812*^9}, {3.7022211725607953`*^9, 3.7022211911736565`*^9}, {
+   3.702226054095982*^9, 3.702226061429982*^9}, {3.702226572930982*^9, 
+   3.702226575188982*^9}, {3.7022468514096413`*^9, 
+   3.7022468532026415`*^9}},ExpressionUUID->"8f679b4a-0283-45dd-9154-\
+bd91f1a4b24c"],
+
+Cell["", "DataResourceCustomCloudDeploySubsection",ExpressionUUID->"16c469c2-3476-416d-8f3a-4aac5441aa7b"],
+
+Cell[BoxData[
+ RowBox[{"CloudDeploy", "[", 
+  RowBox[{"$$ResourceObject", ",", 
+   TagBox[
+    FrameBox["\<\"Path\"\>"],
+    "Placeholder"], ",", 
+   RowBox[{"Permissions", "\[Rule]", 
+    TagBox[
+     FrameBox["\<\"Permissions\"\>"],
+     "Placeholder"]}]}], "]"}]], "DataResourceOperation",
+ ShowCellBracket->True,
+ CellMargins->{{Inherited, 50}, {Inherited, Inherited}},
+ CellContext->Notebook,
+ CellFrameMargins->{{Inherited, Inherited}, {20, Inherited}},
+ CellFrameLabels->None,
+ CellChangeTimes->{{3.696377005707614*^9, 3.69637702247129*^9}, {
+   3.696377225845625*^9, 3.696377236186659*^9}, 3.696377278504891*^9, {
+   3.696377319054945*^9, 3.6963773247475147`*^9}, 3.6963774601870575`*^9, {
+   3.696377490692107*^9, 3.696377510279066*^9}, {3.702220900304572*^9, 
+   3.702220912702812*^9}, {3.7022211725607953`*^9, 3.7022211911736565`*^9}, {
+   3.702226054095982*^9, 3.702226061429982*^9}, {3.702226577997982*^9, 
+   3.702226580120982*^9}, {3.702714959490386*^9, 
+   3.702714973804205*^9}},ExpressionUUID->"4f5c8cd7-40de-4079-9829-\
+c928617a4342"],
+
+Cell["", "DataResourcePageBreak",
+ CellMargins->{{Inherited, Inherited}, {60, 
+   60}},ExpressionUUID->"11db2a3a-193c-407f-aa8b-c919fb1fdbff"],
+
+Cell["", "DataResourceSubmitChapter",
+ CellOpen->True,ExpressionUUID->"91392aca-bc25-4c0c-a74b-bf35ceb572de"],
+
+Cell["", "DataResourcePublisherIDSection",ExpressionUUID->"be7bb578-85df-4f1e-be4d-054d502238c2"],
+
+Cell["", "DataResourcePublisherIDMoreInfo",
+ CellOpen->False,ExpressionUUID->"8df04e34-9fdd-409c-ac86-6a3f7fb5e708"],
+
+Cell["", "DataResourceTextInput",
+ CellMargins->{{Inherited, Inherited}, {0, Inherited}},
+ CellTags->
+  "PublisherID",ExpressionUUID->"483dd424-e8f1-4930-a398-48ba2cb2356f"],
+
+Cell["", "DataResourcePublisherRequest",ExpressionUUID->"d02af504-c3a2-4c77-94ca-fd02d7d7446d"],
+
+Cell[BoxData[
+ RowBox[{"ResourceSubmit", "[", "$$ResourceObject", 
+  "]"}]], "DataResourceOperation",
+ ShowCellBracket->True,
+ CellMargins->{{Inherited, 50}, {Inherited, Inherited}},
+ CellContext->Notebook,
+ CellProlog:>($CellContext`$$publisherid = ResourceSystemClient`$PublisherID; 
+  ResourceSystemClient`$PublisherID = 
+   DataResource`Private`getNotebookResourcePublisher[
+     EvaluationNotebook[]]),
+ CellEpilog:>((ResourceSystemClient`$PublisherID = $CellContext`$$publisherid; 
+    Null) CellFrameMargins -> {{Inherited, Inherited}, {20, Inherited}}),
+ CellFrameLabels->None,ExpressionUUID->"f339c548-3f83-46a5-9392-3d4aa1e5a853"]
+}, Open  ]]
+},
+WindowSize->{1280, 637},
+WindowMargins->{{-8, Automatic}, {Automatic, -8}},
+Visible->True,
+TaggingRules->{
+ "ResourceType" -> "DataResource", "ResourceCreateNotebook" -> True},
+CellContext->Notebook,
+FrontEndVersion->"11.1 for Microsoft Windows (64-bit) (April 18, 2017)",
+StyleDefinitions->FrontEnd`FileName[{"Wolfram"}, 
+  "DataResourceDefinitionStyles.nb", CharacterEncoding -> "UTF-8"]
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{
+ "ResourceName"->{
+  Cell[763, 25, 526, 7, 
+  23, "DataResourceTextInput", "ExpressionUUID" -> "c17e3277-9491-48b9-
+   b72b-415340da0286",
+   CellTags->"ResourceName"]},
+ "ResourceDescription"->{
+  Cell[1560, 42, 561, 10, 
+  23, "DataResourceTextInput", "ExpressionUUID" -> "
+   78ca67c8-69a9-460c-9783-8f8576b5e186",
+   CellTags->"ResourceDescription"]},
+ "ResourceDetails"->{
+  Cell[2408, 62, 166, 3, 
+  88, "DataResourceTextInput", "ExpressionUUID" -> "29f83947-
+   ca0e-445e-8eb8-8fc7bf3accbf",
+   CellTags->"ResourceDetails"]},
+ "ResourceContributedBy"->{
+  Cell[4538, 119, 446, 11, 
+  55, "DataResourceTextInput", "ExpressionUUID" -> "9df67180-
+   cc9d-4f16-870b-390e31563b5d",
+   CellTags->"ResourceContributedBy"]},
+ "ResourceOriginator"->{
+  Cell[5349, 143, 503, 7, 
+  23, "DataResourceTextInput", "ExpressionUUID" -> "d78025e4-285a-41a5-
+   b02f-8157fab22b55",
+   CellTags->"ResourceOriginator"]},
+ "CitationSMD"->{
+  Cell[6213, 163, 644, 14, 
+  87, "DataResourceTextInput", "ExpressionUUID" -> "e749d412-9baa-4a3e-
+   aaab-1540311f397b",
+   CellTags->"CitationSMD"]},
+ "SourceSMD"->{
+  Cell[7215, 190, 309, 4, 
+  23, "DataResourceTextInput", "ExpressionUUID" -> "f7412448-
+   b56e-4be0-806e-79cb1040cfe6",
+   CellTags->"SourceSMD"]},
+ "ResourceExternalLinks"->{
+  Cell[7895, 207, 492, 8, 
+  23, "DataResourceTextInput", "ExpressionUUID" -> "
+   405073b9-8b7e-41cd-9834-8818e6574a4d",
+   CellTags->"ResourceExternalLinks"]},
+ "ResourceSeeAlso"->{
+  Cell[8691, 225, 297, 5, 
+  23, "DataResourceTextInput", "ExpressionUUID" -> "942f0ef0-111c-4f48-
+   a40c-8303fc633836",
+   CellOpen->True,
+   CellTags->"ResourceSeeAlso"]},
+ "DataResourceCategories"->{
+  Cell[9249, 239, 12874, 274, 
+  247, "DataResourceSortingPropertyField", "ExpressionUUID" -> "
+   97b716ee-07ab-436e-b618-89d0e3f0b622",
+   CellTags->"DataResourceCategories"]},
+ "DataResourceContentTypes"->{
+  Cell[22347, 520, 3281, 67, 
+  55, "DataResourceSortingPropertyField", "ExpressionUUID" -> "
+   4bf90b56-3fb1-4e3f-98c5-21387403c99d",
+   CellTags->"DataResourceContentTypes"]},
+ "ResourceKeywords"->{
+  Cell[25843, 594, 549, 15, 
+  103, "DataResourceTextInput", "ExpressionUUID" -> "74e2044e-6400-4eaa-9e59-
+   abdddeb89c9b",
+   CellTags->"ResourceKeywords"]},
+ "CreatorSMD"->{
+  Cell[27999, 655, 278, 5, 
+  55, "DataResourceSMDTextInput", "ExpressionUUID" -> "
+   0734ac92-900d-4f99-93fd-ea38e2ff99fa",
+   CellTags->"CreatorSMD"]},
+ "ContributorSMD"->{
+  Cell[28506, 667, 280, 5, 
+  55, "DataResourceSMDTextInput", "ExpressionUUID" -> "
+   25ccb54a-92f4-4e52-93da-b7176c417451",
+   CellTags->"ContributorSMD"]},
+ "TitleSMD"->{
+  Cell[29002, 679, 310, 8, 
+  112, "DataResourceSMDTextInput", "ExpressionUUID" -> "0447bf98-cfa6-410f-
+   bba2-e76743da7a6d",
+   CellTags->"TitleSMD"]},
+ "DescriptionSMD"->{
+  Cell[29539, 694, 238, 4, 
+  55, "DataResourceSMDTextInput", "ExpressionUUID" -> "8c4607b0-974a-4c23-
+   a91e-5cac46606370",
+   CellTags->"DescriptionSMD"]},
+ "DateSMD"->{
+  Cell[29990, 705, 222, 3, 
+  55, "DataResourceSMDTextInput", "ExpressionUUID" -> "
+   952c6f31-2655-4985-82c9-49d06c8c78f3",
+   CellTags->"DateSMD"]},
+ "PublisherSMD"->{
+  Cell[30436, 715, 288, 5, 
+  55, "DataResourceSMDTextInput", "ExpressionUUID" -> "
+   347bce06-3949-4505-92a9-556821a2c88f",
+   CellTags->"PublisherSMD"]},
+ "GeographicCoverageSMD"->{
+  Cell[30966, 727, 237, 5, 
+  55, "DataResourceSMDTextInput", "ExpressionUUID" -> "30604fe8-415d-4d6b-
+   bfe9-1b3fe4a1232e",
+   CellTags->"GeographicCoverageSMD"]},
+ "TemporalCoverageSMD"->{
+  Cell[31440, 739, 234, 5, 
+  55, "DataResourceSMDTextInput", "ExpressionUUID" -> "7d584b0b-3692-45e7-
+   a680-3a780af25c1a",
+   CellTags->"TemporalCoverageSMD"]},
+ "LanguageSMD"->{
+  Cell[31896, 751, 218, 4, 
+  55, "DataResourceSMDTextInput", "ExpressionUUID" -> "5f45d568-c87c-49f8-
+   aa77-14d2c276c996",
+   CellTags->"LanguageSMD"]},
+ "RightsSMD"->{
+  Cell[32332, 762, 248, 3, 
+  55, "DataResourceSMDTextInput", "ExpressionUUID" -> "
+   39f454d1-193c-44c0-9542-39a72f065126",
+   CellTags->"RightsSMD"]},
+ "DataResourceInitialization"->{
+  Cell[33741, 793, 127, 3, 
+  52, "Input", "ExpressionUUID" -> "67eb2619-21ff-43ce-ae43-ebc8272400e7",
+   CellTags->"DataResourceInitialization"]},
+ "DataResourceContentInputObject"->{
+  Cell[35467, 840, 1311, 33, 
+  143, "DataResourceContentInput", "ExpressionUUID" -> "
+   99c70a5b-3bcc-4541-9f6c-245f7bee0add",
+   Evaluatable->True,
+   CellTags->"DataResourceContentInputObject"]},
+ "DataResourceExampleArea"->{
+  Cell[39688, 939, 156, 4, 
+  5, "DataResourceWhiteSection", "ExpressionUUID" -> "19cd0baa-f9b7-4e7b-9884-
+   be5d1203d159",
+   CellTags->"DataResourceExampleArea"]},
+ "PublisherID"->{
+  Cell[47803, 1136, 173, 3, 
+  51, "DataResourceTextInput", "ExpressionUUID" -> "483dd424-e8f1-4930-
+   a398-48ba2cb2356f",
+   CellTags->"PublisherID"]}
+ }
+*)
+(*CellTagsIndex
+CellTagsIndex->{
+ {"ResourceName", 49241, 1173},
+ {"ResourceDescription", 49418, 1178},
+ {"ResourceDetails", 49600, 1183},
+ {"ResourceContributedBy", 49783, 1188},
+ {"ResourceOriginator", 49971, 1193},
+ {"CitationSMD", 50148, 1198},
+ {"SourceSMD", 50317, 1203},
+ {"ResourceExternalLinks", 50495, 1208},
+ {"ResourceSeeAlso", 50679, 1213},
+ {"DataResourceCategories", 50883, 1219},
+ {"DataResourceContentTypes", 51093, 1224},
+ {"ResourceKeywords", 51295, 1229},
+ {"CreatorSMD", 51472, 1234},
+ {"ContributorSMD", 51648, 1239},
+ {"TitleSMD", 51822, 1244},
+ {"DescriptionSMD", 51997, 1249},
+ {"DateSMD", 52170, 1254},
+ {"PublisherSMD", 52341, 1259},
+ {"GeographicCoverageSMD", 52526, 1264},
+ {"TemporalCoverageSMD", 52718, 1269},
+ {"LanguageSMD", 52900, 1274},
+ {"RightsSMD", 53072, 1279},
+ {"DataResourceInitialization", 53259, 1284},
+ {"DataResourceContentInputObject", 53444, 1288},
+ {"DataResourceExampleArea", 53674, 1294},
+ {"PublisherID", 53859, 1299}
+ }
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[558, 20, 90, 0, 23, "DataResourceNameSection", "ExpressionUUID" -> \
+"ff889f05-4b2e-4e27-95c4-54cc9a29e2a7"],
+Cell[651, 22, 109, 1, 19, "DataResourceNameMoreInfo", "ExpressionUUID" -> \
+"128a5c7e-0595-46c3-843c-9c79e6b1e6ee",
+ CellOpen->False],
+Cell[763, 25, 526, 7, 23, "DataResourceTextInput", "ExpressionUUID" -> \
+"c17e3277-9491-48b9-b72b-415340da0286",
+ CellTags->"ResourceName"],
+Cell[1292, 34, 146, 3, 23, "DataResourceDescriptionSection", "ExpressionUUID" \
+-> "7e9df715-bddc-4e20-bcf6-13d035c3cb3f"],
+Cell[1441, 39, 116, 1, 19, "DataResourceDescriptionMoreInfo", \
+"ExpressionUUID" -> "8be584c1-4371-44e9-8a11-f8f7d0ee74d4",
+ CellOpen->False],
+Cell[1560, 42, 561, 10, 23, "DataResourceTextInput", "ExpressionUUID" -> \
+"78ca67c8-69a9-460c-9783-8f8576b5e186",
+ CellTags->"ResourceDescription"],
+Cell[2124, 54, 93, 0, 23, "DataResourceDetailsSection", "ExpressionUUID" -> \
+"3fd47770-8efd-4622-96d0-8afcb277a6a9"],
+Cell[2220, 56, 185, 4, 19, "DataResourceDetailsMoreInfo", "ExpressionUUID" -> \
+"ff026474-270d-4965-beb4-e7f0a5d0c7f7",
+ CellOpen->False],
+Cell[2408, 62, 166, 3, 88, "DataResourceTextInput", "ExpressionUUID" -> \
+"29f83947-ca0e-445e-8eb8-8fc7bf3accbf",
+ CellTags->"ResourceDetails"],
+Cell[2577, 67, 1590, 39, 45, "DataResourceChapter", "ExpressionUUID" -> \
+"7f63ee51-f18b-4f62-9e7d-376dca569240",
+ Evaluatable->False],
+Cell[4170, 108, 172, 3, 23, "DataResourceContributedBySection", \
+"ExpressionUUID" -> "e4e00d48-4af5-4cc9-badf-3b00908b4c43"],
+Cell[4345, 113, 190, 4, 23, "DataResourceContributedByMoreInfo", \
+"ExpressionUUID" -> "4d9cd40d-ed3b-44b2-871e-79f074657b84",
+ CellOpen->True],
+Cell[4538, 119, 446, 11, 55, "DataResourceTextInput", "ExpressionUUID" -> \
+"9df67180-cc9d-4f16-870b-390e31563b5d",
+ CellTags->"ResourceContributedBy"],
+Cell[4987, 132, 169, 3, 23, "DataResourceOriginatorSection", "ExpressionUUID" \
+-> "3ac19e46-3508-4bea-b6ae-d27d1658d2e6"],
+Cell[5159, 137, 187, 4, 23, "DataResourceOriginatorMoreInfo", \
+"ExpressionUUID" -> "71e0ccd4-645f-4ad3-af79-919114fff7bf",
+ CellOpen->True],
+Cell[5349, 143, 503, 7, 23, "DataResourceTextInput", "ExpressionUUID" -> \
+"d78025e4-285a-41a5-b02f-8157fab22b55",
+ CellTags->"ResourceOriginator"],
+Cell[5855, 152, 167, 3, 23, "DataResourceCitationSection", "ExpressionUUID" \
+-> "c7d69ad4-ee29-4695-8b8f-002f606ce555"],
+Cell[6025, 157, 185, 4, 23, "DataResourceCitationMoreInfo", "ExpressionUUID" \
+-> "639080f1-9d2d-4d02-bee7-7b45d09e5e37",
+ CellOpen->True],
+Cell[6213, 163, 644, 14, 87, "DataResourceTextInput", "ExpressionUUID" -> \
+"e749d412-9baa-4a3e-aaab-1540311f397b",
+ CellTags->"CitationSMD"],
+Cell[6860, 179, 165, 3, 23, "DataResourceSourceSection", "ExpressionUUID" -> \
+"b7ea150e-76af-49f1-8e2a-032f3f8aefa7"],
+Cell[7028, 184, 184, 4, 19, "DataResourceSourceMoreInfo", "ExpressionUUID" -> \
+"72852a36-12a0-4147-903c-e2b771b079ed",
+ CellOpen->False],
+Cell[7215, 190, 309, 4, 23, "DataResourceTextInput", "ExpressionUUID" -> \
+"f7412448-b56e-4be0-806e-79cb1040cfe6",
+ CellTags->"SourceSMD"],
+Cell[7527, 196, 172, 3, 23, "DataResourceExternalLinksSection", \
+"ExpressionUUID" -> "08956a09-bfbf-4a3d-a22d-ddf6597b94f3"],
+Cell[7702, 201, 190, 4, 23, "DataResourceExternalLinksMoreInfo", \
+"ExpressionUUID" -> "699ac812-6df3-4a6f-b2c9-b2ea867940f3",
+ CellOpen->True],
+Cell[7895, 207, 492, 8, 23, "DataResourceTextInput", "ExpressionUUID" -> \
+"405073b9-8b7e-41cd-9834-8818e6574a4d",
+ CellTags->"ResourceExternalLinks"],
+Cell[8390, 217, 102, 0, 23, "DataResourceRelatedResourcesSection", \
+"ExpressionUUID" -> "ff7f9bb3-2e98-41e4-b240-ae9d07757e29"],
+Cell[8495, 219, 193, 4, 23, "DataResourceRelatedResourcesMoreInfo", \
+"ExpressionUUID" -> "09074c52-5a90-4e43-920b-a13ac1472558",
+ CellOpen->True],
+Cell[8691, 225, 297, 5, 23, "DataResourceTextInput", "ExpressionUUID" -> \
+"942f0ef0-111c-4f48-a40c-8303fc633836",
+ CellOpen->True,
+ CellTags->"ResourceSeeAlso"],
+Cell[8991, 232, 137, 2, 23, "DataResourceCategoriesSection", "ExpressionUUID" \
+-> "6d26a1ef-a1cb-4d1d-b04c-29e2950b68ef",
+ CellGroupingRules->"NormalGrouping"],
+Cell[9131, 236, 115, 1, 19, "DataResourceCategoriesMoreInfo", \
+"ExpressionUUID" -> "7d8602fa-b969-4cb2-b2cb-9421e8b9cea4",
+ CellOpen->False],
+Cell[9249, 239, 12874, 274, 247, "DataResourceSortingPropertyField", \
+"ExpressionUUID" -> "97b716ee-07ab-436e-b618-89d0e3f0b622",
+ CellTags->"DataResourceCategories"],
+Cell[22126, 515, 98, 0, 23, "DataResourceContentTypesSection", \
+"ExpressionUUID" -> "8f55dcd2-3c1a-4afe-a849-8f48d5507fba"],
+Cell[22227, 517, 117, 1, 19, "DataResourceContentTypesMoreInfo", \
+"ExpressionUUID" -> "e6ccbae2-6928-4f18-bdef-fa0109f6209e",
+ CellOpen->False],
+Cell[22347, 520, 3281, 67, 55, "DataResourceSortingPropertyField", \
+"ExpressionUUID" -> "4bf90b56-3fb1-4e3f-98c5-21387403c99d",
+ CellTags->"DataResourceContentTypes"],
+Cell[25631, 589, 94, 0, 23, "DataResourceKeywordsSection", "ExpressionUUID" \
+-> "08fa89fd-0e4f-4d10-9d75-2469de962790"],
+Cell[25728, 591, 112, 1, 23, "DataResourceKeywordsMoreInfo", "ExpressionUUID" \
+-> "a17d3198-8948-484a-892a-d50361ec398f",
+ CellOpen->True],
+Cell[25843, 594, 549, 15, 103, "DataResourceTextInput", "ExpressionUUID" -> \
+"74e2044e-6400-4eaa-9e59-abdddeb89c9b",
+ CellTags->"ResourceKeywords"],
+Cell[26395, 611, 185, 4, 19, "DataResourceDetailsMoreInfo", "ExpressionUUID" \
+-> "238f63ed-9028-4c4b-a3ff-c1bda90b1356",
+ CellOpen->False],
+Cell[26583, 617, 1197, 31, 33, "DataResourceSubsection", "ExpressionUUID" -> \
+"a0f25951-31ee-4be9-b8e5-dcc28614dfa0",
+ Evaluatable->False],
+Cell[27783, 650, 96, 0, 92, "DataResourceCreatorSMDSection", "ExpressionUUID" \
+-> "63fdb8f4-0a58-4943-80be-e42c0f80cb94"],
+Cell[27882, 652, 114, 1, 107, "DataResourceCreatorSMDMoreInfo", \
+"ExpressionUUID" -> "b9d7f16e-29be-4c66-bdc6-ff3ecadca648",
+ CellOpen->True],
+Cell[27999, 655, 278, 5, 55, "DataResourceSMDTextInput", "ExpressionUUID" -> \
+"0734ac92-900d-4f99-93fd-ea38e2ff99fa",
+ CellTags->"CreatorSMD"],
+Cell[28280, 662, 101, 0, 92, "DataResourceContributorsSMDSection", \
+"ExpressionUUID" -> "83b2f058-3042-431b-a756-9eb88c19ed7d"],
+Cell[28384, 664, 119, 1, 44, "DataResourceContributorsSMDMoreInfo", \
+"ExpressionUUID" -> "61d439fb-69a9-4533-bdad-3a809b94a4e7",
+ CellOpen->True],
+Cell[28506, 667, 280, 5, 55, "DataResourceSMDTextInput", "ExpressionUUID" -> \
+"25ccb54a-92f4-4e52-93da-b7176c417451",
+ CellTags->"ContributorSMD"],
+Cell[28789, 674, 94, 0, 92, "DataResourceTitleSMDSection", "ExpressionUUID" \
+-> "b1b37352-4073-450e-9182-8b2ef00581ba"],
+Cell[28886, 676, 113, 1, 19, "DataResourceTitleSMDMoreInfo", "ExpressionUUID" \
+-> "5d036429-f7e7-447c-8c2f-f34550c7ec6b",
+ CellOpen->False],
+Cell[29002, 679, 310, 8, 112, "DataResourceSMDTextInput", "ExpressionUUID" -> \
+"0447bf98-cfa6-410f-bba2-e76743da7a6d",
+ CellTags->"TitleSMD"],
+Cell[29315, 689, 100, 0, 67, "DataResourceDescriptionSMDSection", \
+"ExpressionUUID" -> "e1e62f07-e78a-48d6-a12f-79e2370cadbc"],
+Cell[29418, 691, 118, 1, 65, "DataResourceDescriptionSMDMoreInfo", \
+"ExpressionUUID" -> "4a6b76ab-7ac2-41df-8f1c-8a628f7bbaa6",
+ CellOpen->True],
+Cell[29539, 694, 238, 4, 55, "DataResourceSMDTextInput", "ExpressionUUID" -> \
+"8c4607b0-974a-4c23-a91e-5cac46606370",
+ CellTags->"DescriptionSMD"],
+Cell[29780, 700, 93, 0, 108, "DataResourceDateSMDSection", "ExpressionUUID" \
+-> "1e06ec71-e730-444b-be01-d60e70bba780"],
+Cell[29876, 702, 111, 1, 107, "DataResourceDateSMDMoreInfo", "ExpressionUUID" \
+-> "edcb48ba-6739-4d1d-8960-812434c25b66",
+ CellOpen->True],
+Cell[29990, 705, 222, 3, 55, "DataResourceSMDTextInput", "ExpressionUUID" -> \
+"952c6f31-2655-4985-82c9-49d06c8c78f3",
+ CellTags->"DateSMD"],
+Cell[30215, 710, 98, 0, 92, "DataResourcePublisherSMDSection", \
+"ExpressionUUID" -> "f871cc57-42bf-4ae5-9b00-c6675ef12b66"],
+Cell[30316, 712, 117, 1, 19, "DataResourcePublisherSMDMoreInfo", \
+"ExpressionUUID" -> "f8470987-acc5-403b-9bd8-6f38a41ff373",
+ CellOpen->False],
+Cell[30436, 715, 288, 5, 55, "DataResourceSMDTextInput", "ExpressionUUID" -> \
+"347bce06-3949-4505-92a9-556821a2c88f",
+ CellTags->"PublisherSMD"],
+Cell[30727, 722, 107, 0, 72, "DataResourceGeographicCoverageSMDSection", \
+"ExpressionUUID" -> "988aa7af-cf87-4392-89e4-8fe9a3605f08"],
+Cell[30837, 724, 126, 1, 19, "DataResourceGeographicCoverageSMDMoreInfo", \
+"ExpressionUUID" -> "616113a0-d518-4528-8185-dd8071522138",
+ CellOpen->False],
+Cell[30966, 727, 237, 5, 55, "DataResourceSMDTextInput", "ExpressionUUID" -> \
+"30604fe8-415d-4d6b-bfe9-1b3fe4a1232e",
+ CellTags->"GeographicCoverageSMD"],
+Cell[31206, 734, 105, 0, 92, "DataResourceTemporalCoverageSMDSection", \
+"ExpressionUUID" -> "fbfb830c-3ec9-42e6-b56a-fe924f7dad0d"],
+Cell[31314, 736, 123, 1, 44, "DataResourceTemporalCoverageSMDMoreInfo", \
+"ExpressionUUID" -> "3d65696c-468f-41f7-9ecf-897a9814070f",
+ CellOpen->True],
+Cell[31440, 739, 234, 5, 55, "DataResourceSMDTextInput", "ExpressionUUID" -> \
+"7d584b0b-3692-45e7-a680-3a780af25c1a",
+ CellTags->"TemporalCoverageSMD"],
+Cell[31677, 746, 97, 0, 72, "DataResourceLanguageSMDSection", \
+"ExpressionUUID" -> "3e5ebbf6-4cb2-4b89-9cfe-fecacc9807b0"],
+Cell[31777, 748, 116, 1, 19, "DataResourceLanguageSMDMoreInfo", \
+"ExpressionUUID" -> "479f2f6c-ba17-424c-9d5f-62e26f35aad7",
+ CellOpen->False],
+Cell[31896, 751, 218, 4, 55, "DataResourceSMDTextInput", "ExpressionUUID" -> \
+"5f45d568-c87c-49f8-aa77-14d2c276c996",
+ CellTags->"LanguageSMD"],
+Cell[32117, 757, 95, 0, 107, "DataResourceRightsSMDSection", "ExpressionUUID" \
+-> "0e588a14-1e9e-4580-a09b-6b99d8f76e1a"],
+Cell[32215, 759, 114, 1, 19, "DataResourceRightsSMDMoreInfo", \
+"ExpressionUUID" -> "07f8b97e-d90c-4f3c-88c8-ddd9293db11d",
+ CellOpen->False],
+Cell[32332, 762, 248, 3, 55, "DataResourceSMDTextInput", "ExpressionUUID" -> \
+"39f454d1-193c-44c0-9542-39a72f065126",
+ CellTags->"RightsSMD"],
+Cell[32583, 767, 431, 7, 44, "DataResourcePageBreak", "ExpressionUUID" -> \
+"120f875e-dbba-40aa-9944-04ba29961449"],
+Cell[33017, 776, 93, 0, 117, "DataResourceContentSection", "ExpressionUUID" \
+-> "b5d7e0ab-4d55-425d-942d-c095faae27be"],
+Cell[33113, 778, 95, 0, 118, "DataResourceConstructionArea", "ExpressionUUID" \
+-> "cbf19fd6-a177-4173-96dd-54cbc6e079b0"],
+Cell[33211, 780, 113, 1, 5, "DataResourceWhiteSection", "ExpressionUUID" -> \
+"7ca9fed2-9d6f-47f3-8cc5-b656e58f050c"],
+Cell[33327, 783, 81, 0, 52, "Input", "ExpressionUUID" -> \
+"cd63eabd-3378-456c-a65c-7ea90f9f7902"],
+Cell[33411, 785, 111, 1, 5, "DataResourceHiddenPageBreak", "ExpressionUUID" \
+-> "05d8f4e1-ff66-4f7d-bb6b-9643b45111b1"],
+Cell[33525, 788, 97, 0, 118, "DataResourceInitializationArea", \
+"ExpressionUUID" -> "ad8e3ab8-c573-44f1-a5d4-32904b9bc80e"],
+Cell[33625, 790, 113, 1, 5, "DataResourceWhiteSection", "ExpressionUUID" -> \
+"8fdc82ec-727a-466c-82ca-879bea4d1d00"],
+Cell[33741, 793, 127, 3, 52, "Input", "ExpressionUUID" -> \
+"67eb2619-21ff-43ce-ae43-ebc8272400e7",
+ CellTags->"DataResourceInitialization"],
+Cell[33871, 798, 111, 1, 5, "DataResourceHiddenPageBreak", "ExpressionUUID" \
+-> "54352650-e504-49c8-94f5-7d05b073e855"],
+Cell[33985, 801, 94, 0, 82, "DataResourceContentElements", "ExpressionUUID" \
+-> "58398e81-87c7-4259-a0a6-b656e385b1bc"],
+Cell[34082, 803, 178, 3, 27, "DataResourceDefaultContentElementSection", \
+"ExpressionUUID" -> "4a8d14a6-ff9d-449e-a5b3-1775e253eb77"],
+Cell[34263, 808, 172, 4, 95, "DataResourceDefaultContentElementMoreInfo", \
+"ExpressionUUID" -> "e7ba7e11-7bda-4529-8d8c-70fe366bcf39",
+ CellOpen->True],
+Cell[34438, 814, 729, 16, 68, "DataResourceContentInput", "ExpressionUUID" -> \
+"c51a28d0-9ff2-4b4a-bcbb-7ee8c4113f80"],
+Cell[35170, 832, 101, 0, 96, "DataResourceContentElementsSection", \
+"ExpressionUUID" -> "88fbe0d2-6346-4035-91d8-78af6187e5af"],
+Cell[35274, 834, 190, 4, 95, "DataResourceContentElementsMoreInfo", \
+"ExpressionUUID" -> "6b8cbadf-d83c-4611-ad2a-802dc5cfaff5",
+ CellOpen->True],
+Cell[35467, 840, 1311, 33, 143, "DataResourceContentInput", "ExpressionUUID" \
+-> "99c70a5b-3bcc-4541-9f6c-245f7bee0add",
+ Evaluatable->True,
+ CellTags->"DataResourceContentInputObject"],
+Cell[36781, 875, 649, 16, 68, "DataResourceContentInput", "ExpressionUUID" -> \
+"3d66450f-9dca-4864-9e4f-235150c4d56b"],
+Cell[37433, 893, 141, 2, 65, "DataResourcePageBreak", "ExpressionUUID" -> \
+"b0c0166b-5c27-401d-97b9-919e964d7ca8"],
+Cell[37577, 897, 177, 2, 81, "DataResourceExamplesChapter", "ExpressionUUID" \
+-> "54e8b35a-4ec1-4961-9c82-009a45ba80c2"],
+Cell[37757, 901, 94, 0, 25, "DataResourceExamplesSection", "ExpressionUUID" \
+-> "1bbcbac6-db9f-4609-95e4-a6ed110b0edd"],
+Cell[37854, 903, 1831, 34, 19, "DataResourceMoreInfo", "ExpressionUUID" -> \
+"dbf18045-2180-4fa8-b4fd-8b8a5cea9a3c",
+ CellOpen->False],
+Cell[39688, 939, 156, 4, 5, "DataResourceWhiteSection", "ExpressionUUID" -> \
+"19cd0baa-f9b7-4e7b-9884-be5d1203d159",
+ CellTags->"DataResourceExampleArea"],
+Cell[CellGroupData[{
+Cell[39869, 947, 289, 9, 39, "Subsection", "ExpressionUUID" -> \
+"75f78dbe-7493-43f5-88f4-db872aeed6c3"],
+Cell[40161, 958, 227, 4, 46, "Text", "ExpressionUUID" -> \
+"7ee9a0f5-0005-4a9d-8065-70d81dc7cd05",
+ CellGroupingRules->"NormalGrouping"],
+Cell[40391, 964, 307, 6, 52, "Input", "ExpressionUUID" -> \
+"a22664fb-6a9f-4ad1-ad0a-982b9700f2ff"],
+Cell[40701, 972, 222, 4, 46, "Text", "ExpressionUUID" -> \
+"72349757-4435-4262-88ec-8a240cff11d6"],
+Cell[40926, 978, 305, 6, 52, "Input", "ExpressionUUID" -> \
+"db375ba5-837b-42c0-9175-e000eb56c4d5"],
+Cell[41234, 986, 155, 2, 55, "DataResourceHiddenPageBreak", "ExpressionUUID" \
+-> "3ed6c2c5-f02e-464a-b831-ab95e2ef5e9e"],
+Cell[41392, 990, 201, 5, 5, "DataResourcePageBreak", "ExpressionUUID" -> \
+"854c0e42-6e60-4d78-a7a3-7f51d88a2d4a"],
+Cell[41596, 997, 92, 0, 144, "DataResourceCreateChapter", "ExpressionUUID" -> \
+"480efff6-bc44-447e-9b1e-76821908fbde"],
+Cell[41691, 999, 770, 15, 101, "DataResourceOperation", "ExpressionUUID" -> \
+"426a4ec7-7a86-4ec6-9b6f-f1ade60fdb27"],
+Cell[42464, 1016, 201, 5, 5, "DataResourcePageBreak", "ExpressionUUID" -> \
+"76110451-6f11-4850-a29d-785ee37fd12a"],
+Cell[42668, 1023, 92, 0, 122, "DataResourceDeployChapter", "ExpressionUUID" \
+-> "5907475b-e6a6-41d4-af08-7861bb2c8cd4"],
+Cell[42763, 1025, 90, 0, 82, "DataResourceLocalDeploy", "ExpressionUUID" -> \
+"566fb5bc-bce7-4410-8ea3-f91f29b03c61"],
+Cell[42856, 1027, 393, 6, 23, "DataResourceLocalDeploySubsection", \
+"ExpressionUUID" -> "62abfec3-749b-4671-94d2-029899f09c82"],
+Cell[43252, 1035, 762, 15, 69, "DataResourceOperation", "ExpressionUUID" -> \
+"f267f503-f121-40ed-8bf8-47ef58612cd1"],
+Cell[44017, 1052, 90, 0, 82, "DataResourceCloudDeploy", "ExpressionUUID" -> \
+"bae2cee5-21eb-4df0-ba82-21eada184b30"],
+Cell[44110, 1054, 107, 0, 23, "DataResourcePrivateCloudDeploySubsection", \
+"ExpressionUUID" -> "af7b7225-e973-42d8-937a-18372f2da464"],
+Cell[44220, 1056, 888, 17, 69, "DataResourceOperation", "ExpressionUUID" -> \
+"206f49d7-dff2-4afa-86c7-8f3ca2daa6da"],
+Cell[45111, 1075, 106, 0, 47, "DataResourcePublicCloudDeploySubsection", \
+"ExpressionUUID" -> "18d70c38-0dcb-4a1b-8f7b-0ca3c37c4c9f"],
+Cell[45220, 1077, 939, 18, 69, "DataResourceOperation", "ExpressionUUID" -> \
+"8f679b4a-0283-45dd-9154-bd91f1a4b24c"],
+Cell[46162, 1097, 106, 0, 73, "DataResourceCustomCloudDeploySubsection", \
+"ExpressionUUID" -> "16c469c2-3476-416d-8f3a-4aac5441aa7b"],
+Cell[46271, 1099, 1053, 23, 71, "DataResourceOperation", "ExpressionUUID" -> \
+"4f5c8cd7-40de-4079-9829-c928617a4342"],
+Cell[47327, 1124, 142, 2, 125, "DataResourcePageBreak", "ExpressionUUID" -> \
+"11db2a3a-193c-407f-aa8b-c919fb1fdbff"],
+Cell[47472, 1128, 109, 1, 54, "DataResourceSubmitChapter", "ExpressionUUID" \
+-> "91392aca-bc25-4c0c-a74b-bf35ceb572de",
+ CellOpen->True],
+Cell[47584, 1131, 97, 0, 66, "DataResourcePublisherIDSection", \
+"ExpressionUUID" -> "be7bb578-85df-4f1e-be4d-054d502238c2"],
+Cell[47684, 1133, 116, 1, 19, "DataResourcePublisherIDMoreInfo", \
+"ExpressionUUID" -> "8df04e34-9fdd-409c-ac86-6a3f7fb5e708",
+ CellOpen->False],
+Cell[47803, 1136, 173, 3, 51, "DataResourceTextInput", "ExpressionUUID" -> \
+"483dd424-e8f1-4930-a398-48ba2cb2356f",
+ CellTags->"PublisherID"],
+Cell[47979, 1141, 95, 0, 56, "DataResourcePublisherRequest", "ExpressionUUID" \
+-> "d02af504-c3a2-4c77-94ca-fd02d7d7446d"],
+Cell[48077, 1143, 640, 12, 89, "DataResourceOperation", "ExpressionUUID" -> \
+"f339c548-3f83-46a5-9392-3d4aa1e5a853"]
+}, Open  ]]
+}
+]
+*)
+
